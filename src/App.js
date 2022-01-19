@@ -9,7 +9,7 @@ import TableX from './Components/Table.js';
 import NavBarCustom from './Components/NavBar';
 import { ThumbUpSharp } from '@material-ui/icons';
 import inputFile from './Components/uploadFile';
-
+import ProfileView from './Profile';
 
 class App extends React.Component {
 
@@ -111,8 +111,11 @@ class App extends React.Component {
       <div>
         <NavBarCustom view={this.go}></NavBarCustom>
       </div>
+      <ProfileView></ProfileView>
       </header>
+
       </div>
+
     )
   }
   else if (this.state.View === 'Tickets'){
