@@ -1,14 +1,14 @@
 #!/bin/bash
 
-if [ -z "$1" ]
+if [ -z "$1" ] || [ -z "$2" ]
   then
-    echo "No BD name provided, TEST will be used"
-    test="TEST"
+    echo "No username or BD name provided"
+    exit 1 
 else
-    echo "Creant DB ${1}"
-    test=$1
-    echo "DB ${test} created"
+    user=$1
+    database=$2
+    sudo -u $user createdb $database;
+    echo "User: ${user} logged"
+    echo "DB ${database} created"
 fi
-
-sudo -u postgres createdb $test
 

@@ -1,13 +1,15 @@
 #!/bin/bash
-#sudo apt install postgresql postgresql-contrib
+#sudo apt install $userql $userql-contrib
 
-if [ -z "$1" ]
+if [ -z "$1" ] | [ -z "$2"]
   then
-    echo "No BD name to create tables provided, exiting..."
-    exit
+    echo "No BD name or user to create tables provided, exiting..."
+    exit 1
 else
-    echo "Creating tables in ${1}"
-    bd=$1
+    username=$1
+    bd=$2
+    echo "Welcome user: $username"
+    echo "Creating tables in $bd"
 fi
 
 user="CREATE TABLE USERTABLE (
@@ -85,12 +87,11 @@ products_prop="CREATE TABLE PRODUCTS_PROP(
 );"
 
 
-
-sudo -u postgres psql $bd -c "${user}"
-sudo -u postgres psql $bd -c "${friends}"
-sudo -u postgres psql $bd -c "${group}"
-sudo -u postgres psql $bd -c "${ticket}"
-sudo -u postgres psql $bd -c "${payment_method}"
-sudo -u postgres psql $bd -c "${subticket}"
-sudo -u postgres psql $bd -c "${product}"
-sudo -u postgres psql $bd -c "${products_prop}"
+sudo -u $username psql $bd -c "${user}"
+sudo -u $username psql $bd -c "${friends}"
+sudo -u $username psql $bd -c "${group}"
+sudo -u $username psql $bd -c "${ticket}"
+sudo -u $username psql $bd -c "${payment_method}"
+sudo -u $username psql $bd -c "${subticket}"
+sudo -u $username psql $bd -c "${product}"
+sudo -u $username psql $bd -c "${products_prop}"
