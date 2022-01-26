@@ -1,7 +1,7 @@
 #!/bin/bash
 #sudo apt install $userql $userql-contrib
 
-if [ -z "$1" ] | [ -z "$2"]
+if [ -z "$1" ] || [ -z "$2"]
   then
     echo "No BD name or user to create tables provided, exiting..."
     exit 1
@@ -40,9 +40,11 @@ group="CREATE TABLE GROUPS (
     creation DATE NOT NULL
 );"
 
-# groupuser="CREATE TABLE GROUPUSER ( 
-
-# );"
+groupuser="CREATE TABLE GROUPUSER ( 
+    nick_name_1 VARCHAR(20) REFERENCES usertable(nickname),
+    nick_name_2 VARCHAR(20) REFERENCES usertable(nickname),
+    creation_date TIMESTAMP NOT NULL
+);"
 
 ticket="CREATE TABLE TICKET ( 
     ticket_id INT PRIMARY KEY,
@@ -90,6 +92,7 @@ products_prop="CREATE TABLE PRODUCTS_PROP(
 sudo -u $username psql $bd -c "${user}"
 sudo -u $username psql $bd -c "${friends}"
 sudo -u $username psql $bd -c "${group}"
+sudo -u $username psql $bd -c "${groupuser}"
 sudo -u $username psql $bd -c "${ticket}"
 sudo -u $username psql $bd -c "${payment_method}"
 sudo -u $username psql $bd -c "${subticket}"
