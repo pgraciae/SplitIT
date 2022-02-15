@@ -13,20 +13,16 @@ def insert_table(table, file_name):
 
     cur = conn.cursor()
 
-    # df = pd.read_csv("/home/ferran/Escritorio/TFG/SplitIT/DDBB/output/" + file_name)
-    
-    
-    # for f in range(len(df)):
-        # print(f"INSERT INTO {table} ({','.join([x for x in list(df.columns)])}) VALUES({','.join([str(x) for x in list(df.iloc[f])])});")
-        # cur.execute(f"INSERT INTO {table} ({','.join([str(x) for x in list(df.columns)])}) VALUES({','.join([str(x) for x in list(df.iloc[f])])});")
-    cur.execute(f"SELECT column_name, data_type from information_schema.columns WHERE table_name='{table}';")
-    types = cur.fetchall()
-    with open("/home/ferran/Escritorio/TFG/SplitIT/DDBB/output/" + file_name, 'r') as file:
-        for line in file:
-            line = line.strip().split(",")
-            query = ','.join(line)
-            
-            
+    df = pd.read_csv("/home/ferran/Escritorio/TFG/SplitIT/DDBB/output/" + file_name)
+    list_rows = [tuple(row) for row in df.values]
+
+
+    query = f"INSERT INTO {table} VALUES ({','.join(['%s' for x in list(df.columns)])});" 
+    print(query)
+    result = cur.executemany(query, list_rows)
+    conn.commit()
+    print(cur.rowcount, f"Record inserted successfully into {table} table")
+
 
 
         

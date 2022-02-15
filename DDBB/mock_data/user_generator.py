@@ -2,9 +2,14 @@ import pandas as pd
 import random
 import time
 import numpy as np
+<<<<<<< HEAD:DDBB/mock_data/user_generator.py
 import string
 
 def user_table(n = 10):
+=======
+from datetime import datetime as dt
+def gen_random_users(n = 10):
+>>>>>>> e50b3f6847ba60269e021c88b0bf0e1a86e578de:DDBB/mock_data/generator.py
     users_ = {
         'nickname': [],
         'phone':[],
@@ -17,17 +22,24 @@ def user_table(n = 10):
         'gender': [],
         'registration': [],
     }
+<<<<<<< HEAD:DDBB/mock_data/user_generator.py
     df = pd.read_csv("/SplitIT/DDBB/Data/nicknames.csv")
     df_adress = pd.read_csv("/SplitIT/DDBB/Data/worldcities.csv")
+=======
+    df = pd.read_csv("/home/ferran/Escritorio/TFG/SplitIT/DDBB/Data/nicknames.csv")
+    df_adress = pd.read_csv("/home/ferran/Escritorio/TFG/SplitIT/DDBB/Data/worldcities.csv")
+    print(df.columns)
+    df = df.drop_duplicates(subset=[' nickname']).reset_index()
+>>>>>>> e50b3f6847ba60269e021c88b0bf0e1a86e578de:DDBB/mock_data/generator.py
     users,nicknames = df[' name'],df[' nickname']
     users_generator = lambda x: users[x]
     nicknames_generator = lambda x: nicknames[x]
     phone_generator = lambda t: '6' + ''.join([str(random.randint(0,10)) for x in range(8)])
     email_generator = lambda name: name+'@splitit.net'
     address_generator = lambda x: df_adress['city'].iloc[random.randint(0,df_adress.shape[0])]
-    birth_generator = lambda x: str(random.randint(0,32)) + '/' + str(random.randint(0,12)) + '/' +  str(random.randint(1990, 2015))
+    birth_generator = lambda x: str(random.randint(1,31)) + '/' + str(random.randint(1,12)) + '/' +  str(random.randint(1990, 2015))
     gender_generator = lambda x: 'male' if np.random.rand() > 0.5 else 'female'
-    regiistration_generator = lambda x: time.time()
+    regiistration_generator = lambda x: dt.now()
     for element in range(n):
         users_['name'].append(users_generator(element))
         users_['nickname'].append(nicknames_generator(element))

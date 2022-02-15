@@ -21,7 +21,7 @@ user="CREATE TABLE USERTABLE (
     money   INT,
     address VARCHAR(40) NOT NULL,
     birth   DATE,
-    gender  VARCHAR(5),
+    gender  VARCHAR(20),
     registration    TIMESTAMP   NOT NULL
 );"
 
