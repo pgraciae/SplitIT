@@ -1,0 +1,48 @@
+
+version: '3.5'
+
+services:
+
+  splitit_db:
+    container_name: SplitIt_DB
+    build: 
+      context: ./BD/
+      dockerfile: Dockerfile
+    ports:
+      - "5432:5432"
+    volumes:
+      - .:/BD/
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=FDP
+    command: ["postgres", "-c", "log_statement=all"]
+
+
+  flask-api:
+    container_name: app-app
+    build:
+      context: ./api/
+      dockerfile: Dockerfile
+    ports:
+      - "5000:80"
+    volumes:
+      - ./api:/usr/src/app
+    depends_on:
+      - "splitit_db"
+
+  client:
+    container_name: react-app
+    build:
+      context: .
+      dockerfile: ./src/Dockerfile
+    volumes:
+      - './src/:/usr/src/src'
+      - './node_modules:/usr/src/src/node_modules'
+    ports:
+      - '3000:3000'
+    depends_on:
+      - "flask-api"
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+      - HOST_URL=http://0.0.0.0:5000
