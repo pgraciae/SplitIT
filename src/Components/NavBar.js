@@ -10,9 +10,10 @@ function NavBarCustom(props) {
   <Navbar bg="dark" variant="dark" >
     <Container style = {{height:'3vw'}}>
     <Nav className="me-auto" >
-      <Nav.Link href="#home" style = {{left:'10vw',top:'0.5vw',  position:'absolute'}} onClick={(event)=>props.view(event, 'Home')}>Home</Nav.Link>
-      <Nav.Link href="#features" style = {{left:'20vw', top:'0.5vw', position:'absolute'}} onClick={(event)=>props.view(event, 'Profile')}>Profile</Nav.Link>
-      <Nav.Link href="#pricing" style = {{left:'30vw',top:'0.5vw',  position:'absolute'}} onClick={(event)=>props.view(event, 'Tickets')}>Tickets</Nav.Link>
+      <Nav.Link href="#login" style = {{left:'10vw',top:'0.5vw',  position:'absolute'}} onClick={(event)=>props.view(event, 'Login')}>Login</Nav.Link> 
+      <Nav.Link href="#home" style = {{left:'20vw',top:'0.5vw',  position:'absolute'}} onClick={(event)=>props.view(event, 'Home')}>Home</Nav.Link>
+      <Nav.Link href="#features" style = {{left:'30vw', top:'0.5vw', position:'absolute'}} onClick={(event)=>props.view(event, 'Profile')}>Profile</Nav.Link>
+      <Nav.Link href="#pricing" style = {{left:'50vw',top:'0.5vw',  position:'absolute'}} onClick={(event)=>props.view(event, 'Tickets')}>Tickets</Nav.Link>
     </Nav>
     </Container>
   </Navbar>

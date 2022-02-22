@@ -10,6 +10,10 @@ import NavBarCustom from './Components/NavBar';
 import { ThumbUpSharp } from '@material-ui/icons';
 import inputFile from './Components/uploadFile';
 import ProfileView from './Profile';
+import Login from "./Components/Login.js";
+//import { Switch } from '@mui/material';
+
+import { Routes, Switch, Route, Link } from "react-router-dom";
 
 class App extends React.Component {
 
@@ -54,7 +58,20 @@ class App extends React.Component {
     console.log('Testing .... ')
   }
   render(){
-
+    if (this.state.View === 'Login'){
+    return(
+        <div className="App">
+        <header className="App-header">
+        <div>
+          <NavBarCustom view={this.go}></NavBarCustom>
+        </div>
+        <Login>
+        </Login>
+        </header>
+  
+        </div>
+    )
+    }
     if (this.state.View === 'Home'){
       const videoConstraints = {
         width: 1280,
@@ -80,9 +97,9 @@ class App extends React.Component {
       </Button>
     </label>
 
-      <Button variant="contained" onClick ={this.button_test} style = {{position: "absolute", top: '10vw', left: '45vw', width: '10vw', height: '5vw'}}>
+      {/* <Button variant="contained" onClick ={this.button_test} style = {{position: "absolute", top: '10vw', left: '45vw', width: '10vw', height: '5vw'}}>
         NO SABIA SI PODIA TREURE
-      </Button>
+    </Button> */}
       {this.state.webcamEnabled &&
       <Webcam
           audio={false}
