@@ -8,4 +8,3 @@ WORKDIR /BD
 COPY . /BD/
 RUN mv create_table.sql ../docker-entrypoint-initdb.d/
 RUN pip3 install -r requirements.txt
-

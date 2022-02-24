@@ -4,7 +4,7 @@ version: '3.5'
 services:
 
   splitit_db:
-    container_name: SplitIt_DB
+    container_name: SplitItDB
     build: 
       context: ./BD/
       dockerfile: Dockerfile
