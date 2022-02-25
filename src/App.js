@@ -35,7 +35,11 @@ class App extends React.Component {
         resp.json().then(data => {console.log(data)})
       })
     }
+<<<<<<< HEAD
     Upload();
+=======
+    
+>>>>>>> 71c335c105afa6552b3bd3256f5712feb8f9c175
   }
     
   componentDidMount(){
