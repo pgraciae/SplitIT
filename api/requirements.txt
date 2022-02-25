@@ -4,6 +4,8 @@ flask-restful
 flask-cors
 paddlepaddle
 paddleocr
-flask_sqlalchemy
 matplotlib
+Flask-SQLAlchemy==2.5.1
+psycopg2-binary==2.8.6
+SQLAlchemy
 

@@ -3,12 +3,12 @@
 - Before starting, install Compose. Instructions here => https://docs.docker.com/compose/install/
 - Change to the root of the project directory
 - Run ```docker-compose up```. The container should be now up and running.
-- Open a new terminal and run ```docker exec -it SplitIt_DB bash``` to access the container console
+- Open a new terminal and run ```docker exec -it SplitItDB bash``` to access the container console
 - Once inside run the database initialization script: ```python3 src/scripts/init.py```
 - To connect to DB run: ' psql -U postgres postgres '
 ### Database credentials:
 
-- host: sp_db (or localhost)
+- host: localhost or SplitItBD
 - port: 5432
 - user: postgres
 - database: postgres

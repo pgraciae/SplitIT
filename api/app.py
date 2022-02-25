@@ -8,8 +8,21 @@ from PIL import Image
 import os
 from OCR_handler import OCRHandler
 from OCR_Layout_analysis import ItemsIdentifier
+from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import create_engine
+from sqlalchemy.ext.declarative import declarative_base
+from tables import *
+
+
 app = Flask(__name__)
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = False
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://postgres:FDP@SplitItDB:5432/postgres'
+
+db = SQLAlchemy(app)
+db.Model.metadata.reflect(db.engine)
+
+
 
 if 'test_file.txt' not in os.listdir():
     with open('test_file.txt', 'w') as hdlr:
@@ -49,6 +62,31 @@ def upload():
     #infer_img(pix, str(int(time.time())))
     return jsonify({'1':None})
 
+@app.route('/login', methods=['GET'])
+def login():
+
+    data = request.args.to_dict()
+
+    bd =  UserTable.query.filter_by(email = data['nickname']).first()
+    
+    if bd != None:
+        print('email', bd.email)
+        print('psswd', bd.password)
+    else:   
+        print('query result is none')
+
+    if bd != None:
+        if bd.password == data['password']:
+            print({'message': 'Logging in'}, flush=True)
+            return {'message': 'Logging in'}
+        
+        else:
+            print({'error': 'Password incorrect'}, flush=True )
+            return {'error': 'Password incorrect'}
+        
+    else:
+        print({'error': 'User not registered, redirecting to register page'}, flush=True)
+        return {'error': 'User not registered, redirecting to register page'}
 
 if __name__ == '__main__':
         app.run(debug=True,host='0.0.0.0', port = 5000)

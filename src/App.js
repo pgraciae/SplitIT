@@ -10,6 +10,8 @@ import NavBarCustom from './Components/NavBar';
 import { ThumbUpSharp } from '@material-ui/icons';
 import inputFile from './Components/uploadFile';
 import ProfileView from './Profile';
+import Login from "./Components/Login.js";
+import { Routes, Switch, Route, Link } from "react-router-dom";
 
 class App extends React.Component {
 
@@ -23,7 +25,6 @@ class App extends React.Component {
   }
   handleSubmit = (e) => {
     e.preventDefault()
-    console.log("here")
     const formData = new FormData();
     formData.append('file', this.state.selectedFile);
   
@@ -35,11 +36,7 @@ class App extends React.Component {
         resp.json().then(data => {console.log(data)})
       })
     }
-<<<<<<< HEAD
     Upload();
-=======
-    
->>>>>>> 71c335c105afa6552b3bd3256f5712feb8f9c175
   }
     
   componentDidMount(){
@@ -74,6 +71,20 @@ class App extends React.Component {
     console.log('Testing .... ')
   }
   render(){
+    if (this.state.View === 'Login'){
+      return(
+          <div className="App">
+          <header className="App-header">
+          <div>
+            <NavBarCustom view={this.go}></NavBarCustom>
+          </div>
+          <Login>
+          </Login>
+          </header>
+  
+          </div>
+      )
+      }
 
     if (this.state.View === 'Home'){
       const videoConstraints = {

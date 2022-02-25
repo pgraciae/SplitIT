@@ -12,19 +12,33 @@ export default function Login() {
 
   function handleSubmit(event) {
     event.preventDefault();
+    console.log(event.target);
+    console.log(event.target[0].value);
+    console.log(event.target[1].value);
+
+    const Upload = async() => {
+      await fetch('/login?nickname='+event.target[0].value+'&password='+event.target[1].value, {
+        method: 'GET',
+      }).then(resp => {
+        resp.json().then(data => {console.log(data)})
+      })
+    }
+    Upload();
   }
+  
+  //?nickname='+event.target[0].value+'&password'+event.target[1].value
 
   return (
     <div className="Login">
       <Form onSubmit={handleSubmit}>
-        <Form.Group size="lg" controlId="email">
+        <Form.Group size="lg"> {/*//controlId="email">*/}
           <Form.Label>Email</Form.Label>
           <Form.Control
             autoFocus
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-          />
+          />controlId
         </Form.Group>
         <Form.Group size="lg" controlId="password">
           <Form.Label>Password</Form.Label>

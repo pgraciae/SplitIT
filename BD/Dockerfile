@@ -2,7 +2,6 @@ FROM postgres:latest
 
 # Python 3 installation
 RUN apt-get update && apt-get install -y python3 python3-pip
-
 RUN mkdir /BD
 WORKDIR /BD
 COPY . /BD/
