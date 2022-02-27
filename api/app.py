@@ -64,7 +64,7 @@ def upload():
 
 @app.route('/login', methods=['GET'])
 def login():
-
+    
     data = request.args.to_dict()
 
     bd =  UserTable.query.filter_by(email = data['nickname']).first()
@@ -76,6 +76,7 @@ def login():
         print('query result is none')
 
     if bd != None:
+        print({"bd":bd})
         if bd.password == data['password']:
             print({'message': 'Logging in'}, flush=True)
             return {'message': 'Logging in'}
@@ -86,7 +87,9 @@ def login():
         
     else:
         print({'error': 'User not registered, redirecting to register page'}, flush=True)
-        return {'error': 'User not registered, redirecting to register page'}
+        #return {'error': 'User not registered, redirecting to register page'}
+        print({'bd':bd}, flush=True)
+        return {'error': bd}
 
 if __name__ == '__main__':
         app.run(debug=True,host='0.0.0.0', port = 5000)

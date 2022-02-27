@@ -11,14 +11,17 @@ import { ThumbUpSharp } from '@material-ui/icons';
 import inputFile from './Components/uploadFile';
 import ProfileView from './Profile';
 import Login from "./Components/Login.js";
-import { Routes, Switch, Route, Link } from "react-router-dom";
+import Register from "./Components/Registration.js";
+import Forgot from "./Components/Forgot.js";
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 class App extends React.Component {
 
 
   constructor(props){
     super(props);
-    this.state = {currentTime: 0, View: 'Home', selectedFile:null, webcamEnabled: false}
+    this.state = {currentTime: 0, View: 'Login', selectedFile:null, webcamEnabled: false}
     this.go = this.move.bind(this)
     this.loadedImage = this.loadImage.bind(this)
     this.enableWebcam = this.enableWebcam.bind(this)
@@ -73,18 +76,16 @@ class App extends React.Component {
   render(){
     if (this.state.View === 'Login'){
       return(
-          <div className="App">
-          <header className="App-header">
-          <div>
-            <NavBarCustom view={this.go}></NavBarCustom>
-          </div>
-          <Login>
-          </Login>
-          </header>
-  
-          </div>
-      )
-      }
+        <Router>
+        <Routes>
+          <Route path="/login" element={<Login/>} />
+          <Route path="/register" element={<Register/>} />
+          <Route path="/forgot-password" element={<Forgot/>} />
+          <Route path="/" element={<Login/>} />
+        </Routes>
+      </Router>
+      );
+      };
 
     if (this.state.View === 'Home'){
       const videoConstraints = {
@@ -112,9 +113,6 @@ class App extends React.Component {
       </Button>
     </label>
 
-      <Button variant="contained" onClick ={this.button_test} style = {{position: "absolute", top: '10vw', left: '45vw', width: '10vw', height: '5vw'}}>
-        NO SABIA SI PODIA TREURE
-      </Button>
       {this.state.webcamEnabled &&
       <Webcam
           audio={false}
