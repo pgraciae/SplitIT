@@ -62,6 +62,7 @@ def upload():
     #infer_img(pix, str(int(time.time())))
     return jsonify({'1':None})
 
+
 @app.route('/login', methods=['GET'])
 def login():
     
@@ -90,6 +91,18 @@ def login():
         #return {'error': 'User not registered, redirecting to register page'}
         print({'bd':bd}, flush=True)
         return {'error': bd}
+
+@app.route('/register', methods=['POST'])
+def register_user():
+    data = request.get_json()
+    print('aaa' , data, flush = True)
+    new_user = UserTable(**data)
+    db.session.add(new_user)
+    db.session.commit()
+    print( {'message': f'User {data["nickname"]} has been created successfully'}, flush=True)
+    return {'message': f"User {data['nickname']} has been created successfully"}
+
+
 
 if __name__ == '__main__':
         app.run(debug=True,host='0.0.0.0', port = 5000)

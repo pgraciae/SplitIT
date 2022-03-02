@@ -9,6 +9,11 @@ const Register = () => {
   const [password, setPassword] = useState("");
   const [validate, setValidate] = useState({});
   const [showPassword, setShowPassword] = useState(false);
+  const [phone, setPhone] = useState("");
+  const [nickname, setNickname] = useState("");
+  const [address, setAddress] = useState("");
+  const [gender, setGender] = useState("");
+  const [birth, setBirth] = useState("");
 
   const validateRegister = () => {
     let isValid = true;
@@ -27,6 +32,30 @@ const Register = () => {
         value: password,
         isRequired: true,
         minLength: 6,
+      },
+      phone: {
+        value: phone,
+        isRequired: true,
+        minLength: 9,
+        maxLength: 11,
+      },
+      nickname: {
+        value: nickname,
+        isRequired: true,
+        minLength: 3
+      },
+      address: {
+        value: address,
+        isRequired: true,
+      },
+      gender: {
+        value: gender,
+        isRequired: true,
+        maxLength: 1,
+      },
+      birth: {
+        value: birth,
+        isRequired: true,
       },
     });
 
@@ -50,6 +79,11 @@ const Register = () => {
       setName("");
       setEmail("");
       setPassword("");
+      setNickname("");
+      setAddress("");
+      setBirth("");
+      setGender("");
+      setPhone("");
       alert("Successfully Register User");
     }
   };
@@ -80,33 +114,6 @@ const Register = () => {
                 onSubmit={register}
                 autoComplete={"off"}
               >
-                <div className="name mb-3">
-                  <input
-                    type="text"
-                    className={`form-control ${
-                      validate.validate && validate.validate.name
-                        ? "is-invalid "
-                        : ""
-                    }`}
-                    id="name"
-                    name="name"
-                    value={name}
-                    placeholder="Name"
-                    onChange={(e) => setName(e.target.value)}
-                  />
-
-                  <div
-                    className={`invalid-feedback text-start ${
-                      validate.validate && validate.validate.name
-                        ? "d-block"
-                        : "d-none"
-                    }`}
-                  >
-                    {validate.validate && validate.validate.name
-                      ? validate.validate.name[0]
-                      : ""}
-                  </div>
-                </div>
 
                 <div className="email mb-3">
                   <input
@@ -177,6 +184,179 @@ const Register = () => {
                     </div>
                   </div>
                 </div>
+
+                <div className="name mb-3">
+                  <input
+                    type="text"
+                    className={`form-control ${
+                      validate.validate && validate.validate.name
+                        ? "is-invalid "
+                        : ""
+                    }`}
+                    id="name"
+                    name="name"
+                    value={name}
+                    placeholder="Name"
+                    onChange={(e) => setName(e.target.value)}
+                  />
+
+                  <div
+                    className={`invalid-feedback text-start ${
+                      validate.validate && validate.validate.name
+                        ? "d-block"
+                        : "d-none"
+                    }`}
+                  >
+                    {validate.validate && validate.validate.name
+                      ? validate.validate.name[0]
+                      : ""}
+                  </div>
+                </div>
+
+                <div className="nickname mb-3">
+                  <input
+                    type="text"
+                    className={`form-control ${
+                      validate.validate && validate.validate.nickname
+                        ? "is-invalid "
+                        : ""
+                    }`}
+                    id="nickname"
+                    name="nickname"
+                    value={nickname}
+                    placeholder="Nickname"
+                    onChange={(e) => setNickname(e.target.value)}
+                  />
+
+                  <div
+                    className={`invalid-feedback text-start ${
+                      validate.validate && validate.validate.nickname
+                        ? "d-block"
+                        : "d-none"
+                    }`}
+                  >
+                    {validate.validate && validate.validate.nickname
+                      ? validate.validate.nickname[0]
+                      : ""}
+                  </div>
+                </div>
+
+                <div className="address mb-3">
+                  <input
+                    type="text"
+                    className={`form-control ${
+                      validate.validate && validate.validate.address
+                        ? "is-invalid "
+                        : ""
+                    }`}
+                    id="address"
+                    name="address"
+                    value={address}
+                    placeholder="Address"
+                    onChange={(e) => setAddress(e.target.value)}
+                  />
+
+                  <div
+                    className={`invalid-feedback text-start ${
+                      validate.validate && validate.validate.address
+                        ? "d-block"
+                        : "d-none"
+                    }`}
+                  >
+                    {validate.validate && validate.validate.address
+                      ? validate.validate.address[0]
+                      : ""}
+                  </div>
+                </div>
+
+
+                <div className="phone mb-3">
+                  <input
+                    type="text"
+                    className={`form-control ${
+                      validate.validate && validate.validate.phone
+                        ? "is-invalid "
+                        : ""
+                    }`}
+                    id="phone"
+                    name="phone"
+                    value={phone}
+                    placeholder="phone"
+                    onChange={(e) => setPhone(e.target.value)}
+                  />
+
+                  <div
+                    className={`invalid-feedback text-start ${
+                      validate.validate && validate.validate.phone
+                        ? "d-block"
+                        : "d-none"
+                    }`}
+                  >
+                    {validate.validate && validate.validate.phone
+                      ? validate.validate.phone[0]
+                      : ""}
+                  </div>
+                </div>
+
+
+                <div className="gender mb-3">
+                  <input
+                    type="text"
+                    className={`form-control ${
+                      validate.validate && validate.validate.gender
+                        ? "is-invalid "
+                        : ""
+                    }`}
+                    id="gender"
+                    name="gender"
+                    value={gender}
+                    placeholder="Gender (M, F or O)"
+                    onChange={(e) => setGender(e.target.value)}
+                  />
+
+                  <div
+                    className={`invalid-feedback text-start ${
+                      validate.validate && validate.validate.gender
+                        ? "d-block"
+                        : "d-none"
+                    }`}
+                  >
+                    {validate.validate && validate.validate.gender
+                      ? validate.validate.gender[0]
+                      : ""}
+                  </div>
+                </div>
+
+
+                <div className="birth mb-3">
+                  <input
+                    type="text"
+                    className={`form-control ${
+                      validate.validate && validate.validate.birth
+                        ? "is-invalid "
+                        : ""
+                    }`}
+                    id="birth"
+                    name="birth"
+                    value={birth}
+                    placeholder="Birth"
+                    onChange={(e) => setBirth(e.target.value)}
+                  />
+
+                  <div
+                    className={`invalid-feedback text-start ${
+                      validate.validate && validate.validate.birth
+                        ? "d-block"
+                        : "d-none"
+                    }`}
+                  >
+                    {validate.validate && validate.validate.birth
+                      ? validate.validate.birth[0]
+                      : ""}
+                  </div>
+                </div>
+
+
                 <div className="text-center">
                   <button
                     type="submit"

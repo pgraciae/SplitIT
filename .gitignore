@@ -1,5 +1,5 @@
 node_modules/.cache/*
 node_modules/*
 api/models/*
-api/__pycache__/*
 api/uploaded/*
+api/__pycache__/*
