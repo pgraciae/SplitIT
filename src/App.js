@@ -18,13 +18,16 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 class App extends React.Component {
 
-
+  
   constructor(props){
     super(props);
+    
+
     this.state = {currentTime: 0, View: 'Login', selectedFile:null, webcamEnabled: false}
     this.go = this.move.bind(this)
     this.loadedImage = this.loadImage.bind(this)
     this.enableWebcam = this.enableWebcam.bind(this)
+    this.login = this.login.bind(this)
   }
   handleSubmit = (e) => {
     e.preventDefault()
@@ -73,12 +76,15 @@ class App extends React.Component {
   button_test(){
     console.log('Testing .... ')
   }
+  login(){
+    this.setState({"View": 'Home'})
+  }
   render(){
     if (this.state.View === 'Login'){
       return(
         <Router>
         <Routes>
-          <Route path="/login" element={<Login/>} />
+          <Route path="/login" element={<Login login={this.login} />} />
           <Route path="/register" element={<Register/>} />
           <Route path="/forgot-password" element={<Forgot/>} />
           <Route path="/" element={<Login/>} />

@@ -2,14 +2,9 @@ import pandas as pd
 import random
 import time
 import numpy as np
-<<<<<<< HEAD:DDBB/mock_data/user_generator.py
 import string
 
 def user_table(n = 10):
-=======
-from datetime import datetime as dt
-def gen_random_users(n = 10):
->>>>>>> e50b3f6847ba60269e021c88b0bf0e1a86e578de:DDBB/mock_data/generator.py
     users_ = {
         'nickname': [],
         'phone':[],
@@ -22,15 +17,8 @@ def gen_random_users(n = 10):
         'gender': [],
         'registration': [],
     }
-<<<<<<< HEAD:DDBB/mock_data/user_generator.py
     df = pd.read_csv("/SplitIT/DDBB/Data/nicknames.csv")
     df_adress = pd.read_csv("/SplitIT/DDBB/Data/worldcities.csv")
-=======
-    df = pd.read_csv("/home/ferran/Escritorio/TFG/SplitIT/DDBB/Data/nicknames.csv")
-    df_adress = pd.read_csv("/home/ferran/Escritorio/TFG/SplitIT/DDBB/Data/worldcities.csv")
-    print(df.columns)
-    df = df.drop_duplicates(subset=[' nickname']).reset_index()
->>>>>>> e50b3f6847ba60269e021c88b0bf0e1a86e578de:DDBB/mock_data/generator.py
     users,nicknames = df[' name'],df[' nickname']
     users_generator = lambda x: users[x]
     nicknames_generator = lambda x: nicknames[x]
