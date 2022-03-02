@@ -2,6 +2,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Form from "./Forms.js";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 const Register = () => {
   const [name, setName] = useState("");
@@ -94,7 +96,23 @@ const Register = () => {
     } else {
       setShowPassword(true);
     }
+    
   };
+
+  const getInitialState = () => {
+    const value = "Orange";
+    return value;
+  };
+
+  const [value, setValue] = useState(getInitialState);
+
+  const handleChange = (e) => {
+    setValue(e.target.value);
+  
+  };
+
+  const [currentDate, setCurrentDate] = useState(new Date());
+  
 
   return (
     <div className="row g-0 auth-wrapper">
@@ -300,8 +318,7 @@ const Register = () => {
 
 
                 <div className="gender mb-3">
-                  <input
-                    type="text"
+                  <select
                     className={`form-control ${
                       validate.validate && validate.validate.gender
                         ? "is-invalid "
@@ -312,7 +329,11 @@ const Register = () => {
                     value={gender}
                     placeholder="Gender (M, F or O)"
                     onChange={(e) => setGender(e.target.value)}
-                  />
+                  >
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                    <option value="Other">Other</option>
+                  </select>
 
                   <div
                     className={`invalid-feedback text-start ${
@@ -329,8 +350,7 @@ const Register = () => {
 
 
                 <div className="birth mb-3">
-                  <input
-                    type="text"
+                  <DatePicker
                     className={`form-control ${
                       validate.validate && validate.validate.birth
                         ? "is-invalid "
@@ -338,9 +358,10 @@ const Register = () => {
                     }`}
                     id="birth"
                     name="birth"
-                    value={birth}
                     placeholder="Birth"
-                    onChange={(e) => setBirth(e.target.value)}
+                    selected={currentDate}
+                    // onChange={(e) => setCurrentDate(e.target.value)}
+                    onChange={date => setCurrentDate(date)}
                   />
 
                   <div
