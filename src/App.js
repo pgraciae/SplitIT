@@ -85,7 +85,7 @@ class App extends React.Component {
         <Router>
         <Routes>
           <Route path="/login" element={<Login login={this.login} />} />
-          <Route path="/register" element={<Register/>} />
+          <Route path="/register" element={<Register login={this.login}/>} />
           <Route path="/forgot-password" element={<Forgot/>} />
           <Route path="/" element={<Login/>} />
         </Routes>

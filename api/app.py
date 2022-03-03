@@ -95,12 +95,13 @@ def login():
 @app.route('/register', methods=['POST'])
 def register_user():
     data = request.get_json()
-    print('aaa' , data, flush = True)
+    print('Register data:' , data, flush = True)
+
     new_user = UserTable(**data)
     db.session.add(new_user)
     db.session.commit()
     print( {'message': f'User {data["nickname"]} has been created successfully'}, flush=True)
-    return {'message': f"User {data['nickname']} has been created successfully"}
+    return {'message': "Registered"}
 
 
 
