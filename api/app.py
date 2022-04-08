@@ -13,7 +13,6 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from tables import *
 
-
 app = Flask(__name__)
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = False
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -21,8 +20,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://postgres:FDP@Spli
 
 db = SQLAlchemy(app)
 db.Model.metadata.reflect(db.engine)
-
-
 
 if 'test_file.txt' not in os.listdir():
     with open('test_file.txt', 'w') as hdlr:
@@ -43,6 +40,7 @@ def helper_file(*messgae):
     with open('test_file.txt', 'a') as hdlr:
         messsgaes = "\n".join(messgae)
         [hdlr.write(message) for message in messsgaes]
+
 
 @app.route('/time')
 def get_current_time():
@@ -92,6 +90,7 @@ def login():
         print({'bd':bd}, flush=True)
         return {'error': bd}
 
+
 @app.route('/register', methods=['POST'])
 def register_user():
     data = request.get_json()
@@ -104,6 +103,9 @@ def register_user():
     return {'message': "Registered"}
 
 
-
 if __name__ == '__main__':
-        app.run(debug=True,host='0.0.0.0', port = 5000)
+
+    if Groups.query.count() == 0: 
+        exec(open('mock_data/create_mock_data.py').read()) # posem dades a la bd
+
+    app.run(debug=True,host='0.0.0.0', port = 5000)

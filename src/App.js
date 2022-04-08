@@ -23,7 +23,7 @@ class App extends React.Component {
     super(props);
     
 
-    this.state = {currentTime: 0, View: 'Login', selectedFile:null, webcamEnabled: false}
+    this.state = {currentTime: 0, View: 'Home', selectedFile:null, webcamEnabled: false}
     this.go = this.move.bind(this)
     this.loadedImage = this.loadImage.bind(this)
     this.enableWebcam = this.enableWebcam.bind(this)

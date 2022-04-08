@@ -3,3 +3,6 @@ node_modules/*
 api/models/*
 api/uploaded/*
 api/__pycache__/*
+api/__pycache__
+api/mock_data/.ipynb_checkpoints
+api/mock_data/__pycache__
