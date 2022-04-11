@@ -9,7 +9,7 @@ import TableX from './Components/Table.js';
 import NavBarCustom from './Components/NavBar';
 import { ThumbUpSharp } from '@material-ui/icons';
 import inputFile from './Components/uploadFile';
-import ProfileView from './Profile';
+import ProfileView from './Components/Profile';
 import Login from "./Components/Login.js";
 import Register from "./Components/Registration.js";
 import Forgot from "./Components/Forgot.js";
@@ -29,6 +29,7 @@ class App extends React.Component {
     this.enableWebcam = this.enableWebcam.bind(this)
     this.login = this.login.bind(this)
   }
+  
   handleSubmit = (e) => {
     e.preventDefault()
     const formData = new FormData();

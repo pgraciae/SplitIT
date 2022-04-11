@@ -103,6 +103,11 @@ def register_user():
     return {'message': "Registered"}
 
 
+@app.route('/profile', methods=['GET'])
+def get_profile():
+    #Necessitem una variable amb el nom d'usuari de la persona
+    bd =  UserTable.query.filter_by(email = data['nickname']).first()
+
 if __name__ == '__main__':
 
     if Groups.query.count() == 0: 
