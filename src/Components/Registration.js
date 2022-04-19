@@ -159,7 +159,7 @@ class Register extends React.Component {
     }).then(resp => {
       resp.json().then((resp)=>{
         if(resp.message === "Registered"){
-          this.props.login();
+          this.props.Login();
         }
         else{
           console.log('Register failed')

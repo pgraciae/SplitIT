@@ -13,8 +13,8 @@ import ProfileView from './Components/Profile';
 import Login from "./Components/Login.js";
 import Register from "./Components/Registration.js";
 import Forgot from "./Components/Forgot.js";
-
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import cookie from 'react-cookies';
 
 class App extends React.Component {
 
@@ -22,12 +22,12 @@ class App extends React.Component {
   constructor(props){
     super(props);
     
-
     this.state = {currentTime: 0, View: 'Home', selectedFile:null, webcamEnabled: false}
     this.go = this.move.bind(this)
     this.loadedImage = this.loadImage.bind(this)
     this.enableWebcam = this.enableWebcam.bind(this)
     this.login = this.login.bind(this)
+    this.nickname = this.nickname.bind(this)
   }
   
   handleSubmit = (e) => {
@@ -68,25 +68,32 @@ class App extends React.Component {
     this.setState({ selectedFile: event.target.files[0] }, () => console.log(this.state.selectedFile))
 
   }
-    enableWebcam (){
-      console.log(this.state.webcamEnabled)
-      this.setState({webcamEnabled: !this.state.webcamEnabled});
-      console.log(this.state.webcamEnabled)
-    }
+
+  enableWebcam (){
+    console.log(this.state.webcamEnabled)
+    this.setState({webcamEnabled: !this.state.webcamEnabled});
+    console.log(this.state.webcamEnabled)
+  }
   
   button_test(){
     console.log('Testing .... ')
   }
+
   login(){
-    this.setState({"View": 'Home'})
+    this.setState({View: 'Home'});
   }
+
+  nickname(value){
+    this.nickname = value;
+  }
+
   render(){
     if (this.state.View === 'Login'){
       return(
         <Router>
         <Routes>
-          <Route path="/login" element={<Login login={this.login} />} />
-          <Route path="/register" element={<Register login={this.login}/>} />
+          <Route path="/login" element={<Login Login={this.login} />} />
+          <Route path="/register" element={<Register Login={this.login}/>} />
           <Route path="/forgot-password" element={<Forgot/>} />
           <Route path="/" element={<Login/>} />
         </Routes>

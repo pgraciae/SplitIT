@@ -84,9 +84,11 @@ class Login extends React.Component {
         }).then(resp => {
           resp.json().then((resp)=>{
             if(resp.message === "Logging in"){
-              this.props.login();
+              console.log(this.props);
+              this.props.Login();
+              this.props.Nickname(e.target[0].value);
             }
-          }).then(data => {console.log(data)})
+          }).then(data => {console.log(data); console.log(this.props.cookie.load('email')); console.log(this.props.email);})
         })
       }
       
@@ -226,18 +228,5 @@ class Login extends React.Component {
   );
     }
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 export default Login;
