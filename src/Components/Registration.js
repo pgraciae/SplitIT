@@ -118,6 +118,9 @@ class Register extends React.Component {
   setCurrentDate(obj){
       this.setState({currentDate: obj})
   }
+  email_value(){
+    return this.state.email;
+  }
   register(e){
     e.preventDefault();
 
@@ -156,15 +159,20 @@ class Register extends React.Component {
         address: this.state.address,
         registration: new Date(),
       })
+
     }).then(resp => {
+      //console.log(this.state.email);
+
+      //this.props.Email(this.email_value());
       resp.json().then((resp)=>{
         if(resp.message === "Registered"){
+          console.log(this.props);
           this.props.Login();
         }
         else{
           console.log('Register failed')
         }
-      }).then(data => {console.log(data)})
+      })
     })
   }
 
@@ -219,7 +227,9 @@ class Register extends React.Component {
                     name="email"
                     value={this.state.email}
                     placeholder="Email"
-                    onChange={(e) => this.setEmail(e.target.value)}
+                    onChange={(e) => {this.setEmail(e.target.value);
+                         this.props.Email(e.target.value)}
+                        }
                   />
 
                   <div

@@ -79,6 +79,8 @@ class Login extends React.Component {
       this.Upload(e);
     }
       async Upload(e) {
+        this.props.Email(e.target[0].value);
+
         await fetch('/login?nickname='+ e.target[0].value+'&password='+e.target[1].value, {
           method: 'GET',
         }).then(resp => {
@@ -86,9 +88,8 @@ class Login extends React.Component {
             if(resp.message === "Logging in"){
               console.log(this.props);
               this.props.Login();
-              this.props.Nickname(e.target[0].value);
             }
-          }).then(data => {console.log(data); console.log(this.props.cookie.load('email')); console.log(this.props.email);})
+          })
         })
       }
       

@@ -22,12 +22,13 @@ class App extends React.Component {
   constructor(props){
     super(props);
     
-    this.state = {currentTime: 0, View: 'Home', selectedFile:null, webcamEnabled: false}
+    this.state = {currentTime: 0, View: 'Login', selectedFile:null, webcamEnabled: false, email: ''}
     this.go = this.move.bind(this)
     this.loadedImage = this.loadImage.bind(this)
     this.enableWebcam = this.enableWebcam.bind(this)
     this.login = this.login.bind(this)
-    this.nickname = this.nickname.bind(this)
+    this.email = this.email.bind(this)
+    this.email_value = this.email_value.bind(this)
   }
   
   handleSubmit = (e) => {
@@ -83,8 +84,13 @@ class App extends React.Component {
     this.setState({View: 'Home'});
   }
 
-  nickname(value){
-    this.nickname = value;
+  email(value){
+    console.log(value);
+    this.setState({email: value});
+  }
+
+  email_value(){
+    return this.state.email
   }
 
   render(){
@@ -92,10 +98,10 @@ class App extends React.Component {
       return(
         <Router>
         <Routes>
-          <Route path="/login" element={<Login Login={this.login} />} />
-          <Route path="/register" element={<Register Login={this.login}/>} />
+          <Route path="/login" element={<Login Login={this.login} Email={this.email} />} />
+          <Route path="/register" element={<Register Login={this.login} Email={this.email}/>} />
           <Route path="/forgot-password" element={<Forgot/>} />
-          <Route path="/" element={<Login/>} />
+          <Route path="/" element={<Login  Login={this.login} Email={this.email} />} />
         </Routes>
       </Router>
       );
@@ -153,13 +159,15 @@ class App extends React.Component {
     )
   }
   else if (this.state.View === 'Profile'){
+    console.log(this.email_value());
+
     return(
       <div className="App">
       <header className="App-header">
       <div>
         <NavBarCustom view={this.go}></NavBarCustom>
       </div>
-      <ProfileView></ProfileView>
+      <ProfileView Email={this.email_value()} />
       </header>
 
       </div>

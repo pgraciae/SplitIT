@@ -106,7 +106,15 @@ def register_user():
 @app.route('/profile', methods=['GET'])
 def get_profile():
     #Necessitem una variable amb el nom d'usuari de la persona
-    bd =  UserTable.query.filter_by(email = data['nickname']).first()
+    print(request, flush = True)
+    data = request.args.to_dict()
+    print(data, flush = True)
+
+    user =  UserTable.query.filter_by(email = data['email']).first()
+    print(user, flush = True)
+    if user != None:
+        print('email', user.email, flush = True)
+    return {'Nickname': user.nickname, 'Name': user.name, 'email': user.email, 'Total_spend' :user.money}
 
 if __name__ == '__main__':
 
