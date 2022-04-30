@@ -14,6 +14,8 @@ function NavBarCustom(props) {
       <Nav.Link href="#home" style = {{left:'30vw',top:'0.5vw',  position:'absolute'}} onClick={(event)=>props.view(event, 'Home')}>Home</Nav.Link>
       <Nav.Link href="#features" style = {{left:'40vw', top:'0.5vw', position:'absolute'}} onClick={(event)=>props.view(event, 'Profile')}>Profile</Nav.Link>
       <Nav.Link href="#pricing" style = {{left:'50vw',top:'0.5vw',  position:'absolute'}} onClick={(event)=>props.view(event, 'Tickets')}>Tickets</Nav.Link>
+      <Nav.Link href="#friends" style = {{left:'60vw',top:'0.5vw',  position:'absolute'}} onClick={(event)=>props.view(event, 'Friends')}>Friends</Nav.Link>
+      <Nav.Link href="#groups" style = {{left:'70vw',top:'0.5vw',  position:'absolute'}} onClick={(event)=>props.view(event, 'Groups')}>Groups</Nav.Link>
     </Nav>
     </Container>
   </Navbar>

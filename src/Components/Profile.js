@@ -67,7 +67,7 @@ class ProfileView extends React.Component{
     console.log(this.rows)
     console.log(this.state)
     console.log(this.tu)
-
+    
     this.rows = [ 
     this.createData('Nickname', this.tu["Nickname"]),
     this.createData('Name', this.tu['Name']),

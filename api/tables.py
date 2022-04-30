@@ -17,6 +17,11 @@ class Friends(db.Model):
 class Groups(db.Model):
     __table__ = db.Model.metadata.tables['groups']
 
+    def __repr__(self):
+        res = {"group_id": self.group_id, 'title': self.title, 'spend':self.spend, 'n_users':self.n_users, 'creation':self.creation}
+        return '{}'.format(res)
+       # return '{} {} {} {} {}'.format(self.group_id,self.title, self.spend,self.n_users,self.creation)
+        
 class Group_User(db.Model):
     __table__ = db.Model.metadata.tables['group_user']
 

@@ -13,6 +13,8 @@ import ProfileView from './Components/Profile';
 import Login from "./Components/Login.js";
 import Register from "./Components/Registration.js";
 import Forgot from "./Components/Forgot.js";
+import Friends from "./Components/Friends.js"
+import Groups from "./Components/Groups.js"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import cookie from 'react-cookies';
 
@@ -29,6 +31,8 @@ class App extends React.Component {
     this.login = this.login.bind(this)
     this.email = this.email.bind(this)
     this.email_value = this.email_value.bind(this)
+    this.friends = this.friends.bind(this)
+    this.groups = this.groups.bind(this)
   }
   
   handleSubmit = (e) => {
@@ -82,6 +86,14 @@ class App extends React.Component {
 
   login(){
     this.setState({View: 'Home'});
+  }
+
+  friends(){
+    this.setState({View: 'Friends'})
+  }
+
+  groups(){
+    this.setState({View: 'Groups'})
   }
 
   email(value){
@@ -182,6 +194,32 @@ class App extends React.Component {
         <NavBarCustom view={this.go}></NavBarCustom>
       </div>
       </header>
+      </div>
+    )
+  }
+  else if (this.state.View === 'Friends'){
+    return(
+      <div className="App">
+      <header className="App-header">
+      <div>
+        <NavBarCustom view={this.go}></NavBarCustom>
+      </div>
+      <Friends Email={this.email_value()}/>
+      </header>
+
+      </div>
+    )
+  }
+  else if (this.state.View === 'Groups'){
+    return(
+      <div className="App">
+      <header className="App-header">
+      <div>
+        <NavBarCustom view={this.go}></NavBarCustom>
+      </div>
+      <Groups Email={this.email_value()} />
+      </header>
+
       </div>
     )
   }
