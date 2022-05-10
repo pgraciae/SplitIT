@@ -17,6 +17,7 @@ class Friends extends React.Component {
       this.rows = null;
       this.llista = {};
       this.addFriend = this.addFriend.bind(this);
+      this.addFriend_value = this.addFriend_value.bind(this);
     }
 
     async YourFriends() {
@@ -45,11 +46,17 @@ class Friends extends React.Component {
     }
 
     addFriend(){
-      this.setState({friend: 'true'})
+      this.setState({friend:'true'})
     }
-    
-    render(){
 
+    addFriend_value(value){
+      console.log(value)
+      this.setState({friend: value})
+      console.log("friend_restatus", this.state.friend)
+    }
+
+    render(){
+      console.log(this.state.friend, 'friend_status')
       if (this.rows === null) {
        return ( <a>Retrieving data...</a> )
        
@@ -57,10 +64,9 @@ class Friends extends React.Component {
       if (this.state.friend === 'true'){
         return(
           <div>
-            <AddFriend Email={this.props.Email} Nickname={this.state.nickname}/>
+            <AddFriend Email={this.props.Email} Nickname={this.state.nickname} Friend_status={this.addFriend_value} />
           </div>
         )
-        this.setState({friend: 'false'})
       }
       else {
         console.log(this.rows)}

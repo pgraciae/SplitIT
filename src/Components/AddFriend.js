@@ -24,31 +24,32 @@ class AddFriend extends Component{
             method: 'GET',
           }).then(resp => {
             resp.json().then((resp)=>{
-              this.exists = resp.Friends.includes(name);
-              console.log(this.exists);
+                this.exists = resp.Friends.includes(name);
+                console.log(this.exists);
+                if (!this.exists){
+                    fetch('/addfriend',{
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        nickname: name,
+                        your_nickname: this.props.Nickname,
+                    })
+                    }).then(resp => {
+                    resp.json().then((resp)=>{
+                        friendsTemp.push(resp.data)
+                        console.log(resp)
+                        this.setState({ friend: friendsTemp})
+                        this.new_friend = null
+                        this.exists = false;
+                        
+                    })
+                })
+            }
             })
         })
-        if (!this.exists){
-            await fetch('/addfriend',{
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                nickname: name,
-                your_nickname: this.props.Nickname,
-            })
-          }).then(resp => {
-            resp.json().then((resp)=>{
-                friendsTemp.push(resp.data)
-                console.log(resp)
-                this.setState({ friend: friendsTemp})
-                this.new_friend = null
-                
-            })
-          })
-        }
 }
 
 

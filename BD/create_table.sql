@@ -102,3 +102,5 @@ INSERT INTO USERTABLE VALUES('TEST', '603244633', 'polgraciae@gmail.com', 'split
 INSERT INTO USERTABLE VALUES('TEST2', '60324633', 'DANI@gmail.com', 'splitit', 'DA', 0, 'Carrer santa llucia', '12/02/2000', 'M', NOW());
 INSERT INTO USERTABLE VALUES('TEST3', '684244189', 'ferran.vera.filella@gmail.com', 'splitit', 'Ferran', 0, 'Carrer santa llucia', '12/02/2000', 'M', NOW());
 
+
+

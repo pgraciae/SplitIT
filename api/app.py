@@ -1,3 +1,5 @@
+from crypt import methods
+from genericpath import exists
 import time
 from datetime import date
 from flask import Flask
@@ -124,26 +126,22 @@ def get_friends():
     bd =  UserTable.query.filter_by(email = data['email']).first()
     friends = Friends.query.filter((Friends.nick_name_u1 == bd.nickname) | (Friends.nick_name_u2 == bd.nickname)).all()
     friend_list = list()
-    
     if len(friends) > 0:
         for f in friends:
             if f.nick_name_u1 == bd.nickname:
                 friend_list.append(f.nick_name_u2)
             else:
                 friend_list.append(f.nick_name_u1)
-      
         return {"Friends": friend_list}
     else:
         return {"Friends": ["No friends"]}
 
 @app.route('/groups', methods =['GET'])
 def get_groups():
-    print(request, flush=True)
     data = request.args.to_dict()
     bd =  UserTable.query.filter_by(email = data['email']).first()
     group = db.session.query(Groups).join(Group_User, Groups.group_id==Group_User.group_id).filter(Group_User.nickname == bd.nickname).all()
     group_list = list()
-    print(group)
 
     if len(group) > 0:
         for g in group:
@@ -156,7 +154,6 @@ def get_groups():
 def add_friend():
     data = request.get_json()
     exists = db.session.query(UserTable).filter_by(nickname=data['nickname']).first()
-    print(data)
     if exists == None:
         return {"Added": "Nickname doesn't exist"}
     
@@ -165,7 +162,38 @@ def add_friend():
     new_friendship = Friends(**data_add)
     db.session.add(new_friendship)
     db.session.commit()
-    return {"Added":'CONGRATULATIONS YOU ARE FRIEND WITH {}'.format(data['nickname'])}
+    return {"Added":'True'}
+
+@app.route('/addgroup', methods =['POST'])
+def add_group():
+    data = request.get_json()
+    if data['title'] == [] or len(data['listfriends']) == 0:
+        return {"Added:" "Wrong inputs"}
+    bd =  UserTable.query.filter_by(email = data['email']).first()
+    nickname = bd.nickname
+    exists = db.session.query(Groups).filter_by(title=data['title']).first()
+    if exists != None:
+        return {"Added": "Title is used, try another name"}
+    group_id = db.session.query(func.max(Groups.group_id)).scalar()
+    groupuser_id = db.session.query(func.max(Group_User.groupuser_id)).scalar()
+    print(nickname ,'nickname')
+    print('group_id', group_id)
+    new_group = {'group_id': int(group_id)+1, 'title':data['title'],'spend':data['spend'], 'n_users':len(data['listfriends']), 'creation':date.today()}
+    print(new_group)
+    new_group_created = Groups(**new_group)
+    db.session.add(new_group_created)
+    db.session.commit()
+    new_groupuser_me = {'groupuser_id': groupuser_id+1, 'group_id': group_id+1, 'nickname':nickname, 'creation_date':date.today()}
+    new_groupuser_created_me = Group_User(**new_groupuser_me)
+    db.session.add(new_groupuser_created_me)
+    db.session.commit()
+    for i in range(len(data['listfriends'])):
+        new_groupuser = {'groupuser_id': groupuser_id+i+2, 'group_id': group_id+1, 'nickname': data['listfriends'][i], 'creation_date':date.today()}
+        new_groupuser_created = Group_User(**new_groupuser)
+        db.session.add(new_groupuser_created)
+        db.session.commit()
+    return {'Group_added': 'True'}
+
 
 if __name__ == '__main__':
 
