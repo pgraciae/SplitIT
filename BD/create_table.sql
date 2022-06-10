@@ -6,11 +6,11 @@
 CREATE TABLE USERTABLE (
     nickname    VARCHAR(30) PRIMARY KEY,
     phone   VARCHAR(20) UNIQUE NOT NULL,
-    email   VARCHAR(40)   UNIQUE NOT NULL,
+    email   VARCHAR(1000)   UNIQUE NOT NULL,
     password    VARCHAR(30) NOT NULL,
     name    VARCHAR(20)   NOT NULL,
     money   REAL NOT NULL,
-    address VARCHAR(40) NOT NULL,
+    address VARCHAR(1000) NOT NULL,
     birth   DATE,
     gender  VARCHAR(10),
     registration    TIMESTAMP   NOT NULL
@@ -71,10 +71,11 @@ CREATE TABLE PAYMENT_METHOD(
 -- DROP TABLE IF EXISTS PRODUCT CASCADE;
 
 CREATE TABLE PRODUCT( 
-    product_id INT PRIMARY KEY,
+    index_id INT PRIMARY KEY,
+    product_id INT,
     ticket_id INT REFERENCES ticket(ticket_id),
     paid_by VARCHAR(30) REFERENCES usertable(nickname),
-    item VARCHAR(50) NOT NULL,
+    item VARCHAR(1000) NOT NULL,
     price NUMERIC(5,2) NOT NULL
 );
 
@@ -82,7 +83,7 @@ CREATE TABLE PRODUCT(
 
 CREATE TABLE PRODUCTS_PROP( 
     products_prop_id INT PRIMARY KEY,
-    product_id INT REFERENCES product(product_id),
+    product_id INT REFERENCES product(index_id),
     subticket_id INT REFERENCES subticket(subticket_id),
     proportion REAL
 );
@@ -98,9 +99,9 @@ CREATE TABLE FRIENDS (
 
 ALTER DATABASE postgres SET datestyle TO 'ISO, DMY'; --Dates format dd/mm/yyyy
 
-INSERT INTO USERTABLE VALUES('TEST', '603244633', 'polgraciae@gmail.com', 'splitit', 'Pol', 0, 'Carrer santa llucia', '12/02/2000', 'M', NOW());
-INSERT INTO USERTABLE VALUES('TEST2', '60324633', 'DANI@gmail.com', 'splitit', 'DA', 0, 'Carrer santa llucia', '12/02/2000', 'M', NOW());
-INSERT INTO USERTABLE VALUES('TEST3', '684244189', 'ferran.vera.filella@gmail.com', 'splitit', 'Ferran', 0, 'Carrer santa llucia', '12/02/2000', 'M', NOW());
+--INSERT INTO USERTABLE VALUES('TEST', '603244633', 'polgraciae@gmail.com', 'splitit', 'Pol', 0, 'Carrer santa llucia', '12/02/2000', 'M', NOW());
+--INSERT INTO USERTABLE VALUES('TEST2', '60324633', 'DANI@gmail.com', 'splitit', 'DA', 0, 'Carrer santa llucia', '12/02/2000', 'M', NOW());
+--INSERT INTO USERTABLE VALUES('TEST3', '684244189', 'ferran.vera.filella@gmail.com', 'splitit', 'Ferran', 0, 'Carrer santa llucia', '12/02/2000', 'M', NOW());
 
-
+--COPY USERTABLE FROM '/home/ferran/Escritorio/TFG/SplitIT/BD/Data/usertable.csv' DELIMITER ',' CSV HEADER;
 

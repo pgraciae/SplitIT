@@ -3,6 +3,7 @@ import random
 import numpy as np
 import string
 import datetime
+import os
 from sqlalchemy import create_engine
 
 def UserTable(n = 50, nicknames_path = "BD/Data/nicknames.csv", worldcities_path = "BD/Data/worldcities.csv"):
@@ -264,27 +265,32 @@ def products_prop(subtick, product, items = 50):
     return pd.DataFrame(products_prop)
 
 
-users = UserTable(100, nicknames_path = "mock_data/Data/nicknames.csv", worldcities_path = "mock_data/Data/worldcities.csv")
-g_u = group_user(users, groups = 20, users_per_group=10)
-Groups = groups(g_u)
-Friends = friends(users, 25)
-Tickets = ticket(Groups, 50 , cities_path = 'mock_data/Data/worldcities.csv')
-Subtickets = subticket(Tickets, g_u, 200)
-p_m = payment_method(Subtickets)
-Product = product(Tickets, g_u, items = 500 , groceries_path = 'mock_data/Data/Groceries.csv')
-P_P = products_prop(Subtickets, Product, 1000)
+# users = UserTable(100, nicknames_path = "mock_data/Data/nicknames.csv", worldcities_path = "mock_data/Data/worldcities.csv")
+# g_u = group_user(users, groups = 20, users_per_group=10)
+# Groups = groups(g_u)
+# Friends = friends(users, 25)
+# Tickets = ticket(Groups, 50 , cities_path = 'mock_data/Data/worldcities.csv')
+# Subtickets = subticket(Tickets, g_u, 200)
+# p_m = payment_method(Subtickets)
+# Product = product(Tickets, g_u, items = 500 , groceries_path = 'mock_data/Data/Groceries.csv')
+# P_P = products_prop(Subtickets, Product, 1000)
 
 
 if __name__ == '__main__':
 
     engine = create_engine('postgresql+psycopg2://postgres:FDP@SplitItDB:5432/postgres')
-    
+    users = pd.read_csv(os.path.abspath("Data/usertable.csv"), delimiter=',')
+    Groups = pd.read_csv(os.path.abspath("Data/groups.csv"), delimiter=',')
+    g_u = pd.read_csv(os.path.abspath("Data/group_user.csv"), delimiter=',')
+    Friends = pd.read_csv(os.path.abspath("Data/friends.csv"), delimiter=',')
+    Product = pd.read_csv(os.path.abspath("Data/products.csv"), delimiter=',')
+    Tickets = pd.read_table(os.path.abspath("Data/tickets.csv"), delimiter=',')
     users.to_sql('usertable', con = engine, index = False, if_exists = 'append')
     Groups.to_sql('groups', con = engine, index = False, if_exists = 'append')
     g_u.to_sql('group_user', con = engine, index = False, if_exists = 'append')    
     Tickets.to_sql('ticket', con = engine, index = False, if_exists = 'append')
-    Subtickets.to_sql('subticket', con = engine, index = False, if_exists = 'append')
-    p_m.to_sql('payment_method', con = engine, index = False, if_exists = 'append')
+    # Subtickets.to_sql('subticket', con = engine, index = False, if_exists = 'append')
+    # p_m.to_sql('payment_method', con = engine, index = False, if_exists = 'append')
     Product.to_sql('product', con = engine, index = False, if_exists = 'append')
-    P_P.to_sql('products_prop', con = engine, index = False, if_exists = 'append')
+    # P_P.to_sql('products_prop', con = engine, index = False, if_exists = 'append')
     Friends.to_sql('friends', con = engine, index = False, if_exists = 'append')

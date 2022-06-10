@@ -10,8 +10,8 @@ import numpy as np
 from PIL import Image
 from sqlalchemy import func 
 import os
-from OCR_handler import OCRHandler
-from OCR_Layout_analysis import ItemsIdentifier
+#from OCR_handler import OCRHandler
+#from OCR_Layout_analysis import ItemsIdentifier
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
@@ -30,7 +30,7 @@ if 'test_file.txt' not in os.listdir():
         hdlr.write("Test: /")
         #print(os.getcwd(), flush=True)
 
-model = OCRHandler()
+#model = OCRHandler()
 
 def do_ocr(img_path):
     global model
@@ -160,6 +160,8 @@ def add_friend():
     f_id = db.session.query(func.max(Friends.friendship_id)).scalar()
     data_add = {'friendship_id':int(f_id)+1, 'nick_name_u1':data['nickname'], 'nick_name_u2':data['your_nickname'], 'date':date.today()}
     new_friendship = Friends(**data_add)
+    print(new_friendship, flush=True)
+    print(data_add, flush=True)
     db.session.add(new_friendship)
     db.session.commit()
     return {"Added":'True'}
@@ -178,7 +180,7 @@ def add_group():
     groupuser_id = db.session.query(func.max(Group_User.groupuser_id)).scalar()
     print(nickname ,'nickname')
     print('group_id', group_id)
-    new_group = {'group_id': int(group_id)+1, 'title':data['title'],'spend':data['spend'], 'n_users':len(data['listfriends']), 'creation':date.today()}
+    new_group = {'group_id': int(group_id)+1, 'title':data['title'],'spend':data['spend'], 'n_users':len(data['listfriends'])+1, 'creation':date.today()}
     print(new_group)
     new_group_created = Groups(**new_group)
     db.session.add(new_group_created)
