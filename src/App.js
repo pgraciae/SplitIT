@@ -17,6 +17,7 @@ import Friends from "./Components/Friends.js"
 import Groups from "./Components/Groups.js"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import cookie from 'react-cookies';
+import ChooseGroup from "./Components/ChooseGroup.js"
 
 class App extends React.Component {
 
@@ -24,7 +25,7 @@ class App extends React.Component {
   constructor(props){
     super(props);
     
-    this.state = {currentTime: 0, View: 'Login', selectedFile:null, webcamEnabled: false, email: ''}
+    this.state = {currentTime: 0, View: 'Login', selectedFile:null, webcamEnabled: false, email: '', choosed_group: null}
     this.go = this.move.bind(this)
     this.loadedImage = this.loadImage.bind(this)
     this.enableWebcam = this.enableWebcam.bind(this)
@@ -33,8 +34,14 @@ class App extends React.Component {
     this.email_value = this.email_value.bind(this)
     this.friends = this.friends.bind(this)
     this.groups = this.groups.bind(this)
+    this.chooseGroup = this.chooseGroup.bind(this)
+    this.choosedGroup_ = this.choosedGroup.bind(this)
+    this.choosedGroup_value_ = this.choosedGroup_value.bind(this)
+    this.move0_ = this.move0.bind(this)
+
   }
   
+
   handleSubmit = (e) => {
     e.preventDefault()
     const formData = new FormData();
@@ -48,6 +55,7 @@ class App extends React.Component {
         resp.json().then(data => {console.log(data)})
       })
     }
+    this.setState({View:'Uploaded'}); //sota d'Upload()
     Upload();
   }
     
@@ -61,6 +69,9 @@ class App extends React.Component {
 
   move(event, name) {
     event.preventDefault()
+    this.setState({View: name})
+  }
+  move0(name){
     this.setState({View: name})
   }
 
@@ -86,6 +97,18 @@ class App extends React.Component {
 
   login(){
     this.setState({View: 'Home'});
+  }
+
+  chooseGroup(){
+    this.setState({View: 'chooseGroup'})
+  }
+
+  choosedGroup(value){
+    this.setState({choosed_group: value})
+  }
+
+  choosedGroup_value(){
+    return this.state.choosed_group
   }
 
   friends(){
@@ -158,18 +181,66 @@ class App extends React.Component {
         Camera
       </Button>
       <Button variant ="contained" type="submit" style = {{position: "absolute", top: '20vw', left: '45vw', width: '10vw', height: '5vw'}}>
-        Submit File
+        Submit ticket image
       </Button>
       </form>
     </Stack>
-    <div style = {{position: 'absolute', width: '70vw', left: '22vw', top:'60vw'}}>
-      <TableX></TableX>
-      </div>
       </header>
 
     </div>
     )
   }
+
+  else if (this.state.View === 'Uploaded'){
+    console.log(this.email_value());
+    console.log('no enttra')
+    return (
+      <div className="App">
+      <header className="App-header">
+      <div>
+        <NavBarCustom view={this.go}></NavBarCustom>
+      </div>
+      <TableX></TableX>
+      <div>
+      <Button variant ="contained" onClick={this.chooseGroup}>
+        Continue
+      </Button>
+
+      </div>
+      </header>
+      </div>
+    )
+  }
+  else if (this.state.View === 'chooseGroup'){
+    console.log('entra')
+    return(
+      <div className="App">
+      <header className="App-header">
+      <div>
+        <NavBarCustom view={this.go}></NavBarCustom>
+      </div>
+      <ChooseGroup Email={this.email_value()} group_value={this.choosedGroup_} view={this.move0_}></ChooseGroup>
+      </header>
+
+      </div>
+    )
+      }
+      
+  else if (this.state.View ==='repartir'){
+    console.log(this.choosedGroup_value())
+    return (
+      <div className="App">
+      <header className="App-header">
+      <div>
+        <NavBarCustom view={this.go}></NavBarCustom>
+      </div>
+      hoa
+      </header>
+
+      </div>
+    )
+  }
+  
   else if (this.state.View === 'Profile'){
     console.log(this.email_value());
 

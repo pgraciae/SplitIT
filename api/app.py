@@ -10,8 +10,8 @@ import numpy as np
 from PIL import Image
 from sqlalchemy import func 
 import os
-#from OCR_handler import OCRHandler
-#from OCR_Layout_analysis import ItemsIdentifier
+# from OCR_handler import OCRHandler
+# from OCR_Layout_analysis import ItemsIdentifier
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
@@ -30,7 +30,7 @@ if 'test_file.txt' not in os.listdir():
         hdlr.write("Test: /")
         #print(os.getcwd(), flush=True)
 
-#model = OCRHandler()
+# model = OCRHandler()
 
 def do_ocr(img_path):
     global model

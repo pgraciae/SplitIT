@@ -44,9 +44,11 @@ class AddFriend extends Component{
                         this.setState({ friend: friendsTemp})
                         this.new_friend = null
                         this.exists = false;
-                        
+                        console.log(this.props.addedFriend)
+                        this.props.addedFriend();
                     })
                 })
+
             }
             })
         })

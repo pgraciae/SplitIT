@@ -13,6 +13,7 @@ class Groups extends React.Component {
       this.llista = {};
       this.addGroup = this.addGroup.bind(this);
       this.addGroup_value = this.addGroup_value.bind(this);
+      this.addedGroup = this.addedGroup.bind(this);
     }
 
     async YourGroups() {
@@ -38,6 +39,9 @@ class Groups extends React.Component {
     addGroup(){
       this.setState({group: 'true'})
     }
+    addedGroup(){
+      this.setState({group:'false'})
+    }
   
     addGroup_value(value){
       console.log(value)
@@ -54,7 +58,7 @@ class Groups extends React.Component {
       if (this.state.group === 'true'){
         return(
           <div>
-            <AddGroup Email={this.props.Email} Group_status={this.addGroup_value} />
+            <AddGroup Email={this.props.Email} Group_status={this.addGroup_value} addedGroup={this.addedGroup}/>
           </div>
         )
       }

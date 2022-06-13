@@ -53,7 +53,7 @@ class AddGroup extends Component{
                 }).then(resp => {
                     resp.json().then((resp)=>{
                         console.log(resp)
-                        
+                    this.props.addedGroup();
                     })
                 })
         }
