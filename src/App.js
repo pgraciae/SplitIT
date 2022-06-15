@@ -257,6 +257,7 @@ class App extends React.Component {
 
     )
   }
+  
   else if (this.state.View === 'Tickets'){
     return(
       <div className="App">
