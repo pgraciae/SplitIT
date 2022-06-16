@@ -1,1348 +1,1408 @@
-index_id,product_id,ticket_id,paid_by,item,price
-1,1127050,6636108,U1061,Cilantro-Lime Rice,7
-2,4339285,6636108,U1095,Sherry's Wild West Soup,10
-3,7625178,6636108,U1048,Cotija and Corn Tacos with Lime and Mango,10
-4,6941656,6636108,U1083,Mexican Beef and Cheese Wontons with Salsa,14
-5,4025240,6636108,U1048,Mexican-style Lasagna,10
-6,1517757,6636108,U1095,Mexican Ham and Bean Soup,11
-7,2249825,6636108,U1061,Mexican Style Jalapeno Burger,8
-8,3991238,6636108,U1095,Layered Chicken and Black Bean Enchilada Casserole,7
-9,7516725,6636108,U1095,Mexican Bean Pizza,14
-10,1072381,6636108,U1061,Lobster and Crab Enchiladas,12
-11,5108927,6636108,U1061,Pesto Tofu Pasta,32
-12,5462039,6636108,U1048,How To Make Panzanella (Italian Bread Salad),29
-13,9448609,6636108,U1061,Lemon Focaccia,40
-14,1127050,4025079,U1024,Cilantro-Lime Rice,13
-15,8111259,3523244,U1097,Sweet and Spicy Chinese Takeout Chicken,17
-16,63194,3523244,U1004,Easy Chinese Soy Sauce Chicken,24
-17,8155603,3523244,U1004,MAMA’S BRAISED CHICKEN LEGS ON RICE W/ FRIED CHILI CAPERS,44
-18,5169585,3523244,U1061,Sesame Beef and Asian Vegetable Stir-Fry,43
-19,4074884,3523244,U1097,Fried Rice,27
-20,1127050,9172631,U1026,Cilantro-Lime Rice,3
-21,1127050,9172631,U1026,Cilantro-Lime Rice,3
-22,4339285,9172631,U1026,Sherry's Wild West Soup,5
-23,4339285,9172631,U1065,Sherry's Wild West Soup,5
-24,7625178,9172631,U1039,Cotija and Corn Tacos with Lime and Mango,6
-25,7625178,9172631,U1026,Cotija and Corn Tacos with Lime and Mango,6
-26,6941656,9172631,U1039,Mexican Beef and Cheese Wontons with Salsa,5
-27,6941656,9172631,U1026,Mexican Beef and Cheese Wontons with Salsa,5
-28,4025240,9172631,U1039,Mexican-style Lasagna,3
-29,4025240,9172631,U1026,Mexican-style Lasagna,3
-30,1517757,9172631,U1039,Mexican Ham and Bean Soup,6
-31,1517757,9172631,U1065,Mexican Ham and Bean Soup,6
-32,1127050,4475474,U1028,Cilantro-Lime Rice,2
-33,4339285,4475474,U1103,Sherry's Wild West Soup,6
-34,7625178,4475474,U1028,Cotija and Corn Tacos with Lime and Mango,5
-35,6941656,4475474,U1031,Mexican Beef and Cheese Wontons with Salsa,3
-36,4025240,4475474,U1028,Mexican-style Lasagna,3
-37,1517757,4475474,U1068,Mexican Ham and Bean Soup,5
-38,2249825,4475474,U1068,Mexican Style Jalapeno Burger,4
-39,3991238,4475474,U1031,Layered Chicken and Black Bean Enchilada Casserole,2
-40,1127050,7755333,U1095,Cilantro-Lime Rice,24
-41,4339285,7755333,U1084,Sherry's Wild West Soup,35
-42,7625178,7755333,U1034,Cotija and Corn Tacos with Lime and Mango,30
-43,6941656,7755333,U1095,Mexican Beef and Cheese Wontons with Salsa,38
-44,4025240,7755333,U1034,Mexican-style Lasagna,36
-45,1517757,7755333,U1095,Mexican Ham and Bean Soup,41
-46,2249825,7755333,U1034,Mexican Style Jalapeno Burger,43
-47,3991238,7755333,U1095,Layered Chicken and Black Bean Enchilada Casserole,48
-48,7516725,7755333,U1095,Mexican Bean Pizza,31
-49,1072381,7755333,U1095,Lobster and Crab Enchiladas,48
-50,1127050,3699627,U1027,Cilantro-Lime Rice,14
-51,4339285,3699627,U1090,Sherry's Wild West Soup,10
-52,7625178,3699627,U1027,Cotija and Corn Tacos with Lime and Mango,8
-53,6941656,3699627,U1090,Mexican Beef and Cheese Wontons with Salsa,11
-54,4025240,3699627,U1090,Mexican-style Lasagna,10
-55,1517757,3699627,U1090,Mexican Ham and Bean Soup,12
-56,2249825,3699627,U1138,Mexican Style Jalapeno Burger,10
-57,3991238,3699627,U1090,Layered Chicken and Black Bean Enchilada Casserole,11
-58,7516725,3699627,U1138,Mexican Bean Pizza,11
-59,1127050,4134659,U1067,Cilantro-Lime Rice,5
-60,1127050,4134659,U1068,Cilantro-Lime Rice,6
-61,4339285,4134659,U1103,Sherry's Wild West Soup,3
-62,4339285,4134659,U1103,Sherry's Wild West Soup,5
-63,7625178,4134659,U1068,Cotija and Corn Tacos with Lime and Mango,4
-64,7625178,4134659,U1067,Cotija and Corn Tacos with Lime and Mango,5
-65,6941656,4134659,U1103,Mexican Beef and Cheese Wontons with Salsa,3
-66,6941656,4134659,U1067,Mexican Beef and Cheese Wontons with Salsa,2
-67,4025240,4134659,U1067,Mexican-style Lasagna,6
-68,1127050,2456476,U1113,Cilantro-Lime Rice,3
-69,1127050,2456476,U1134,Cilantro-Lime Rice,9
-70,4339285,2456476,U1134,Sherry's Wild West Soup,6
-71,4339285,2456476,U1106,Sherry's Wild West Soup,14
-72,7625178,2456476,U1113,Cotija and Corn Tacos with Lime and Mango,6
-73,7625178,2456476,U1009,Cotija and Corn Tacos with Lime and Mango,11
-74,6941656,2456476,U1009,Mexican Beef and Cheese Wontons with Salsa,2
-75,1127050,9155035,U1109,Cilantro-Lime Rice,10
-76,4339285,9155035,U1032,Sherry's Wild West Soup,13
-77,7625178,9155035,U1128,Cotija and Corn Tacos with Lime and Mango,9
-78,6941656,9155035,U1062,Mexican Beef and Cheese Wontons with Salsa,9
-79,4025240,9155035,U1085,Mexican-style Lasagna,8
-80,1517757,9155035,U1095,Mexican Ham and Bean Soup,9
-81,2249825,9155035,U1109,Mexican Style Jalapeno Burger,9
-82,6428676,2251556,U1134,Udon-Beef Noodle Bowl,14
-83,3887839,2251556,U1046,Fettuccine Carbonara,7
-84,4519345,2251556,U1046,Sushi Deviled Eggs | Elegant Appetizers,8
-85,7121483,2251556,U1083,Yaki Udon With Beef,7
-86,6412600,2251556,U1134,Udon Noodles with Bay Scallops and Baby Bok Choy,7
-87,6157338,2251556,U1083,Miso Soup,7
-88,1127050,9894128,U1003,Cilantro-Lime Rice,12
-89,1127050,9172631,U1039,Cilantro-Lime Rice,3
-90,1127050,9172631,U1039,Cilantro-Lime Rice,3
-91,4339285,9172631,U1039,Sherry's Wild West Soup,5
-92,4339285,9172631,U1039,Sherry's Wild West Soup,5
-93,7625178,9172631,U1026,Cotija and Corn Tacos with Lime and Mango,6
-94,7625178,9172631,U1026,Cotija and Corn Tacos with Lime and Mango,6
-95,1127050,9915053,U1083,Cilantro-Lime Rice,12
-96,1127050,9915053,U1003,Cilantro-Lime Rice,14
-97,4339285,9915053,U1083,Sherry's Wild West Soup,8
-98,4339285,9915053,U1137,Sherry's Wild West Soup,8
-99,7625178,9915053,U1137,Cotija and Corn Tacos with Lime and Mango,7
-100,7625178,9915053,U1083,Cotija and Corn Tacos with Lime and Mango,8
-101,6941656,9915053,U1003,Mexican Beef and Cheese Wontons with Salsa,11
-102,6428676,9505346,U1117,Udon-Beef Noodle Bowl,9
-103,3887839,9505346,U1117,Fettuccine Carbonara,8
-104,4519345,9505346,U1012,Sushi Deviled Eggs | Elegant Appetizers,13
-105,7121483,9505346,U1117,Yaki Udon With Beef,12
-106,6412600,9505346,U1117,Udon Noodles with Bay Scallops and Baby Bok Choy,7
-107,6157338,9505346,U1012,Miso Soup,12
-108,1612412,9505346,U1117,Grilled Teriyaki-Glazed Salmon,8
-109,2027794,9505346,U1030,Negimaki,10
-110,1127050,3986667,U1081,Cilantro-Lime Rice,11
-111,1127050,3986667,U1056,Cilantro-Lime Rice,11
-112,6428676,9081937,U1106,Udon-Beef Noodle Bowl,14
-113,6428676,9081937,U1135,Udon-Beef Noodle Bowl,14
-114,3887839,9081937,U1078,Fettuccine Carbonara,11
-115,3887839,9081937,U1016,Fettuccine Carbonara,11
-116,4519345,9081937,U1112,Sushi Deviled Eggs | Elegant Appetizers,11
-117,4519345,9081937,U1032,Sushi Deviled Eggs | Elegant Appetizers,11
-118,7121483,9081937,U1045,Yaki Udon With Beef,12
-119,6428676,8198186,U1122,Udon-Beef Noodle Bowl,32
-120,3887839,8198186,U1089,Fettuccine Carbonara,35
-121,4519345,8198186,U1122,Sushi Deviled Eggs | Elegant Appetizers,46
-122,7121483,8198186,U1114,Yaki Udon With Beef,19
-123,6412600,8198186,U1053,Udon Noodles with Bay Scallops and Baby Bok Choy,27
-124,1127050,3436403,U1067,Cilantro-Lime Rice,5
-125,1127050,3436403,U1068,Cilantro-Lime Rice,7
-126,4339285,3436403,U1068,Sherry's Wild West Soup,3
-127,4339285,3436403,U1068,Sherry's Wild West Soup,7
-128,7625178,3436403,U1067,Cotija and Corn Tacos with Lime and Mango,4
-129,7625178,3436403,U1068,Cotija and Corn Tacos with Lime and Mango,9
-130,6941656,3436403,U1068,Mexican Beef and Cheese Wontons with Salsa,3
-131,6941656,3436403,U1103,Mexican Beef and Cheese Wontons with Salsa,7
-132,4025240,3436403,U1067,Mexican-style Lasagna,6
-133,4025240,3436403,U1103,Mexican-style Lasagna,12
-134,1517757,3436403,U1067,Mexican Ham and Bean Soup,3
-135,1517757,3436403,U1068,Mexican Ham and Bean Soup,14
-136,2249825,3436403,U1067,Mexican Style Jalapeno Burger,6
-137,2249825,3436403,U1103,Mexican Style Jalapeno Burger,13
-138,3991238,3436403,U1067,Layered Chicken and Black Bean Enchilada Casserole,6
-139,5108927,7885550,U1048,Pesto Tofu Pasta,32
-140,5108927,7885550,U1083,Pesto Tofu Pasta,32
-141,5462039,7885550,U1083,How To Make Panzanella (Italian Bread Salad),29
-142,5462039,7885550,U1083,How To Make Panzanella (Italian Bread Salad),29
-143,6428676,6773642,U1004,Udon-Beef Noodle Bowl,32
-144,3887839,6773642,U1004,Fettuccine Carbonara,35
-145,4519345,6773642,U1108,Sushi Deviled Eggs | Elegant Appetizers,46
-146,7121483,6773642,U1132,Yaki Udon With Beef,19
-147,6412600,6773642,U1071,Udon Noodles with Bay Scallops and Baby Bok Choy,27
-148,6157338,6773642,U1089,Miso Soup,35
-149,1612412,6773642,U1059,Grilled Teriyaki-Glazed Salmon,29
-150,5108927,2557427,U1013,Pesto Tofu Pasta,45
-151,5462039,2557427,U1091,How To Make Panzanella (Italian Bread Salad),20
-152,9448609,2557427,U1089,Lemon Focaccia,17
-153,4470875,2557427,U1091,Pizza Dough,23
-154,3238244,2557427,U1091,Spicy Italian White Bean and Sausage Soup,32
-155,9358092,2557427,U1091,Slow-Cooker Cheesy Italian Tortellini,30
-156,154346,2557427,U1013,Pasta Calamari Capri,48
-157,4212269,2557427,U1091,"Prosciutto, Tomato, and Olive Spaghetti",23
-158,8352507,3825155,U1032,Bramblewood Blackberry Pie,2
-159,4106701,3825155,U1032,Roasted Vegetables,2
-160,1127050,581343,U1087,Cilantro-Lime Rice,4
-161,1127050,581343,U1050,Cilantro-Lime Rice,10
-162,4339285,581343,U1082,Sherry's Wild West Soup,3
-163,1127050,6704533,U1081,Cilantro-Lime Rice,12
-164,4339285,6704533,U1056,Sherry's Wild West Soup,12
-165,7625178,6704533,U1056,Cotija and Corn Tacos with Lime and Mango,11
-166,6941656,6704533,U1081,Mexican Beef and Cheese Wontons with Salsa,14
-167,4025240,6704533,U1081,Mexican-style Lasagna,8
-168,5108927,9048811,U1083,Pesto Tofu Pasta,32
-169,5108927,9048811,U1083,Pesto Tofu Pasta,32
-170,5462039,9048811,U1048,How To Make Panzanella (Italian Bread Salad),29
-171,5462039,9048811,U1048,How To Make Panzanella (Italian Bread Salad),29
-172,9448609,9048811,U1083,Lemon Focaccia,40
-173,9448609,9048811,U1048,Lemon Focaccia,40
-174,4470875,9048811,U1083,Pizza Dough,15
-175,4470875,9048811,U1095,Pizza Dough,15
-176,3238244,9048811,U1048,Spicy Italian White Bean and Sausage Soup,40
-177,3238244,9048811,U1048,Spicy Italian White Bean and Sausage Soup,40
-178,9358092,9048811,U1095,Slow-Cooker Cheesy Italian Tortellini,32
-179,9358092,9048811,U1095,Slow-Cooker Cheesy Italian Tortellini,32
-180,154346,9048811,U1095,Pasta Calamari Capri,37
-181,154346,9048811,U1048,Pasta Calamari Capri,37
-182,4212269,9048811,U1095,"Prosciutto, Tomato, and Olive Spaghetti",32
-183,5108927,2630642,U1089,Pesto Tofu Pasta,45
-184,5462039,2630642,U1013,How To Make Panzanella (Italian Bread Salad),20
-185,9448609,2630642,U1013,Lemon Focaccia,17
-186,4470875,2630642,U1013,Pizza Dough,23
-187,3238244,2630642,U1013,Spicy Italian White Bean and Sausage Soup,32
-188,9358092,2630642,U1047,Slow-Cooker Cheesy Italian Tortellini,30
-189,154346,2630642,U1047,Pasta Calamari Capri,48
-190,4212269,2630642,U1091,"Prosciutto, Tomato, and Olive Spaghetti",23
-191,4539109,2630642,U1013,Baked Italian Chicken Breasts,37
-192,2079298,2630642,U1047,"Prosciutto, Nectarine and Fontina Panini on Rosemary Focaccia",39
-193,8352507,2630642,U1047,Bramblewood Blackberry Pie,11
-194,1127050,1814903,U1116,Cilantro-Lime Rice,3
-195,4339285,1814903,U1053,Sherry's Wild West Soup,3
-196,7625178,1814903,U1009,Cotija and Corn Tacos with Lime and Mango,3
-197,6941656,1814903,U1056,Mexican Beef and Cheese Wontons with Salsa,6
-198,4025240,1814903,U1024,Mexican-style Lasagna,6
-199,1517757,1814903,U1024,Mexican Ham and Bean Soup,5
-200,2249825,1814903,U1109,Mexican Style Jalapeno Burger,2
-201,3991238,1814903,U1056,Layered Chicken and Black Bean Enchilada Casserole,2
-202,7516725,1814903,U1056,Mexican Bean Pizza,2
-203,1072381,1814903,U1132,Lobster and Crab Enchiladas,2
-204,1127050,3293469,U1001,Cilantro-Lime Rice,44
-205,4339285,3293469,U1001,Sherry's Wild West Soup,17
-206,7625178,3293469,U1055,Cotija and Corn Tacos with Lime and Mango,34
-207,6941656,3293469,U1132,Mexican Beef and Cheese Wontons with Salsa,25
-208,4025240,3293469,U1024,Mexican-style Lasagna,22
-209,1517757,3293469,U1132,Mexican Ham and Bean Soup,27
-210,2249825,3293469,U1071,Mexican Style Jalapeno Burger,23
-211,1127050,8143598,U1048,Cilantro-Lime Rice,12
-212,1127050,8143598,U1137,Cilantro-Lime Rice,14
-213,4339285,8143598,U1048,Sherry's Wild West Soup,8
-214,4339285,8143598,U1048,Sherry's Wild West Soup,8
-215,7625178,8143598,U1137,Cotija and Corn Tacos with Lime and Mango,7
-216,7625178,8143598,U1048,Cotija and Corn Tacos with Lime and Mango,8
-217,6941656,8143598,U1048,Mexican Beef and Cheese Wontons with Salsa,11
-218,6941656,8143598,U1137,Mexican Beef and Cheese Wontons with Salsa,7
-219,1127050,8404982,U1075,Cilantro-Lime Rice,7
-220,1127050,8404982,U1116,Cilantro-Lime Rice,12
-221,4339285,8404982,U1016,Sherry's Wild West Soup,8
-222,4339285,8404982,U1024,Sherry's Wild West Soup,13
-223,7625178,8404982,U1009,Cotija and Corn Tacos with Lime and Mango,10
-224,1127050,8068217,U1068,Cilantro-Lime Rice,5
-225,1127050,8068217,U1067,Cilantro-Lime Rice,6
-226,1127050,9956870,U1065,Cilantro-Lime Rice,6
-227,4339285,9956870,U1026,Sherry's Wild West Soup,3
-228,7625178,9956870,U1026,Cotija and Corn Tacos with Lime and Mango,3
-229,6941656,9956870,U1129,Mexican Beef and Cheese Wontons with Salsa,2
-230,4025240,9956870,U1065,Mexican-style Lasagna,2
-231,1517757,9956870,U1065,Mexican Ham and Bean Soup,2
-232,1127050,1670709,U1093,Cilantro-Lime Rice,13
-233,4339285,1670709,U1030,Sherry's Wild West Soup,10
-234,7625178,1670709,U1066,Cotija and Corn Tacos with Lime and Mango,10
-235,6941656,1670709,U1093,Mexican Beef and Cheese Wontons with Salsa,9
-236,4025240,1670709,U1066,Mexican-style Lasagna,10
-237,1517757,1670709,U1066,Mexican Ham and Bean Soup,14
-238,2249825,1670709,U1066,Mexican Style Jalapeno Burger,11
-239,3991238,1670709,U1093,Layered Chicken and Black Bean Enchilada Casserole,14
-240,7516725,1670709,U1066,Mexican Bean Pizza,8
-241,1127050,4025079,U1126,Cilantro-Lime Rice,13
-242,4339285,4025079,U1126,Sherry's Wild West Soup,14
-243,7625178,4025079,U1055,Cotija and Corn Tacos with Lime and Mango,14
-244,6941656,4025079,U1126,Mexican Beef and Cheese Wontons with Salsa,14
-245,4025240,4025079,U1126,Mexican-style Lasagna,7
-246,1127050,9747987,U1023,Cilantro-Lime Rice,4
-247,4339285,9747987,U1023,Sherry's Wild West Soup,2
-248,7625178,9747987,U1080,Cotija and Corn Tacos with Lime and Mango,2
-249,6941656,9747987,U1021,Mexican Beef and Cheese Wontons with Salsa,3
-250,4025240,9747987,U1023,Mexican-style Lasagna,4
-251,1517757,9747987,U1080,Mexican Ham and Bean Soup,3
-252,2249825,9747987,U1021,Mexican Style Jalapeno Burger,4
-253,3991238,9747987,U1023,Layered Chicken and Black Bean Enchilada Casserole,6
-254,7516725,9747987,U1023,Mexican Bean Pizza,4
-255,1072381,9747987,U1080,Lobster and Crab Enchiladas,4
-256,8111259,459766,U1138,Sweet and Spicy Chinese Takeout Chicken,8
-257,63194,459766,U1138,Easy Chinese Soy Sauce Chicken,10
-258,8155603,459766,U1128,MAMA’S BRAISED CHICKEN LEGS ON RICE W/ FRIED CHILI CAPERS,13
-259,5169585,459766,U1138,Sesame Beef and Asian Vegetable Stir-Fry,11
-260,4074884,459766,U1138,Fried Rice,11
-261,2419736,459766,U1138,The Best Chinese Sesame Chicken,12
-262,8201098,459766,U1090,Chinese Chicken Salad,13
-263,6428676,2251556,U1046,Udon-Beef Noodle Bowl,14
-264,3887839,2251556,U1046,Fettuccine Carbonara,7
-265,4519345,2251556,U1083,Sushi Deviled Eggs | Elegant Appetizers,8
-266,7121483,2251556,U1046,Yaki Udon With Beef,7
-267,6412600,2251556,U1083,Udon Noodles with Bay Scallops and Baby Bok Choy,7
-268,6157338,2251556,U1046,Miso Soup,7
-269,1612412,2251556,U1046,Grilled Teriyaki-Glazed Salmon,13
-270,2027794,2251556,U1134,Negimaki,14
-271,1618916,2251556,U1134,Japanese Beef and Vegetable Hot Pot (Sukiyaki),10
-272,1127050,2098571,U1090,Cilantro-Lime Rice,14
-273,4339285,2098571,U1027,Sherry's Wild West Soup,10
-274,7625178,2098571,U1138,Cotija and Corn Tacos with Lime and Mango,8
-275,6941656,2098571,U1138,Mexican Beef and Cheese Wontons with Salsa,11
-276,4025240,2098571,U1138,Mexican-style Lasagna,10
-277,1517757,2098571,U1090,Mexican Ham and Bean Soup,12
-278,2249825,2098571,U1090,Mexican Style Jalapeno Burger,10
-279,3991238,2098571,U1027,Layered Chicken and Black Bean Enchilada Casserole,11
-280,7516725,2098571,U1138,Mexican Bean Pizza,11
-281,1072381,2098571,U1027,Lobster and Crab Enchiladas,14
-282,8352507,2098571,U1090,Bramblewood Blackberry Pie,4
-283,4106701,2098571,U1027,Roasted Vegetables,3
-284,8866457,2098571,U1090,Grilled Salmon and Spinach Salad with Peach Dressing,4
-285,5108927,1483192,U1065,Pesto Tofu Pasta,7
-286,5108927,1483192,U1026,Pesto Tofu Pasta,7
-287,5462039,1483192,U1065,How To Make Panzanella (Italian Bread Salad),11
-288,1127050,8879165,U1026,Cilantro-Lime Rice,3
-289,4339285,8879165,U1039,Sherry's Wild West Soup,5
-290,7625178,8879165,U1039,Cotija and Corn Tacos with Lime and Mango,6
-291,6941656,8879165,U1065,Mexican Beef and Cheese Wontons with Salsa,5
-292,4025240,8879165,U1065,Mexican-style Lasagna,3
-293,1517757,8879165,U1065,Mexican Ham and Bean Soup,6
-294,2249825,8879165,U1039,Mexican Style Jalapeno Burger,3
-295,3991238,8879165,U1026,Layered Chicken and Black Bean Enchilada Casserole,3
-296,7516725,8879165,U1039,Mexican Bean Pizza,4
-297,1072381,8879165,U1039,Lobster and Crab Enchiladas,2
-298,5108927,8879165,U1026,Pesto Tofu Pasta,7
-299,5462039,8879165,U1039,How To Make Panzanella (Italian Bread Salad),11
-300,9448609,8879165,U1026,Lemon Focaccia,12
-301,1127050,7819901,U1093,Cilantro-Lime Rice,2
-302,4339285,7819901,U1110,Sherry's Wild West Soup,2
-303,7625178,7819901,U1066,Cotija and Corn Tacos with Lime and Mango,6
-304,6941656,7819901,U1066,Mexican Beef and Cheese Wontons with Salsa,4
-305,4025240,7819901,U1066,Mexican-style Lasagna,4
-306,1517757,7819901,U1110,Mexican Ham and Bean Soup,4
-307,2249825,7819901,U1066,Mexican Style Jalapeno Burger,5
-308,3991238,7819901,U1110,Layered Chicken and Black Bean Enchilada Casserole,5
-309,8352507,6028064,U1052,Bramblewood Blackberry Pie,5
-310,4106701,6028064,U1111,Roasted Vegetables,3
-311,8866457,6028064,U1069,Grilled Salmon and Spinach Salad with Peach Dressing,6
-312,5849663,6028064,U1008,Cowboy Nachos,6
-313,7598445,6028064,U1052,The Munroe Melt,3
-314,7147350,6028064,U1111,Roasted-Garlic Mashed Potatoes,6
-315,2689492,6028064,U1037,Dave's BBQ Sauce,5
-316,4257388,6028064,U1111,Curried Chicken Salad,6
-317,9749357,6028064,U1111,Lemon Asparagus,6
-318,8111259,2810824,U1013,Sweet and Spicy Chinese Takeout Chicken,8
-319,63194,2810824,U1027,Easy Chinese Soy Sauce Chicken,10
-320,8155603,2810824,U1089,MAMA’S BRAISED CHICKEN LEGS ON RICE W/ FRIED CHILI CAPERS,13
-321,5169585,2810824,U1027,Sesame Beef and Asian Vegetable Stir-Fry,11
-322,4074884,2810824,U1128,Fried Rice,11
-323,1127050,4512775,U1084,Cilantro-Lime Rice,24
-324,4339285,4512775,U1095,Sherry's Wild West Soup,35
-325,7625178,4512775,U1084,Cotija and Corn Tacos with Lime and Mango,30
-326,6941656,4512775,U1034,Mexican Beef and Cheese Wontons with Salsa,38
-327,4025240,4512775,U1034,Mexican-style Lasagna,36
-328,1517757,4512775,U1084,Mexican Ham and Bean Soup,41
-329,2249825,4512775,U1095,Mexican Style Jalapeno Burger,43
-330,3991238,4512775,U1034,Layered Chicken and Black Bean Enchilada Casserole,48
-331,7516725,4512775,U1095,Mexican Bean Pizza,31
-332,1072381,4512775,U1095,Lobster and Crab Enchiladas,48
-333,6428676,4512775,U1095,Udon-Beef Noodle Bowl,10
-334,6428676,4512775,U1034,Udon-Beef Noodle Bowl,13
-335,6428676,9081937,U1116,Udon-Beef Noodle Bowl,14
-336,6428676,9081937,U1061,Udon-Beef Noodle Bowl,14
-337,3887839,9081937,U1114,Fettuccine Carbonara,11
-338,3887839,9081937,U1075,Fettuccine Carbonara,11
-339,1127050,8143598,U1048,Cilantro-Lime Rice,12
-340,5108927,2630642,U1089,Pesto Tofu Pasta,45
-341,5462039,2630642,U1047,How To Make Panzanella (Italian Bread Salad),20
-342,9448609,2630642,U1089,Lemon Focaccia,17
-343,4470875,2630642,U1047,Pizza Dough,23
-344,3238244,2630642,U1013,Spicy Italian White Bean and Sausage Soup,32
-345,9358092,2630642,U1091,Slow-Cooker Cheesy Italian Tortellini,30
-346,154346,2630642,U1013,Pasta Calamari Capri,48
-347,1127050,9956870,U1026,Cilantro-Lime Rice,6
-348,4339285,9956870,U1026,Sherry's Wild West Soup,3
-349,7625178,9956870,U1031,Cotija and Corn Tacos with Lime and Mango,3
-350,6941656,9956870,U1129,Mexican Beef and Cheese Wontons with Salsa,2
-351,4025240,9956870,U1031,Mexican-style Lasagna,2
-352,1517757,9956870,U1129,Mexican Ham and Bean Soup,2
-353,2249825,9956870,U1031,Mexican Style Jalapeno Burger,4
-354,3991238,9956870,U1065,Layered Chicken and Black Bean Enchilada Casserole,5
-355,7516725,9956870,U1031,Mexican Bean Pizza,3
-356,1072381,9956870,U1129,Lobster and Crab Enchiladas,5
-357,1127050,3427320,U1052,Cilantro-Lime Rice,14
-358,4339285,3427320,U1008,Sherry's Wild West Soup,14
-359,7625178,3427320,U1008,Cotija and Corn Tacos with Lime and Mango,10
-360,6941656,3427320,U1052,Mexican Beef and Cheese Wontons with Salsa,12
-361,4025240,3427320,U1008,Mexican-style Lasagna,8
-362,1127050,8879165,U1065,Cilantro-Lime Rice,3
-363,4339285,8879165,U1065,Sherry's Wild West Soup,5
-364,7625178,8879165,U1065,Cotija and Corn Tacos with Lime and Mango,6
-365,6941656,8879165,U1065,Mexican Beef and Cheese Wontons with Salsa,5
-366,4025240,8879165,U1065,Mexican-style Lasagna,3
-367,1517757,8879165,U1026,Mexican Ham and Bean Soup,6
-368,2249825,8879165,U1039,Mexican Style Jalapeno Burger,3
-369,1127050,3939752,U1084,Cilantro-Lime Rice,12
-370,6428676,1325694,U1034,Udon-Beef Noodle Bowl,13
-371,3887839,1325694,U1134,Fettuccine Carbonara,11
-372,4519345,1325694,U1085,Sushi Deviled Eggs | Elegant Appetizers,13
-373,7121483,1325694,U1136,Yaki Udon With Beef,10
-374,6412600,1325694,U1134,Udon Noodles with Bay Scallops and Baby Bok Choy,12
-375,6157338,1325694,U1034,Miso Soup,14
-376,1612412,1325694,U1136,Grilled Teriyaki-Glazed Salmon,14
-377,2027794,1325694,U1085,Negimaki,7
-378,1618916,1325694,U1034,Japanese Beef and Vegetable Hot Pot (Sukiyaki),9
-379,3325054,1325694,U1034,Miso-Glazed Sea Bass,13
-380,8111259,1325694,U1095,Sweet and Spicy Chinese Takeout Chicken,9
-381,6428676,3330098,U1089,Udon-Beef Noodle Bowl,14
-382,6428676,3330098,U1061,Udon-Beef Noodle Bowl,14
-383,3887839,3330098,U1024,Fettuccine Carbonara,11
-384,3887839,3330098,U1071,Fettuccine Carbonara,11
-385,4519345,3330098,U1104,Sushi Deviled Eggs | Elegant Appetizers,11
-386,4519345,3330098,U1137,Sushi Deviled Eggs | Elegant Appetizers,11
-387,7121483,3330098,U1024,Yaki Udon With Beef,12
-388,7121483,3330098,U1135,Yaki Udon With Beef,12
-389,6412600,3330098,U1024,Udon Noodles with Bay Scallops and Baby Bok Choy,14
-390,6412600,3330098,U1106,Udon Noodles with Bay Scallops and Baby Bok Choy,14
-391,6157338,3330098,U1032,Miso Soup,8
-392,6157338,3330098,U1089,Miso Soup,8
-393,6428676,8198186,U1029,Udon-Beef Noodle Bowl,32
-394,3887839,8198186,U1009,Fettuccine Carbonara,35
-395,4519345,8198186,U1009,Sushi Deviled Eggs | Elegant Appetizers,46
-396,7121483,8198186,U1036,Yaki Udon With Beef,19
-397,1127050,5724030,U1036,Cilantro-Lime Rice,12
-398,4339285,5724030,U1036,Sherry's Wild West Soup,14
-399,7625178,5724030,U1071,Cotija and Corn Tacos with Lime and Mango,8
-400,1127050,3551130,U1134,Cilantro-Lime Rice,11
-401,1127050,3551130,U1001,Cilantro-Lime Rice,11
-402,4339285,3551130,U1077,Sherry's Wild West Soup,11
-403,4339285,3551130,U1056,Sherry's Wild West Soup,11
-404,7625178,3551130,U1081,Cotija and Corn Tacos with Lime and Mango,9
-405,7625178,3551130,U1081,Cotija and Corn Tacos with Lime and Mango,9
-406,6941656,3551130,U1056,Mexican Beef and Cheese Wontons with Salsa,11
-407,6941656,3551130,U1001,Mexican Beef and Cheese Wontons with Salsa,11
-408,4025240,3551130,U1001,Mexican-style Lasagna,10
-409,4025240,3551130,U1001,Mexican-style Lasagna,10
-410,6428676,4733963,U1122,Udon-Beef Noodle Bowl,10
-411,3887839,4733963,U1013,Fettuccine Carbonara,9
-412,4519345,4733963,U1134,Sushi Deviled Eggs | Elegant Appetizers,14
-413,7121483,4733963,U1106,Yaki Udon With Beef,11
-414,6412600,4733963,U1122,Udon Noodles with Bay Scallops and Baby Bok Choy,14
-415,6157338,4733963,U1113,Miso Soup,12
-416,1612412,4733963,U1036,Grilled Teriyaki-Glazed Salmon,10
-417,2027794,4733963,U1134,Negimaki,12
-418,1618916,4733963,U1106,Japanese Beef and Vegetable Hot Pot (Sukiyaki),13
-419,5108927,2630642,U1091,Pesto Tofu Pasta,45
-420,5462039,2630642,U1091,How To Make Panzanella (Italian Bread Salad),20
-421,9448609,2630642,U1091,Lemon Focaccia,17
-422,4470875,2630642,U1089,Pizza Dough,23
-423,3238244,2630642,U1091,Spicy Italian White Bean and Sausage Soup,32
-424,9358092,2630642,U1047,Slow-Cooker Cheesy Italian Tortellini,30
-425,154346,2630642,U1047,Pasta Calamari Capri,48
-426,4212269,2630642,U1047,"Prosciutto, Tomato, and Olive Spaghetti",23
-427,4539109,2630642,U1089,Baked Italian Chicken Breasts,37
-428,2079298,2630642,U1089,"Prosciutto, Nectarine and Fontina Panini on Rosemary Focaccia",39
-429,1127050,5940647,U1055,Cilantro-Lime Rice,11
-430,4339285,5940647,U1055,Sherry's Wild West Soup,11
-431,7625178,5940647,U1004,Cotija and Corn Tacos with Lime and Mango,9
-432,6941656,5940647,U1108,Mexican Beef and Cheese Wontons with Salsa,11
-433,4025240,5940647,U1132,Mexican-style Lasagna,10
-434,5108927,2630642,U1091,Pesto Tofu Pasta,45
-435,5462039,2630642,U1047,How To Make Panzanella (Italian Bread Salad),20
-436,9448609,2630642,U1047,Lemon Focaccia,17
-437,4470875,2630642,U1089,Pizza Dough,23
-438,3238244,2630642,U1089,Spicy Italian White Bean and Sausage Soup,32
-439,9358092,2630642,U1091,Slow-Cooker Cheesy Italian Tortellini,30
-440,154346,2630642,U1013,Pasta Calamari Capri,48
-441,4212269,2630642,U1091,"Prosciutto, Tomato, and Olive Spaghetti",23
-442,4539109,2630642,U1013,Baked Italian Chicken Breasts,37
-443,2079298,2630642,U1013,"Prosciutto, Nectarine and Fontina Panini on Rosemary Focaccia",39
-444,8352507,2630642,U1089,Bramblewood Blackberry Pie,11
-445,4106701,2630642,U1091,Roasted Vegetables,10
-446,8866457,2630642,U1089,Grilled Salmon and Spinach Salad with Peach Dressing,8
-447,5849663,2630642,U1013,Cowboy Nachos,7
-448,1127050,9318329,U1083,Cilantro-Lime Rice,11
-449,4339285,9318329,U1048,Sherry's Wild West Soup,10
-450,7625178,9318329,U1048,Cotija and Corn Tacos with Lime and Mango,7
-451,6941656,9318329,U1061,Mexican Beef and Cheese Wontons with Salsa,10
-452,4025240,9318329,U1048,Mexican-style Lasagna,12
-453,1517757,9318329,U1083,Mexican Ham and Bean Soup,8
-454,2249825,9318329,U1048,Mexican Style Jalapeno Burger,13
-455,3991238,9318329,U1061,Layered Chicken and Black Bean Enchilada Casserole,12
-456,7516725,9318329,U1048,Mexican Bean Pizza,14
-457,1072381,9318329,U1061,Lobster and Crab Enchiladas,11
-458,6428676,9318329,U1048,Udon-Beef Noodle Bowl,7
-459,3887839,9318329,U1061,Fettuccine Carbonara,9
-460,1127050,3699627,U1027,Cilantro-Lime Rice,14
-461,4339285,3699627,U1138,Sherry's Wild West Soup,10
-462,7625178,3699627,U1138,Cotija and Corn Tacos with Lime and Mango,8
-463,6941656,3699627,U1090,Mexican Beef and Cheese Wontons with Salsa,11
-464,4025240,3699627,U1090,Mexican-style Lasagna,10
-465,1517757,3699627,U1090,Mexican Ham and Bean Soup,12
-466,2249825,3699627,U1090,Mexican Style Jalapeno Burger,10
-467,3991238,3699627,U1090,Layered Chicken and Black Bean Enchilada Casserole,11
-468,1127050,2305948,U1027,Cilantro-Lime Rice,12
-469,1127050,2484479,U1082,Cilantro-Lime Rice,4
-470,4339285,2484479,U1123,Sherry's Wild West Soup,3
-471,7625178,2484479,U1080,Cotija and Corn Tacos with Lime and Mango,6
-472,1127050,9956870,U1129,Cilantro-Lime Rice,6
-473,4339285,9956870,U1026,Sherry's Wild West Soup,3
-474,7625178,9956870,U1065,Cotija and Corn Tacos with Lime and Mango,3
-475,6941656,9956870,U1065,Mexican Beef and Cheese Wontons with Salsa,2
-476,4025240,9956870,U1065,Mexican-style Lasagna,2
-477,1517757,9956870,U1129,Mexican Ham and Bean Soup,2
-478,2249825,9956870,U1031,Mexican Style Jalapeno Burger,4
-479,3991238,9956870,U1031,Layered Chicken and Black Bean Enchilada Casserole,5
-480,1127050,5994376,U1067,Cilantro-Lime Rice,6
-481,1127050,5994376,U1103,Cilantro-Lime Rice,7
-482,4339285,5994376,U1107,Sherry's Wild West Soup,4
-483,4339285,5994376,U1067,Sherry's Wild West Soup,14
-484,7625178,5994376,U1107,Cotija and Corn Tacos with Lime and Mango,4
-485,7625178,5994376,U1067,Cotija and Corn Tacos with Lime and Mango,9
-486,6941656,5994376,U1107,Mexican Beef and Cheese Wontons with Salsa,2
-487,6941656,5994376,U1107,Mexican Beef and Cheese Wontons with Salsa,11
-488,4025240,5994376,U1067,Mexican-style Lasagna,3
-489,4025240,5994376,U1103,Mexican-style Lasagna,12
-490,1517757,5994376,U1107,Mexican Ham and Bean Soup,3
-491,1127050,2762291,U1083,Cilantro-Lime Rice,12
-492,4339285,2762291,U1084,Sherry's Wild West Soup,8
-493,7625178,2762291,U1089,Cotija and Corn Tacos with Lime and Mango,7
-494,6941656,2762291,U1095,Mexican Beef and Cheese Wontons with Salsa,11
-495,4025240,2762291,U1089,Mexican-style Lasagna,12
-496,1517757,2762291,U1089,Mexican Ham and Bean Soup,11
-497,2249825,2762291,U1084,Mexican Style Jalapeno Burger,10
-498,3991238,2762291,U1095,Layered Chicken and Black Bean Enchilada Casserole,14
-499,7516725,2762291,U1084,Mexican Bean Pizza,9
-500,1072381,2762291,U1089,Lobster and Crab Enchiladas,11
-501,6428676,2762291,U1084,Udon-Beef Noodle Bowl,14
-502,6428676,2762291,U1013,Udon-Beef Noodle Bowl,14
-503,1127050,1136430,U1082,Cilantro-Lime Rice,6
-504,1127050,1136430,U1068,Cilantro-Lime Rice,7
-505,4339285,1136430,U1103,Sherry's Wild West Soup,4
-506,4339285,1136430,U1068,Sherry's Wild West Soup,7
-507,7625178,1136430,U1082,Cotija and Corn Tacos with Lime and Mango,6
-508,7625178,1136430,U1067,Cotija and Corn Tacos with Lime and Mango,9
-509,6941656,1136430,U1103,Mexican Beef and Cheese Wontons with Salsa,3
-510,6941656,1136430,U1082,Mexican Beef and Cheese Wontons with Salsa,7
-511,4025240,1136430,U1067,Mexican-style Lasagna,2
-512,4025240,1136430,U1068,Mexican-style Lasagna,12
-513,1517757,1136430,U1068,Mexican Ham and Bean Soup,3
-514,8352507,6028064,U1037,Bramblewood Blackberry Pie,5
-515,4106701,6028064,U1069,Roasted Vegetables,3
-516,1127050,4902261,U1018,Cilantro-Lime Rice,11
-517,4339285,4902261,U1018,Sherry's Wild West Soup,11
-518,7625178,4902261,U1054,Cotija and Corn Tacos with Lime and Mango,9
-519,6941656,4902261,U1054,Mexican Beef and Cheese Wontons with Salsa,11
-520,1127050,2898463,U1003,Cilantro-Lime Rice,12
-521,1127050,2898463,U1048,Cilantro-Lime Rice,14
-522,4339285,2898463,U1003,Sherry's Wild West Soup,8
-523,4339285,2898463,U1083,Sherry's Wild West Soup,8
-524,7625178,2898463,U1003,Cotija and Corn Tacos with Lime and Mango,7
-525,7625178,2898463,U1137,Cotija and Corn Tacos with Lime and Mango,8
-526,6941656,2898463,U1137,Mexican Beef and Cheese Wontons with Salsa,11
-527,6941656,2898463,U1048,Mexican Beef and Cheese Wontons with Salsa,7
-528,4025240,2898463,U1048,Mexican-style Lasagna,12
-529,4025240,2898463,U1083,Mexican-style Lasagna,9
-530,1517757,2898463,U1137,Mexican Ham and Bean Soup,11
-531,1517757,2898463,U1083,Mexican Ham and Bean Soup,13
-532,2249825,2898463,U1083,Mexican Style Jalapeno Burger,10
-533,8352507,7724432,U1138,Bramblewood Blackberry Pie,12
-534,4106701,7724432,U1027,Roasted Vegetables,7
-535,8866457,7724432,U1138,Grilled Salmon and Spinach Salad with Peach Dressing,14
-536,5849663,7724432,U1027,Cowboy Nachos,7
-537,4984104,2686334,U1030,Lemongrass Beef and Onions over Rice Vermicelli (Bun Bo),11
-538,4984104,2686334,U1020,Lemongrass Beef and Onions over Rice Vermicelli (Bun Bo),11
-539,1127050,3645954,U1027,Cilantro-Lime Rice,14
-540,1127050,3645954,U1027,Cilantro-Lime Rice,14
-541,4339285,3645954,U1138,Sherry's Wild West Soup,10
-542,7625178,3645954,U1090,Cotija and Corn Tacos with Lime and Mango,8
-543,6941656,3645954,U1090,Mexican Beef and Cheese Wontons with Salsa,11
-544,4025240,3645954,U1090,Mexican-style Lasagna,10
-545,1517757,3645954,U1090,Mexican Ham and Bean Soup,12
-546,2249825,3645954,U1027,Mexican Style Jalapeno Burger,10
-547,1127050,7578835,U1005,Cilantro-Lime Rice,9
-548,4339285,7578835,U1071,Sherry's Wild West Soup,8
-549,7625178,7578835,U1024,Cotija and Corn Tacos with Lime and Mango,8
-550,6941656,7578835,U1032,Mexican Beef and Cheese Wontons with Salsa,14
-551,4025240,7578835,U1032,Mexican-style Lasagna,8
-552,1517757,7578835,U1085,Mexican Ham and Bean Soup,12
-553,6428676,267128,U1095,Udon-Beef Noodle Bowl,13
-554,3887839,267128,U1095,Fettuccine Carbonara,14
-555,4519345,267128,U1034,Sushi Deviled Eggs | Elegant Appetizers,11
-556,7121483,267128,U1084,Yaki Udon With Beef,9
-557,6412600,267128,U1095,Udon Noodles with Bay Scallops and Baby Bok Choy,10
-558,6157338,267128,U1034,Miso Soup,11
-559,1612412,267128,U1084,Grilled Teriyaki-Glazed Salmon,8
-560,2027794,267128,U1095,Negimaki,14
-561,1618916,267128,U1095,Japanese Beef and Vegetable Hot Pot (Sukiyaki),14
-562,3325054,267128,U1034,Miso-Glazed Sea Bass,12
-563,1127050,9151152,U1065,Cilantro-Lime Rice,14
-564,4339285,9151152,U1065,Sherry's Wild West Soup,10
-565,7625178,9151152,U1065,Cotija and Corn Tacos with Lime and Mango,7
-566,6941656,9151152,U1026,Mexican Beef and Cheese Wontons with Salsa,14
-567,4025240,9151152,U1065,Mexican-style Lasagna,12
-568,1517757,9151152,U1129,Mexican Ham and Bean Soup,11
-569,2249825,9151152,U1026,Mexican Style Jalapeno Burger,11
-570,3991238,9151152,U1026,Layered Chicken and Black Bean Enchilada Casserole,7
-571,1127050,9165944,U1005,Cilantro-Lime Rice,12
-572,1127050,9165944,U1036,Cilantro-Lime Rice,7
-573,1127050,9165944,U1064,Cilantro-Lime Rice,12
-574,1127050,3037355,U1066,Cilantro-Lime Rice,13
-575,4339285,3037355,U1030,Sherry's Wild West Soup,10
-576,7625178,3037355,U1030,Cotija and Corn Tacos with Lime and Mango,10
-577,6428676,2251556,U1046,Udon-Beef Noodle Bowl,14
-578,3887839,2251556,U1083,Fettuccine Carbonara,7
-579,1127050,8682432,U1065,Cilantro-Lime Rice,3
-580,4339285,8682432,U1039,Sherry's Wild West Soup,5
-581,7625178,8682432,U1065,Cotija and Corn Tacos with Lime and Mango,6
-582,6941656,8682432,U1039,Mexican Beef and Cheese Wontons with Salsa,5
-583,4025240,8682432,U1026,Mexican-style Lasagna,3
-584,1517757,8682432,U1065,Mexican Ham and Bean Soup,6
-585,5108927,2077590,U1022,Pesto Tofu Pasta,6
-586,5462039,2077590,U1053,How To Make Panzanella (Italian Bread Salad),2
-587,4984104,2826646,U1100,Lemongrass Beef and Onions over Rice Vermicelli (Bun Bo),10
-588,1127050,3427320,U1008,Cilantro-Lime Rice,14
-589,4339285,3427320,U1008,Sherry's Wild West Soup,14
-590,7625178,3427320,U1069,Cotija and Corn Tacos with Lime and Mango,10
-591,6941656,3427320,U1052,Mexican Beef and Cheese Wontons with Salsa,12
-592,1127050,9318329,U1061,Cilantro-Lime Rice,11
-593,4339285,9318329,U1095,Sherry's Wild West Soup,10
-594,7625178,9318329,U1095,Cotija and Corn Tacos with Lime and Mango,7
-595,6941656,9318329,U1083,Mexican Beef and Cheese Wontons with Salsa,10
-596,4025240,9318329,U1061,Mexican-style Lasagna,12
-597,1517757,9318329,U1061,Mexican Ham and Bean Soup,8
-598,2249825,9318329,U1083,Mexican Style Jalapeno Burger,13
-599,3991238,9318329,U1061,Layered Chicken and Black Bean Enchilada Casserole,12
-600,7516725,9318329,U1061,Mexican Bean Pizza,14
-601,1072381,9318329,U1083,Lobster and Crab Enchiladas,11
-602,6428676,9318329,U1061,Udon-Beef Noodle Bowl,7
-603,3887839,9318329,U1095,Fettuccine Carbonara,9
-604,4519345,9318329,U1083,Sushi Deviled Eggs | Elegant Appetizers,7
-605,1127050,7412776,U1103,Cilantro-Lime Rice,5
-606,4339285,7412776,U1068,Sherry's Wild West Soup,3
-607,5108927,6638568,U1083,Pesto Tofu Pasta,32
-608,5108927,6638568,U1095,Pesto Tofu Pasta,32
-609,5462039,6638568,U1083,How To Make Panzanella (Italian Bread Salad),29
-610,1127050,7522432,U1103,Cilantro-Lime Rice,5
-611,1127050,7522432,U1068,Cilantro-Lime Rice,6
-612,4339285,7522432,U1067,Sherry's Wild West Soup,3
-613,4339285,7522432,U1067,Sherry's Wild West Soup,4
-614,1127050,678532,U1039,Cilantro-Lime Rice,3
-615,1127050,678532,U1039,Cilantro-Lime Rice,3
-616,4339285,678532,U1026,Sherry's Wild West Soup,5
-617,6428676,9081937,U1114,Udon-Beef Noodle Bowl,14
-618,6428676,9081937,U1075,Udon-Beef Noodle Bowl,14
-619,3887839,9081937,U1045,Fettuccine Carbonara,11
-620,3887839,9081937,U1099,Fettuccine Carbonara,11
-621,4519345,9081937,U1114,Sushi Deviled Eggs | Elegant Appetizers,11
-622,1127050,2456476,U1009,Cilantro-Lime Rice,3
-623,1127050,2456476,U1106,Cilantro-Lime Rice,9
-624,4339285,2456476,U1113,Sherry's Wild West Soup,6
-625,8352507,5299740,U1128,Bramblewood Blackberry Pie,2
-626,8352507,5299740,U1099,Bramblewood Blackberry Pie,10
-627,4106701,5299740,U1085,Roasted Vegetables,2
-628,4106701,5299740,U1099,Roasted Vegetables,11
-629,8866457,5299740,U1095,Grilled Salmon and Spinach Salad with Peach Dressing,4
-630,8866457,5299740,U1109,Grilled Salmon and Spinach Salad with Peach Dressing,11
-631,5849663,5299740,U1095,Cowboy Nachos,5
-632,5849663,5299740,U1089,Cowboy Nachos,11
-633,8352507,5299740,U1128,Bramblewood Blackberry Pie,2
-634,8352507,5299740,U1062,Bramblewood Blackberry Pie,10
-635,4106701,5299740,U1032,Roasted Vegetables,2
-636,4106701,5299740,U1062,Roasted Vegetables,11
-637,8866457,5299740,U1062,Grilled Salmon and Spinach Salad with Peach Dressing,4
-638,8866457,5299740,U1062,Grilled Salmon and Spinach Salad with Peach Dressing,11
-639,6428676,4733963,U1134,Udon-Beef Noodle Bowl,10
-640,3887839,4733963,U1019,Fettuccine Carbonara,9
-641,4519345,4733963,U1113,Sushi Deviled Eggs | Elegant Appetizers,14
-642,7121483,4733963,U1106,Yaki Udon With Beef,11
-643,6412600,4733963,U1009,Udon Noodles with Bay Scallops and Baby Bok Choy,14
-644,6157338,4733963,U1036,Miso Soup,12
-645,1612412,4733963,U1113,Grilled Teriyaki-Glazed Salmon,10
-646,2027794,4733963,U1019,Negimaki,12
-647,6428676,4733963,U1122,Udon-Beef Noodle Bowl,10
-648,3887839,4733963,U1113,Fettuccine Carbonara,9
-649,4519345,4733963,U1013,Sushi Deviled Eggs | Elegant Appetizers,14
-650,7121483,4733963,U1013,Yaki Udon With Beef,11
-651,6412600,4733963,U1106,Udon Noodles with Bay Scallops and Baby Bok Choy,14
-652,6157338,4733963,U1134,Miso Soup,12
-653,6428676,3195133,U1084,Udon-Beef Noodle Bowl,10
-654,3887839,3195133,U1084,Fettuccine Carbonara,14
-655,4519345,3195133,U1034,Sushi Deviled Eggs | Elegant Appetizers,13
-656,8352507,9518193,U1120,Bramblewood Blackberry Pie,4
-657,8352507,9518193,U1120,Bramblewood Blackberry Pie,4
-658,4106701,9518193,U1037,Roasted Vegetables,4
-659,4106701,9518193,U1037,Roasted Vegetables,4
-660,8866457,9518193,U1120,Grilled Salmon and Spinach Salad with Peach Dressing,5
-661,8866457,9518193,U1037,Grilled Salmon and Spinach Salad with Peach Dressing,5
-662,5849663,9518193,U1069,Cowboy Nachos,4
-663,5849663,9518193,U1037,Cowboy Nachos,4
-664,7598445,9518193,U1120,The Munroe Melt,3
-665,7598445,9518193,U1069,The Munroe Melt,3
-666,7147350,9518193,U1069,Roasted-Garlic Mashed Potatoes,6
-667,7147350,9518193,U1120,Roasted-Garlic Mashed Potatoes,6
-668,2689492,9518193,U1069,Dave's BBQ Sauce,2
-669,2689492,9518193,U1037,Dave's BBQ Sauce,2
-670,5108927,792145,U1065,Pesto Tofu Pasta,7
-671,5462039,792145,U1026,How To Make Panzanella (Italian Bread Salad),11
-672,9448609,792145,U1065,Lemon Focaccia,12
-673,1127050,2612146,U1106,Cilantro-Lime Rice,11
-674,4339285,2612146,U1055,Sherry's Wild West Soup,11
-675,7625178,2612146,U1135,Cotija and Corn Tacos with Lime and Mango,9
-676,6941656,2612146,U1004,Mexican Beef and Cheese Wontons with Salsa,11
-677,4025240,2612146,U1071,Mexican-style Lasagna,10
-678,1517757,2612146,U1106,Mexican Ham and Bean Soup,11
-679,5108927,2298974,U1036,Pesto Tofu Pasta,6
-680,5462039,2298974,U1036,How To Make Panzanella (Italian Bread Salad),5
-681,9448609,2298974,U1113,Lemon Focaccia,6
-682,4470875,2298974,U1009,Pizza Dough,6
-683,1127050,1180861,U1068,Cilantro-Lime Rice,5
-684,1127050,1180861,U1103,Cilantro-Lime Rice,7
-685,4339285,1180861,U1067,Sherry's Wild West Soup,3
-686,4339285,1180861,U1103,Sherry's Wild West Soup,7
-687,7625178,1180861,U1067,Cotija and Corn Tacos with Lime and Mango,4
-688,7625178,1180861,U1067,Cotija and Corn Tacos with Lime and Mango,9
-689,1127050,5832523,U1068,Cilantro-Lime Rice,6
-690,1127050,5832523,U1068,Cilantro-Lime Rice,7
-691,4339285,5832523,U1103,Sherry's Wild West Soup,4
-692,4339285,5832523,U1068,Sherry's Wild West Soup,7
-693,7625178,5832523,U1068,Cotija and Corn Tacos with Lime and Mango,6
-694,1127050,9747987,U1080,Cilantro-Lime Rice,4
-695,4339285,9747987,U1023,Sherry's Wild West Soup,2
-696,7625178,9747987,U1023,Cotija and Corn Tacos with Lime and Mango,2
-697,6941656,9747987,U1023,Mexican Beef and Cheese Wontons with Salsa,3
-698,4025240,9747987,U1080,Mexican-style Lasagna,4
-699,1127050,7855330,U1067,Cilantro-Lime Rice,10
-700,5108927,9069517,U1049,Pesto Tofu Pasta,6
-701,5108927,9069517,U1081,Pesto Tofu Pasta,6
-702,5462039,9069517,U1024,How To Make Panzanella (Italian Bread Salad),2
-703,5462039,9069517,U1109,How To Make Panzanella (Italian Bread Salad),2
-704,1127050,7878226,U1045,Cilantro-Lime Rice,7
-705,1127050,7878226,U1045,Cilantro-Lime Rice,12
-706,4339285,7878226,U1009,Sherry's Wild West Soup,8
-707,4339285,7878226,U1036,Sherry's Wild West Soup,13
-708,7625178,7878226,U1106,Cotija and Corn Tacos with Lime and Mango,10
-709,7625178,7878226,U1104,Cotija and Corn Tacos with Lime and Mango,10
-710,6941656,7878226,U1104,Mexican Beef and Cheese Wontons with Salsa,14
-711,6941656,7878226,U1075,Mexican Beef and Cheese Wontons with Salsa,8
-712,4025240,7878226,U1016,Mexican-style Lasagna,8
-713,4025240,7878226,U1036,Mexican-style Lasagna,7
-714,1517757,7878226,U1106,Mexican Ham and Bean Soup,13
-715,1517757,7878226,U1075,Mexican Ham and Bean Soup,10
-716,8352507,9518193,U1069,Bramblewood Blackberry Pie,4
-717,8352507,9518193,U1037,Bramblewood Blackberry Pie,4
-718,1127050,2036853,U1003,Cilantro-Lime Rice,12
-719,4339285,2036853,U1048,Sherry's Wild West Soup,8
-720,7625178,2036853,U1083,Cotija and Corn Tacos with Lime and Mango,7
-721,6941656,2036853,U1048,Mexican Beef and Cheese Wontons with Salsa,11
-722,4025240,2036853,U1003,Mexican-style Lasagna,12
-723,1517757,2036853,U1083,Mexican Ham and Bean Soup,11
-724,2249825,2036853,U1048,Mexican Style Jalapeno Burger,10
-725,3991238,2036853,U1083,Layered Chicken and Black Bean Enchilada Casserole,14
-726,7516725,2036853,U1003,Mexican Bean Pizza,9
-727,8352507,7002867,U1044,Bramblewood Blackberry Pie,3
-728,4106701,7002867,U1118,Roasted Vegetables,4
-729,8866457,7002867,U1118,Grilled Salmon and Spinach Salad with Peach Dressing,5
-730,5849663,7002867,U1035,Cowboy Nachos,3
-731,7598445,7002867,U1035,The Munroe Melt,4
-732,1127050,9125160,U1085,Cilantro-Lime Rice,10
-733,4339285,9125160,U1109,Sherry's Wild West Soup,13
-734,7625178,9125160,U1128,Cotija and Corn Tacos with Lime and Mango,9
-735,6941656,9125160,U1032,Mexican Beef and Cheese Wontons with Salsa,9
-736,4025240,9125160,U1095,Mexican-style Lasagna,8
-737,1517757,9125160,U1062,Mexican Ham and Bean Soup,9
-738,2249825,9125160,U1085,Mexican Style Jalapeno Burger,9
-739,3991238,9125160,U1062,Layered Chicken and Black Bean Enchilada Casserole,9
-740,7516725,9125160,U1032,Mexican Bean Pizza,14
-741,1072381,9125160,U1099,Lobster and Crab Enchiladas,12
-742,8111259,9125160,U1062,Sweet and Spicy Chinese Takeout Chicken,24
-743,8111259,9125160,U1099,Sweet and Spicy Chinese Takeout Chicken,24
-744,1127050,9956870,U1129,Cilantro-Lime Rice,6
-745,4339285,9956870,U1031,Sherry's Wild West Soup,3
-746,7625178,9956870,U1031,Cotija and Corn Tacos with Lime and Mango,3
-747,6941656,9956870,U1129,Mexican Beef and Cheese Wontons with Salsa,2
-748,1127050,4512775,U1084,Cilantro-Lime Rice,24
-749,4339285,4512775,U1034,Sherry's Wild West Soup,35
-750,7625178,4512775,U1095,Cotija and Corn Tacos with Lime and Mango,30
-751,6941656,4512775,U1084,Mexican Beef and Cheese Wontons with Salsa,38
-752,4025240,4512775,U1095,Mexican-style Lasagna,36
-753,1517757,4512775,U1084,Mexican Ham and Bean Soup,41
-754,2249825,4512775,U1095,Mexican Style Jalapeno Burger,43
-755,3991238,4512775,U1084,Layered Chicken and Black Bean Enchilada Casserole,48
-756,7516725,4512775,U1034,Mexican Bean Pizza,31
-757,1072381,4512775,U1095,Lobster and Crab Enchiladas,48
-758,6428676,4512775,U1095,Udon-Beef Noodle Bowl,10
-759,6428676,4512775,U1084,Udon-Beef Noodle Bowl,13
-760,1127050,3699627,U1138,Cilantro-Lime Rice,14
-761,4339285,3699627,U1138,Sherry's Wild West Soup,10
-762,1127050,530220,U1070,Cilantro-Lime Rice,2
-763,1127050,530220,U1123,Cilantro-Lime Rice,10
-764,4339285,530220,U1123,Sherry's Wild West Soup,4
-765,4339285,530220,U1082,Sherry's Wild West Soup,10
-766,7625178,530220,U1123,Cotija and Corn Tacos with Lime and Mango,4
-767,7625178,530220,U1103,Cotija and Corn Tacos with Lime and Mango,9
-768,6941656,530220,U1028,Mexican Beef and Cheese Wontons with Salsa,3
-769,6941656,530220,U1103,Mexican Beef and Cheese Wontons with Salsa,7
-770,4025240,530220,U1070,Mexican-style Lasagna,2
-771,4025240,530220,U1070,Mexican-style Lasagna,11
-772,1517757,530220,U1070,Mexican Ham and Bean Soup,6
-773,1517757,530220,U1103,Mexican Ham and Bean Soup,14
-774,2249825,530220,U1028,Mexican Style Jalapeno Burger,5
-775,1127050,2305948,U1027,Cilantro-Lime Rice,12
-776,4339285,2305948,U1128,Sherry's Wild West Soup,14
-777,7625178,2305948,U1128,Cotija and Corn Tacos with Lime and Mango,12
-778,6941656,2305948,U1027,Mexican Beef and Cheese Wontons with Salsa,14
-779,4025240,2305948,U1090,Mexican-style Lasagna,10
-780,1127050,3156056,U1048,Cilantro-Lime Rice,12
-781,1127050,3156056,U1137,Cilantro-Lime Rice,14
-782,4339285,3156056,U1003,Sherry's Wild West Soup,8
-783,4339285,3156056,U1137,Sherry's Wild West Soup,8
-784,7625178,3156056,U1003,Cotija and Corn Tacos with Lime and Mango,7
-785,7625178,3156056,U1003,Cotija and Corn Tacos with Lime and Mango,8
-786,6941656,3156056,U1048,Mexican Beef and Cheese Wontons with Salsa,11
-787,6941656,3156056,U1003,Mexican Beef and Cheese Wontons with Salsa,7
-788,4025240,3156056,U1137,Mexican-style Lasagna,12
-789,4025240,3156056,U1048,Mexican-style Lasagna,9
-790,1517757,3156056,U1083,Mexican Ham and Bean Soup,11
-791,1517757,3156056,U1048,Mexican Ham and Bean Soup,13
-792,2249825,3156056,U1003,Mexican Style Jalapeno Burger,10
-793,2249825,3156056,U1083,Mexican Style Jalapeno Burger,9
-794,1127050,7412776,U1068,Cilantro-Lime Rice,5
-795,4339285,7412776,U1067,Sherry's Wild West Soup,3
-796,7625178,7412776,U1067,Cotija and Corn Tacos with Lime and Mango,4
-797,6941656,7412776,U1067,Mexican Beef and Cheese Wontons with Salsa,3
-798,4025240,7412776,U1067,Mexican-style Lasagna,6
-799,1517757,7412776,U1103,Mexican Ham and Bean Soup,3
-800,1127050,5805877,U1037,Cilantro-Lime Rice,12
-801,4339285,5805877,U1069,Sherry's Wild West Soup,8
-802,7625178,5805877,U1015,Cotija and Corn Tacos with Lime and Mango,7
-803,6941656,5805877,U1111,Mexican Beef and Cheese Wontons with Salsa,13
-804,4025240,5805877,U1111,Mexican-style Lasagna,13
-805,1517757,5805877,U1037,Mexican Ham and Bean Soup,12
-806,2249825,5805877,U1069,Mexican Style Jalapeno Burger,14
-807,5108927,2298974,U1036,Pesto Tofu Pasta,6
-808,5462039,2298974,U1113,How To Make Panzanella (Italian Bread Salad),5
-809,9448609,2298974,U1134,Lemon Focaccia,6
-810,4470875,2298974,U1134,Pizza Dough,6
-811,3238244,2298974,U1106,Spicy Italian White Bean and Sausage Soup,3
-812,9358092,2298974,U1134,Slow-Cooker Cheesy Italian Tortellini,2
-813,154346,2298974,U1134,Pasta Calamari Capri,3
-814,4212269,2298974,U1113,"Prosciutto, Tomato, and Olive Spaghetti",3
-815,4539109,2298974,U1134,Baked Italian Chicken Breasts,2
-816,2079298,2298974,U1009,"Prosciutto, Nectarine and Fontina Panini on Rosemary Focaccia",6
-817,1127050,8068217,U1067,Cilantro-Lime Rice,5
-818,1127050,8068217,U1068,Cilantro-Lime Rice,6
-819,4339285,8068217,U1103,Sherry's Wild West Soup,3
-820,4339285,8068217,U1067,Sherry's Wild West Soup,4
-821,7625178,8068217,U1067,Cotija and Corn Tacos with Lime and Mango,4
-822,7625178,8068217,U1067,Cotija and Corn Tacos with Lime and Mango,6
-823,6941656,8068217,U1068,Mexican Beef and Cheese Wontons with Salsa,3
-824,6941656,8068217,U1103,Mexican Beef and Cheese Wontons with Salsa,3
-825,4025240,8068217,U1067,Mexican-style Lasagna,6
-826,4025240,8068217,U1067,Mexican-style Lasagna,2
-827,8111259,6920533,U1091,Sweet and Spicy Chinese Takeout Chicken,8
-828,63194,6920533,U1089,Easy Chinese Soy Sauce Chicken,10
-829,8155603,6920533,U1013,MAMA’S BRAISED CHICKEN LEGS ON RICE W/ FRIED CHILI CAPERS,13
-830,5169585,6920533,U1091,Sesame Beef and Asian Vegetable Stir-Fry,11
-831,4074884,6920533,U1013,Fried Rice,11
-832,2419736,6920533,U1089,The Best Chinese Sesame Chicken,12
-833,8201098,6920533,U1027,Chinese Chicken Salad,13
-834,3065136,6920533,U1047,Pot Stickers,7
-835,922184,6920533,U1089,"Phat Si Ew (Stir-Fried Rice Noodles with Pork, Chinese Broccoli, and Soy Sauce)",13
-836,8451404,6920533,U1089,Wok-Fried Long Life Noodles with New Year Vegetables,14
-837,1127050,61804,U1082,Cilantro-Lime Rice,10
-838,1127050,61804,U1123,Cilantro-Lime Rice,10
-839,4339285,61804,U1123,Sherry's Wild West Soup,14
-840,4339285,61804,U1123,Sherry's Wild West Soup,14
-841,7625178,61804,U1050,Cotija and Corn Tacos with Lime and Mango,14
-842,7625178,61804,U1050,Cotija and Corn Tacos with Lime and Mango,14
-843,1127050,581343,U1082,Cilantro-Lime Rice,4
-844,1127050,581343,U1087,Cilantro-Lime Rice,10
-845,4339285,581343,U1087,Sherry's Wild West Soup,3
-846,4339285,581343,U1123,Sherry's Wild West Soup,14
-847,7625178,581343,U1050,Cotija and Corn Tacos with Lime and Mango,6
-848,7625178,581343,U1087,Cotija and Corn Tacos with Lime and Mango,14
-849,6941656,581343,U1087,Mexican Beef and Cheese Wontons with Salsa,4
-850,6941656,581343,U1087,Mexican Beef and Cheese Wontons with Salsa,13
-851,4025240,581343,U1087,Mexican-style Lasagna,6
-852,4025240,581343,U1082,Mexican-style Lasagna,14
-853,1517757,581343,U1123,Mexican Ham and Bean Soup,2
-854,1517757,581343,U1050,Mexican Ham and Bean Soup,14
-855,2249825,581343,U1050,Mexican Style Jalapeno Burger,2
-856,2249825,581343,U1082,Mexican Style Jalapeno Burger,8
-857,1127050,1227800,U1090,Cilantro-Lime Rice,12
-858,4339285,1227800,U1027,Sherry's Wild West Soup,14
-859,5108927,8633909,U1029,Pesto Tofu Pasta,3
-860,5462039,8633909,U1036,How To Make Panzanella (Italian Bread Salad),5
-861,9448609,8633909,U1106,Lemon Focaccia,4
-862,4470875,8633909,U1114,Pizza Dough,6
-863,3238244,8633909,U1036,Spicy Italian White Bean and Sausage Soup,4
-864,9358092,8633909,U1106,Slow-Cooker Cheesy Italian Tortellini,4
-865,154346,8633909,U1009,Pasta Calamari Capri,5
-866,4212269,8633909,U1114,"Prosciutto, Tomato, and Olive Spaghetti",6
-867,4539109,8633909,U1114,Baked Italian Chicken Breasts,6
-868,2079298,8633909,U1055,"Prosciutto, Nectarine and Fontina Panini on Rosemary Focaccia",6
-869,1127050,7238080,U1048,Cilantro-Lime Rice,7
-870,4339285,7238080,U1095,Sherry's Wild West Soup,10
-871,7625178,7238080,U1061,Cotija and Corn Tacos with Lime and Mango,10
-872,6941656,7238080,U1061,Mexican Beef and Cheese Wontons with Salsa,14
-873,4025240,7238080,U1095,Mexican-style Lasagna,10
-874,1517757,7238080,U1095,Mexican Ham and Bean Soup,11
-875,2249825,7238080,U1083,Mexican Style Jalapeno Burger,8
-876,3991238,7238080,U1083,Layered Chicken and Black Bean Enchilada Casserole,7
-877,6428676,2373611,U1096,Udon-Beef Noodle Bowl,13
-878,3887839,2373611,U1085,Fettuccine Carbonara,11
-879,4519345,2373611,U1096,Sushi Deviled Eggs | Elegant Appetizers,13
-880,1127050,5832523,U1082,Cilantro-Lime Rice,6
-881,6428676,1206097,U1030,Udon-Beef Noodle Bowl,9
-882,1127050,8777520,U1013,Cilantro-Lime Rice,13
-883,4339285,8777520,U1089,Sherry's Wild West Soup,10
-884,7625178,8777520,U1128,Cotija and Corn Tacos with Lime and Mango,7
-885,6941656,8777520,U1027,Mexican Beef and Cheese Wontons with Salsa,11
-886,4025240,8777520,U1091,Mexican-style Lasagna,9
-887,1127050,8632270,U1082,Cilantro-Lime Rice,10
-888,1127050,8632270,U1123,Cilantro-Lime Rice,10
-889,4339285,8632270,U1050,Sherry's Wild West Soup,14
-890,5108927,792145,U1065,Pesto Tofu Pasta,7
-891,5462039,792145,U1026,How To Make Panzanella (Italian Bread Salad),11
-892,9448609,792145,U1026,Lemon Focaccia,12
-893,4470875,792145,U1065,Pizza Dough,9
-894,3238244,792145,U1129,Spicy Italian White Bean and Sausage Soup,11
-895,9358092,792145,U1065,Slow-Cooker Cheesy Italian Tortellini,14
-896,154346,792145,U1065,Pasta Calamari Capri,10
-897,4212269,792145,U1026,"Prosciutto, Tomato, and Olive Spaghetti",12
-898,4539109,792145,U1065,Baked Italian Chicken Breasts,10
-899,2079298,792145,U1065,"Prosciutto, Nectarine and Fontina Panini on Rosemary Focaccia",13
-900,1127050,9165944,U1053,Cilantro-Lime Rice,12
-901,1127050,9165944,U1076,Cilantro-Lime Rice,7
-902,1127050,9165944,U1024,Cilantro-Lime Rice,12
-903,4339285,9165944,U1036,Sherry's Wild West Soup,14
-904,4339285,9165944,U1125,Sherry's Wild West Soup,12
-905,4339285,9165944,U1076,Sherry's Wild West Soup,10
-906,7625178,9165944,U1014,Cotija and Corn Tacos with Lime and Mango,8
-907,7625178,9165944,U1071,Cotija and Corn Tacos with Lime and Mango,14
-908,7625178,9165944,U1125,Cotija and Corn Tacos with Lime and Mango,7
-909,6941656,9165944,U1125,Mexican Beef and Cheese Wontons with Salsa,8
-910,6941656,9165944,U1071,Mexican Beef and Cheese Wontons with Salsa,9
-911,6941656,9165944,U1036,Mexican Beef and Cheese Wontons with Salsa,12
-912,4025240,9165944,U1053,Mexican-style Lasagna,14
-913,8352507,7420882,U1095,Bramblewood Blackberry Pie,2
-914,4106701,7420882,U1062,Roasted Vegetables,2
-915,8866457,7420882,U1062,Grilled Salmon and Spinach Salad with Peach Dressing,4
-916,5849663,7420882,U1122,Cowboy Nachos,5
-917,7598445,7420882,U1089,The Munroe Melt,3
-918,7147350,7420882,U1122,Roasted-Garlic Mashed Potatoes,4
-919,2689492,7420882,U1062,Dave's BBQ Sauce,5
-920,8352507,9140413,U1072,Bramblewood Blackberry Pie,5
-921,4106701,9140413,U1072,Roasted Vegetables,3
-922,8866457,9140413,U1072,Grilled Salmon and Spinach Salad with Peach Dressing,3
-923,5849663,9140413,U1117,Cowboy Nachos,6
-924,7598445,9140413,U1072,The Munroe Melt,6
-925,7147350,9140413,U1035,Roasted-Garlic Mashed Potatoes,2
-926,2689492,9140413,U1072,Dave's BBQ Sauce,2
-927,4257388,9140413,U1035,Curried Chicken Salad,5
-928,9749357,9140413,U1072,Lemon Asparagus,3
-929,1127050,6307654,U1028,Cilantro-Lime Rice,5
-930,4339285,6307654,U1028,Sherry's Wild West Soup,3
-931,7625178,6307654,U1103,Cotija and Corn Tacos with Lime and Mango,4
-932,6941656,6307654,U1028,Mexican Beef and Cheese Wontons with Salsa,3
-933,4025240,6307654,U1082,Mexican-style Lasagna,6
-934,1517757,6307654,U1028,Mexican Ham and Bean Soup,3
-935,2249825,6307654,U1103,Mexican Style Jalapeno Burger,6
-936,1127050,8723308,U1107,Cilantro-Lime Rice,6
-937,1127050,8723308,U1103,Cilantro-Lime Rice,7
-938,4339285,8723308,U1067,Sherry's Wild West Soup,4
-939,4339285,8723308,U1107,Sherry's Wild West Soup,14
-940,7625178,8723308,U1107,Cotija and Corn Tacos with Lime and Mango,4
-941,7625178,8723308,U1107,Cotija and Corn Tacos with Lime and Mango,9
-942,6941656,8723308,U1103,Mexican Beef and Cheese Wontons with Salsa,2
-943,6941656,8723308,U1067,Mexican Beef and Cheese Wontons with Salsa,11
-944,4025240,8723308,U1107,Mexican-style Lasagna,3
-945,4025240,8723308,U1067,Mexican-style Lasagna,12
-946,1517757,8723308,U1067,Mexican Ham and Bean Soup,3
-947,1517757,8723308,U1103,Mexican Ham and Bean Soup,7
-948,2249825,8723308,U1103,Mexican Style Jalapeno Burger,3
-949,5108927,1366473,U1065,Pesto Tofu Pasta,7
-950,5108927,1366473,U1039,Pesto Tofu Pasta,7
-951,5462039,1366473,U1039,How To Make Panzanella (Italian Bread Salad),11
-952,5462039,1366473,U1039,How To Make Panzanella (Italian Bread Salad),11
-953,9448609,1366473,U1039,Lemon Focaccia,12
-954,9448609,1366473,U1026,Lemon Focaccia,12
-955,4470875,1366473,U1065,Pizza Dough,9
-956,4470875,1366473,U1039,Pizza Dough,9
-957,3238244,1366473,U1065,Spicy Italian White Bean and Sausage Soup,11
-958,3238244,1366473,U1065,Spicy Italian White Bean and Sausage Soup,11
-959,1127050,9151152,U1129,Cilantro-Lime Rice,14
-960,4339285,9151152,U1026,Sherry's Wild West Soup,10
-961,7625178,9151152,U1129,Cotija and Corn Tacos with Lime and Mango,7
-962,6941656,9151152,U1129,Mexican Beef and Cheese Wontons with Salsa,14
-963,4025240,9151152,U1026,Mexican-style Lasagna,12
-964,1517757,9151152,U1129,Mexican Ham and Bean Soup,11
-965,6428676,1325694,U1095,Udon-Beef Noodle Bowl,13
-966,3887839,1325694,U1134,Fettuccine Carbonara,11
-967,4519345,1325694,U1085,Sushi Deviled Eggs | Elegant Appetizers,13
-968,7121483,1325694,U1096,Yaki Udon With Beef,10
-969,6412600,1325694,U1034,Udon Noodles with Bay Scallops and Baby Bok Choy,12
-970,6157338,1325694,U1095,Miso Soup,14
-971,1612412,1325694,U1096,Grilled Teriyaki-Glazed Salmon,14
-972,2027794,1325694,U1085,Negimaki,7
-973,1618916,1325694,U1085,Japanese Beef and Vegetable Hot Pot (Sukiyaki),9
-974,3325054,1325694,U1136,Miso-Glazed Sea Bass,13
-975,8111259,1325694,U1136,Sweet and Spicy Chinese Takeout Chicken,9
-976,8111259,1325694,U1095,Sweet and Spicy Chinese Takeout Chicken,31
-977,1127050,3335845,U1031,Cilantro-Lime Rice,3
-978,1127050,3335845,U1031,Cilantro-Lime Rice,6
-979,1127050,3335845,U1031,Cilantro-Lime Rice,14
-980,4339285,3335845,U1031,Sherry's Wild West Soup,2
-981,4339285,3335845,U1026,Sherry's Wild West Soup,3
-982,4339285,3335845,U1031,Sherry's Wild West Soup,10
-983,7625178,3335845,U1065,Cotija and Corn Tacos with Lime and Mango,4
-984,7625178,3335845,U1026,Cotija and Corn Tacos with Lime and Mango,3
-985,7625178,3335845,U1026,Cotija and Corn Tacos with Lime and Mango,7
-986,6941656,3335845,U1026,Mexican Beef and Cheese Wontons with Salsa,5
-987,6941656,3335845,U1065,Mexican Beef and Cheese Wontons with Salsa,2
-988,6941656,3335845,U1065,Mexican Beef and Cheese Wontons with Salsa,14
-989,4025240,3335845,U1026,Mexican-style Lasagna,5
-990,8352507,7420882,U1062,Bramblewood Blackberry Pie,2
-991,4106701,7420882,U1085,Roasted Vegetables,2
-992,8866457,7420882,U1095,Grilled Salmon and Spinach Salad with Peach Dressing,4
-993,5849663,7420882,U1032,Cowboy Nachos,5
-994,7598445,7420882,U1085,The Munroe Melt,3
-995,7147350,7420882,U1032,Roasted-Garlic Mashed Potatoes,4
-996,2689492,7420882,U1099,Dave's BBQ Sauce,5
-997,4257388,7420882,U1032,Curried Chicken Salad,3
-998,9749357,7420882,U1099,Lemon Asparagus,4
-999,5575289,7420882,U1089,Blackberry Limeade,5
-1000,6428676,7420882,U1085,Udon-Beef Noodle Bowl,13
-1001,3887839,7420882,U1095,Fettuccine Carbonara,11
-1002,4519345,7420882,U1089,Sushi Deviled Eggs | Elegant Appetizers,13
-1003,7121483,7420882,U1109,Yaki Udon With Beef,10
-1004,1127050,1700667,U1055,Cilantro-Lime Rice,13
-1005,4339285,1700667,U1106,Sherry's Wild West Soup,14
-1006,7625178,1700667,U1134,Cotija and Corn Tacos with Lime and Mango,14
-1007,6941656,1700667,U1106,Mexican Beef and Cheese Wontons with Salsa,14
-1008,4025240,1700667,U1106,Mexican-style Lasagna,7
-1009,1517757,1700667,U1055,Mexican Ham and Bean Soup,8
-1010,2249825,1700667,U1053,Mexican Style Jalapeno Burger,11
-1011,3991238,1700667,U1106,Layered Chicken and Black Bean Enchilada Casserole,11
-1012,7516725,1700667,U1036,Mexican Bean Pizza,10
-1013,1127050,9251909,U1028,Cilantro-Lime Rice,4
-1014,1127050,9251909,U1068,Cilantro-Lime Rice,14
-1015,4339285,9251909,U1028,Sherry's Wild West Soup,6
-1016,4339285,9251909,U1068,Sherry's Wild West Soup,9
-1017,7625178,9251909,U1067,Cotija and Corn Tacos with Lime and Mango,6
-1018,7625178,9251909,U1082,Cotija and Corn Tacos with Lime and Mango,10
-1019,6941656,9251909,U1028,Mexican Beef and Cheese Wontons with Salsa,4
-1020,6941656,9251909,U1028,Mexican Beef and Cheese Wontons with Salsa,12
-1021,4025240,9251909,U1068,Mexican-style Lasagna,5
-1022,4025240,9251909,U1068,Mexican-style Lasagna,13
-1023,1517757,9251909,U1067,Mexican Ham and Bean Soup,2
-1024,1517757,9251909,U1067,Mexican Ham and Bean Soup,7
-1025,2249825,9251909,U1082,Mexican Style Jalapeno Burger,6
-1026,8352507,8858603,U1128,Bramblewood Blackberry Pie,2
-1027,8352507,8858603,U1032,Bramblewood Blackberry Pie,10
-1028,4106701,8858603,U1062,Roasted Vegetables,2
-1029,4106701,8858603,U1095,Roasted Vegetables,11
-1030,8866457,8858603,U1095,Grilled Salmon and Spinach Salad with Peach Dressing,4
-1031,8866457,8858603,U1085,Grilled Salmon and Spinach Salad with Peach Dressing,11
-1032,5849663,8858603,U1095,Cowboy Nachos,5
-1033,5849663,8858603,U1089,Cowboy Nachos,11
-1034,7598445,8858603,U1099,The Munroe Melt,3
-1035,7598445,8858603,U1062,The Munroe Melt,8
-1036,6428676,6050277,U1036,Udon-Beef Noodle Bowl,14
-1037,6428676,6050277,U1009,Udon-Beef Noodle Bowl,14
-1038,3887839,6050277,U1029,Fettuccine Carbonara,11
-1039,6428676,257363,U1134,Udon-Beef Noodle Bowl,13
-1040,3887839,257363,U1096,Fettuccine Carbonara,11
-1041,4519345,257363,U1034,Sushi Deviled Eggs | Elegant Appetizers,13
-1042,7121483,257363,U1095,Yaki Udon With Beef,10
-1043,6412600,257363,U1034,Udon Noodles with Bay Scallops and Baby Bok Choy,12
-1044,6157338,257363,U1096,Miso Soup,14
-1045,1612412,257363,U1085,Grilled Teriyaki-Glazed Salmon,14
-1046,2027794,257363,U1085,Negimaki,7
-1047,1618916,257363,U1034,Japanese Beef and Vegetable Hot Pot (Sukiyaki),9
-1048,3325054,257363,U1136,Miso-Glazed Sea Bass,13
-1049,5108927,7885550,U1048,Pesto Tofu Pasta,32
-1050,5108927,7885550,U1095,Pesto Tofu Pasta,32
-1051,5462039,7885550,U1048,How To Make Panzanella (Italian Bread Salad),29
-1052,5462039,7885550,U1048,How To Make Panzanella (Italian Bread Salad),29
-1053,9448609,7885550,U1095,Lemon Focaccia,40
-1054,9448609,7885550,U1083,Lemon Focaccia,40
-1055,1127050,2305948,U1128,Cilantro-Lime Rice,12
-1056,4339285,2305948,U1138,Sherry's Wild West Soup,14
-1057,7625178,2305948,U1027,Cotija and Corn Tacos with Lime and Mango,12
-1058,6941656,2305948,U1128,Mexican Beef and Cheese Wontons with Salsa,14
-1059,4025240,2305948,U1128,Mexican-style Lasagna,10
-1060,1517757,2305948,U1090,Mexican Ham and Bean Soup,10
-1061,1127050,7819901,U1093,Cilantro-Lime Rice,2
-1062,4339285,7819901,U1066,Sherry's Wild West Soup,2
-1063,7625178,7819901,U1110,Cotija and Corn Tacos with Lime and Mango,6
-1064,6941656,7819901,U1066,Mexican Beef and Cheese Wontons with Salsa,4
-1065,4025240,7819901,U1040,Mexican-style Lasagna,4
-1066,1517757,7819901,U1040,Mexican Ham and Bean Soup,4
-1067,2249825,7819901,U1093,Mexican Style Jalapeno Burger,5
-1068,1127050,3939752,U1003,Cilantro-Lime Rice,12
-1069,4339285,3939752,U1092,Sherry's Wild West Soup,8
-1070,7625178,3939752,U1092,Cotija and Corn Tacos with Lime and Mango,7
-1071,6941656,3939752,U1003,Mexican Beef and Cheese Wontons with Salsa,11
-1072,4025240,3939752,U1095,Mexican-style Lasagna,12
-1073,1517757,3939752,U1092,Mexican Ham and Bean Soup,11
-1074,6428676,6050277,U1078,Udon-Beef Noodle Bowl,14
-1075,6428676,6050277,U1116,Udon-Beef Noodle Bowl,14
-1076,3887839,6050277,U1029,Fettuccine Carbonara,11
-1077,3887839,6050277,U1099,Fettuccine Carbonara,11
-1078,1127050,7412776,U1068,Cilantro-Lime Rice,5
-1079,4339285,7412776,U1067,Sherry's Wild West Soup,3
-1080,7625178,7412776,U1067,Cotija and Corn Tacos with Lime and Mango,4
-1081,6941656,7412776,U1103,Mexican Beef and Cheese Wontons with Salsa,3
-1082,4025240,7412776,U1068,Mexican-style Lasagna,6
-1083,1517757,7412776,U1103,Mexican Ham and Bean Soup,3
-1084,2249825,7412776,U1103,Mexican Style Jalapeno Burger,6
-1085,3991238,7412776,U1067,Layered Chicken and Black Bean Enchilada Casserole,6
-1086,7516725,7412776,U1103,Mexican Bean Pizza,2
-1087,1127050,3436403,U1103,Cilantro-Lime Rice,5
-1088,1127050,3436403,U1067,Cilantro-Lime Rice,7
-1089,4339285,3436403,U1067,Sherry's Wild West Soup,3
-1090,4339285,3436403,U1103,Sherry's Wild West Soup,7
-1091,7625178,3436403,U1068,Cotija and Corn Tacos with Lime and Mango,4
-1092,7625178,3436403,U1067,Cotija and Corn Tacos with Lime and Mango,9
-1093,6941656,3436403,U1067,Mexican Beef and Cheese Wontons with Salsa,3
-1094,6941656,3436403,U1067,Mexican Beef and Cheese Wontons with Salsa,7
-1095,4025240,3436403,U1068,Mexican-style Lasagna,6
-1096,4025240,3436403,U1067,Mexican-style Lasagna,12
-1097,1517757,3436403,U1068,Mexican Ham and Bean Soup,3
-1098,1517757,3436403,U1103,Mexican Ham and Bean Soup,14
-1099,2249825,3436403,U1103,Mexican Style Jalapeno Burger,6
-1100,2249825,3436403,U1103,Mexican Style Jalapeno Burger,13
-1101,1127050,9747987,U1021,Cilantro-Lime Rice,4
-1102,4339285,9747987,U1021,Sherry's Wild West Soup,2
-1103,7625178,9747987,U1023,Cotija and Corn Tacos with Lime and Mango,2
-1104,6941656,9747987,U1023,Mexican Beef and Cheese Wontons with Salsa,3
-1105,1127050,4512775,U1095,Cilantro-Lime Rice,24
-1106,4339285,4512775,U1095,Sherry's Wild West Soup,35
-1107,7625178,4512775,U1095,Cotija and Corn Tacos with Lime and Mango,30
-1108,6941656,4512775,U1084,Mexican Beef and Cheese Wontons with Salsa,38
-1109,4025240,4512775,U1095,Mexican-style Lasagna,36
-1110,1517757,4512775,U1095,Mexican Ham and Bean Soup,41
-1111,2249825,4512775,U1084,Mexican Style Jalapeno Burger,43
-1112,3991238,4512775,U1084,Layered Chicken and Black Bean Enchilada Casserole,48
-1113,7516725,4512775,U1084,Mexican Bean Pizza,31
-1114,1072381,4512775,U1095,Lobster and Crab Enchiladas,48
-1115,6428676,4512775,U1034,Udon-Beef Noodle Bowl,10
-1116,6428676,4512775,U1095,Udon-Beef Noodle Bowl,13
-1117,3887839,4512775,U1095,Fettuccine Carbonara,14
-1118,3887839,4512775,U1034,Fettuccine Carbonara,14
-1119,4519345,4512775,U1034,Sushi Deviled Eggs | Elegant Appetizers,13
-1120,1127050,2036853,U1048,Cilantro-Lime Rice,12
-1121,4339285,2036853,U1083,Sherry's Wild West Soup,8
-1122,7625178,2036853,U1083,Cotija and Corn Tacos with Lime and Mango,7
-1123,6428676,9081937,U1078,Udon-Beef Noodle Bowl,14
-1124,6428676,9081937,U1137,Udon-Beef Noodle Bowl,14
-1125,6428676,9081937,U1061,Udon-Beef Noodle Bowl,14
-1126,6428676,9081937,U1122,Udon-Beef Noodle Bowl,14
-1127,3887839,9081937,U1106,Fettuccine Carbonara,11
-1128,3887839,9081937,U1137,Fettuccine Carbonara,11
-1129,4519345,9081937,U1089,Sushi Deviled Eggs | Elegant Appetizers,11
-1130,4519345,9081937,U1106,Sushi Deviled Eggs | Elegant Appetizers,11
-1131,7121483,9081937,U1116,Yaki Udon With Beef,12
-1132,7121483,9081937,U1062,Yaki Udon With Beef,12
-1133,6412600,9081937,U1061,Udon Noodles with Bay Scallops and Baby Bok Choy,14
-1134,6412600,9081937,U1114,Udon Noodles with Bay Scallops and Baby Bok Choy,14
-1135,6157338,9081937,U1009,Miso Soup,8
-1136,6157338,9081937,U1114,Miso Soup,8
-1137,1612412,9081937,U1137,Grilled Teriyaki-Glazed Salmon,11
-1138,1612412,9081937,U1135,Grilled Teriyaki-Glazed Salmon,11
-1139,1127050,5869342,U1113,Cilantro-Lime Rice,4
-1140,1127050,5869342,U1019,Cilantro-Lime Rice,14
-1141,4339285,5869342,U1113,Sherry's Wild West Soup,2
-1142,4339285,5869342,U1113,Sherry's Wild West Soup,8
-1143,7625178,5869342,U1019,Cotija and Corn Tacos with Lime and Mango,4
-1144,7625178,5869342,U1019,Cotija and Corn Tacos with Lime and Mango,13
-1145,6941656,5869342,U1019,Mexican Beef and Cheese Wontons with Salsa,4
-1146,6941656,5869342,U1038,Mexican Beef and Cheese Wontons with Salsa,10
-1147,4025240,5869342,U1038,Mexican-style Lasagna,2
-1148,4025240,5869342,U1038,Mexican-style Lasagna,14
-1149,1517757,5869342,U1038,Mexican Ham and Bean Soup,4
-1150,1517757,5869342,U1071,Mexican Ham and Bean Soup,10
-1151,1127050,5322968,U1084,Cilantro-Lime Rice,12
-1152,4339285,5322968,U1013,Sherry's Wild West Soup,8
-1153,7625178,5322968,U1095,Cotija and Corn Tacos with Lime and Mango,7
-1154,6941656,5322968,U1013,Mexican Beef and Cheese Wontons with Salsa,11
-1155,4025240,5322968,U1084,Mexican-style Lasagna,12
-1156,1517757,5322968,U1013,Mexican Ham and Bean Soup,11
-1157,2249825,5322968,U1095,Mexican Style Jalapeno Burger,10
-1158,3991238,5322968,U1095,Layered Chicken and Black Bean Enchilada Casserole,14
-1159,7516725,5322968,U1089,Mexican Bean Pizza,9
-1160,1072381,5322968,U1089,Lobster and Crab Enchiladas,11
-1161,6428676,5322968,U1013,Udon-Beef Noodle Bowl,14
-1162,6428676,3330098,U1024,Udon-Beef Noodle Bowl,14
-1163,6428676,3330098,U1137,Udon-Beef Noodle Bowl,14
-1164,1127050,9915053,U1048,Cilantro-Lime Rice,12
-1165,1127050,9915053,U1083,Cilantro-Lime Rice,14
-1166,4339285,9915053,U1003,Sherry's Wild West Soup,8
-1167,4339285,9915053,U1137,Sherry's Wild West Soup,8
-1168,7625178,9915053,U1048,Cotija and Corn Tacos with Lime and Mango,7
-1169,7625178,9915053,U1003,Cotija and Corn Tacos with Lime and Mango,8
-1170,6941656,9915053,U1048,Mexican Beef and Cheese Wontons with Salsa,11
-1171,6941656,9915053,U1003,Mexican Beef and Cheese Wontons with Salsa,7
-1172,4025240,9915053,U1048,Mexican-style Lasagna,12
-1173,4025240,9915053,U1003,Mexican-style Lasagna,9
-1174,1517757,9915053,U1048,Mexican Ham and Bean Soup,11
-1175,1517757,9915053,U1137,Mexican Ham and Bean Soup,13
-1176,2249825,9915053,U1003,Mexican Style Jalapeno Burger,10
-1177,2249825,9915053,U1137,Mexican Style Jalapeno Burger,9
-1178,1127050,3335845,U1065,Cilantro-Lime Rice,3
-1179,1127050,3335845,U1031,Cilantro-Lime Rice,6
-1180,1127050,3335845,U1065,Cilantro-Lime Rice,14
-1181,4339285,3335845,U1026,Sherry's Wild West Soup,2
-1182,4339285,3335845,U1031,Sherry's Wild West Soup,3
-1183,4339285,3335845,U1065,Sherry's Wild West Soup,10
-1184,7625178,3335845,U1065,Cotija and Corn Tacos with Lime and Mango,4
-1185,7625178,3335845,U1065,Cotija and Corn Tacos with Lime and Mango,3
-1186,7625178,3335845,U1026,Cotija and Corn Tacos with Lime and Mango,7
-1187,6941656,3335845,U1065,Mexican Beef and Cheese Wontons with Salsa,5
-1188,6941656,3335845,U1065,Mexican Beef and Cheese Wontons with Salsa,2
-1189,6941656,3335845,U1026,Mexican Beef and Cheese Wontons with Salsa,14
-1190,4025240,3335845,U1031,Mexican-style Lasagna,5
-1191,1127050,6039342,U1089,Cilantro-Lime Rice,13
-1192,4339285,6039342,U1047,Sherry's Wild West Soup,10
-1193,7625178,6039342,U1089,Cotija and Corn Tacos with Lime and Mango,7
-1194,6941656,6039342,U1089,Mexican Beef and Cheese Wontons with Salsa,11
-1195,4025240,6039342,U1013,Mexican-style Lasagna,9
-1196,1517757,6039342,U1089,Mexican Ham and Bean Soup,9
-1197,2249825,6039342,U1089,Mexican Style Jalapeno Burger,14
-1198,3991238,6039342,U1089,Layered Chicken and Black Bean Enchilada Casserole,13
-1199,7516725,6039342,U1013,Mexican Bean Pizza,12
-1200,1072381,6039342,U1013,Lobster and Crab Enchiladas,9
-1201,1127050,2305948,U1138,Cilantro-Lime Rice,12
-1202,4339285,2305948,U1128,Sherry's Wild West Soup,14
-1203,7625178,2305948,U1090,Cotija and Corn Tacos with Lime and Mango,12
-1204,1127050,3293469,U1077,Cilantro-Lime Rice,44
-1205,1127050,6636108,U1095,Cilantro-Lime Rice,7
-1206,4339285,6636108,U1083,Sherry's Wild West Soup,10
-1207,7625178,6636108,U1083,Cotija and Corn Tacos with Lime and Mango,10
-1208,6941656,6636108,U1048,Mexican Beef and Cheese Wontons with Salsa,14
-1209,4025240,6636108,U1095,Mexican-style Lasagna,10
-1210,1517757,6636108,U1061,Mexican Ham and Bean Soup,11
-1211,2249825,6636108,U1048,Mexican Style Jalapeno Burger,8
-1212,3991238,6636108,U1061,Layered Chicken and Black Bean Enchilada Casserole,7
-1213,7516725,6636108,U1095,Mexican Bean Pizza,14
-1214,1072381,6636108,U1083,Lobster and Crab Enchiladas,12
-1215,5108927,6636108,U1061,Pesto Tofu Pasta,32
-1216,1127050,2601250,U1034,Cilantro-Lime Rice,14
-1217,1127050,3986667,U1055,Cilantro-Lime Rice,11
-1218,1127050,3986667,U1081,Cilantro-Lime Rice,11
-1219,4339285,3986667,U1081,Sherry's Wild West Soup,11
-1220,4339285,3986667,U1053,Sherry's Wild West Soup,11
-1221,1127050,7855330,U1103,Cilantro-Lime Rice,10
-1222,4339285,7855330,U1067,Sherry's Wild West Soup,10
-1223,7625178,7855330,U1103,Cotija and Corn Tacos with Lime and Mango,9
-1224,6941656,7855330,U1063,Mexican Beef and Cheese Wontons with Salsa,7
-1225,4025240,7855330,U1103,Mexican-style Lasagna,11
-1226,1517757,7855330,U1067,Mexican Ham and Bean Soup,14
-1227,2249825,7855330,U1067,Mexican Style Jalapeno Burger,11
-1228,3991238,7855330,U1103,Layered Chicken and Black Bean Enchilada Casserole,10
-1229,7516725,7855330,U1067,Mexican Bean Pizza,13
-1230,5108927,2630642,U1089,Pesto Tofu Pasta,45
-1231,5462039,2630642,U1047,How To Make Panzanella (Italian Bread Salad),20
-1232,9448609,2630642,U1013,Lemon Focaccia,17
-1233,4470875,2630642,U1047,Pizza Dough,23
-1234,8111259,1230586,U1132,Sweet and Spicy Chinese Takeout Chicken,10
-1235,63194,1230586,U1053,Easy Chinese Soy Sauce Chicken,12
-1236,8155603,1230586,U1053,MAMA’S BRAISED CHICKEN LEGS ON RICE W/ FRIED CHILI CAPERS,11
-1237,5169585,1230586,U1132,Sesame Beef and Asian Vegetable Stir-Fry,12
-1238,1127050,4123711,U1036,Cilantro-Lime Rice,3
-1239,1127050,4123711,U1036,Cilantro-Lime Rice,9
-1240,4339285,4123711,U1036,Sherry's Wild West Soup,6
-1241,4339285,4123711,U1106,Sherry's Wild West Soup,14
-1242,1127050,6176931,U1089,Cilantro-Lime Rice,12
-1243,4339285,6176931,U1033,Sherry's Wild West Soup,12
-1244,7625178,6176931,U1027,Cotija and Corn Tacos with Lime and Mango,8
-1245,6941656,6176931,U1027,Mexican Beef and Cheese Wontons with Salsa,7
-1246,4025240,6176931,U1033,Mexican-style Lasagna,13
-1247,1517757,6176931,U1033,Mexican Ham and Bean Soup,11
-1248,2249825,6176931,U1027,Mexican Style Jalapeno Burger,11
-1249,3991238,6176931,U1089,Layered Chicken and Black Bean Enchilada Casserole,7
-1250,7516725,6176931,U1033,Mexican Bean Pizza,14
-1251,1072381,6176931,U1086,Lobster and Crab Enchiladas,12
-1252,6428676,6176931,U1027,Udon-Beef Noodle Bowl,32
-1253,3887839,6176931,U1027,Fettuccine Carbonara,35
-1254,4519345,6176931,U1089,Sushi Deviled Eggs | Elegant Appetizers,46
-1255,7121483,6176931,U1027,Yaki Udon With Beef,19
-1256,6412600,6176931,U1086,Udon Noodles with Bay Scallops and Baby Bok Choy,27
-1257,1127050,9915053,U1137,Cilantro-Lime Rice,12
-1258,1127050,9915053,U1083,Cilantro-Lime Rice,14
-1259,4339285,9915053,U1003,Sherry's Wild West Soup,8
-1260,4339285,9915053,U1137,Sherry's Wild West Soup,8
-1261,7625178,9915053,U1003,Cotija and Corn Tacos with Lime and Mango,7
-1262,7625178,9915053,U1083,Cotija and Corn Tacos with Lime and Mango,8
-1263,6941656,9915053,U1083,Mexican Beef and Cheese Wontons with Salsa,11
-1264,6941656,9915053,U1083,Mexican Beef and Cheese Wontons with Salsa,7
-1265,4025240,9915053,U1137,Mexican-style Lasagna,12
-1266,4025240,9915053,U1083,Mexican-style Lasagna,9
-1267,1517757,9915053,U1137,Mexican Ham and Bean Soup,11
-1268,1517757,9915053,U1003,Mexican Ham and Bean Soup,13
-1269,2249825,9915053,U1048,Mexican Style Jalapeno Burger,10
-1270,2249825,9915053,U1003,Mexican Style Jalapeno Burger,9
-1271,3991238,9915053,U1083,Layered Chicken and Black Bean Enchilada Casserole,14
-1272,1127050,3427320,U1052,Cilantro-Lime Rice,14
-1273,4339285,3427320,U1069,Sherry's Wild West Soup,14
-1274,7625178,3427320,U1069,Cotija and Corn Tacos with Lime and Mango,10
-1275,1127050,8836622,U1062,Cilantro-Lime Rice,10
-1276,4339285,8836622,U1085,Sherry's Wild West Soup,13
-1277,1127050,9795035,U1031,Cilantro-Lime Rice,3
-1278,1127050,9795035,U1031,Cilantro-Lime Rice,6
-1279,1127050,7755333,U1034,Cilantro-Lime Rice,24
-1280,4339285,7755333,U1095,Sherry's Wild West Soup,35
-1281,7625178,7755333,U1084,Cotija and Corn Tacos with Lime and Mango,30
-1282,6941656,7755333,U1095,Mexican Beef and Cheese Wontons with Salsa,38
-1283,4025240,7755333,U1084,Mexican-style Lasagna,36
-1284,1517757,7755333,U1084,Mexican Ham and Bean Soup,41
-1285,1127050,8723308,U1107,Cilantro-Lime Rice,6
-1286,1127050,8723308,U1103,Cilantro-Lime Rice,7
-1287,4339285,8723308,U1107,Sherry's Wild West Soup,4
-1288,4339285,8723308,U1107,Sherry's Wild West Soup,14
-1289,7625178,8723308,U1103,Cotija and Corn Tacos with Lime and Mango,4
-1290,7625178,8723308,U1107,Cotija and Corn Tacos with Lime and Mango,9
-1291,6941656,8723308,U1067,Mexican Beef and Cheese Wontons with Salsa,2
-1292,6941656,8723308,U1107,Mexican Beef and Cheese Wontons with Salsa,11
-1293,4025240,8723308,U1107,Mexican-style Lasagna,3
-1294,4025240,8723308,U1103,Mexican-style Lasagna,12
-1295,1517757,8723308,U1103,Mexican Ham and Bean Soup,3
-1296,1517757,8723308,U1107,Mexican Ham and Bean Soup,7
-1297,1127050,8777520,U1089,Cilantro-Lime Rice,13
-1298,4339285,8777520,U1047,Sherry's Wild West Soup,10
-1299,7625178,8777520,U1027,Cotija and Corn Tacos with Lime and Mango,7
-1300,6941656,8777520,U1091,Mexican Beef and Cheese Wontons with Salsa,11
-1301,4025240,8777520,U1091,Mexican-style Lasagna,9
-1302,1517757,8777520,U1091,Mexican Ham and Bean Soup,9
-1303,2249825,8777520,U1006,Mexican Style Jalapeno Burger,14
-1304,3991238,8777520,U1013,Layered Chicken and Black Bean Enchilada Casserole,13
-1305,7516725,8777520,U1027,Mexican Bean Pizza,12
-1306,1072381,8777520,U1091,Lobster and Crab Enchiladas,9
-1307,8111259,8777520,U1006,Sweet and Spicy Chinese Takeout Chicken,8
-1308,63194,8777520,U1047,Easy Chinese Soy Sauce Chicken,10
-1309,1127050,8723308,U1103,Cilantro-Lime Rice,6
-1310,1127050,8723308,U1107,Cilantro-Lime Rice,7
-1311,4339285,8723308,U1067,Sherry's Wild West Soup,4
-1312,4339285,8723308,U1067,Sherry's Wild West Soup,14
-1313,7625178,8723308,U1067,Cotija and Corn Tacos with Lime and Mango,4
-1314,7625178,8723308,U1067,Cotija and Corn Tacos with Lime and Mango,9
-1315,6941656,8723308,U1103,Mexican Beef and Cheese Wontons with Salsa,2
-1316,1127050,8645569,U1024,Cilantro-Lime Rice,13
-1317,4339285,8645569,U1126,Sherry's Wild West Soup,8
-1318,7625178,8645569,U1024,Cotija and Corn Tacos with Lime and Mango,7
-1319,6941656,8645569,U1055,Mexican Beef and Cheese Wontons with Salsa,13
-1320,4025240,8645569,U1024,Mexican-style Lasagna,8
-1321,1127050,3551130,U1077,Cilantro-Lime Rice,11
-1322,1127050,3551130,U1001,Cilantro-Lime Rice,11
-1323,4339285,3551130,U1053,Sherry's Wild West Soup,11
-1324,4339285,3551130,U1053,Sherry's Wild West Soup,11
-1325,7625178,3551130,U1053,Cotija and Corn Tacos with Lime and Mango,9
-1326,7625178,3551130,U1081,Cotija and Corn Tacos with Lime and Mango,9
-1327,6941656,3551130,U1056,Mexican Beef and Cheese Wontons with Salsa,11
-1328,6941656,3551130,U1081,Mexican Beef and Cheese Wontons with Salsa,11
-1329,4025240,3551130,U1055,Mexican-style Lasagna,10
-1330,4025240,3551130,U1081,Mexican-style Lasagna,10
-1331,1517757,3551130,U1134,Mexican Ham and Bean Soup,11
-1332,1517757,3551130,U1134,Mexican Ham and Bean Soup,11
-1333,2249825,3551130,U1055,Mexican Style Jalapeno Burger,13
-1334,2249825,3551130,U1081,Mexican Style Jalapeno Burger,13
-1335,3991238,3551130,U1077,Layered Chicken and Black Bean Enchilada Casserole,13
-1336,1127050,3293469,U1134,Cilantro-Lime Rice,44
-1337,1127050,6176931,U1027,Cilantro-Lime Rice,12
-1338,4339285,6176931,U1033,Sherry's Wild West Soup,12
-1339,1127050,9894128,U1083,Cilantro-Lime Rice,12
-1340,1127050,9894128,U1083,Cilantro-Lime Rice,14
-1341,4339285,9894128,U1137,Sherry's Wild West Soup,8
-1342,4339285,9894128,U1137,Sherry's Wild West Soup,8
-1343,8352507,5724286,U1108,Bramblewood Blackberry Pie,2
-1344,4106701,5724286,U1004,Roasted Vegetables,4
-1345,5108927,9458401,U1065,Pesto Tofu Pasta,7
-1346,5462039,9458401,U1026,How To Make Panzanella (Italian Bread Salad),11
-1347,4984104,2826646,U1093,Lemongrass Beef and Onions over Rice Vermicelli (Bun Bo),10
+index_id,product_id,ticket_id,paid_by,item,rating,food_rating,service_rating,price
+0,2208462,6390661,U1027,Bramblewood Blackberry Pie,2,1,0,2
+1,5436564,6390661,U1027,Roasted Vegetables,2,1,0,6
+2,2186602,6390661,U1137,Grilled Salmon and Spinach Salad with Peach Dressing,2,1,0,5
+3,2662619,6390661,U1086,Cowboy Nachos,2,1,0,6
+4,4252503,6390661,U1027,The Munroe Melt,2,1,0,6
+5,1970456,6390661,U1089,Roasted-Garlic Mashed Potatoes,2,1,0,2
+6,7512788,6390661,U1137,Dave's BBQ Sauce,2,1,0,4
+7,4798509,6390661,U1137,Curried Chicken Salad,2,1,0,2
+8,9580009,6390661,U1033,Lemon Asparagus,2,1,0,2
+9,5227098,6390661,U1114,Blackberry Limeade,2,1,0,6
+10,7668584,6390661,U1086,Sweet and Spicy Chinese Takeout Chicken,1,1,1,10
+11,2199744,6390661,U1027,Easy Chinese Soy Sauce Chicken,1,1,1,9
+12,8633036,6390661,U1086,MAMA’S BRAISED CHICKEN LEGS ON RICE W/ FRIED CHILI CAPERS,1,1,1,11
+13,5430038,9648390,U1123,Cilantro-Lime Rice,1,2,1,4
+14,5430038,9648390,U1068,Cilantro-Lime Rice,1,1,1,6
+15,213517,9648390,U1067,Sherry's Wild West Soup,1,2,1,3
+16,213517,9648390,U1123,Sherry's Wild West Soup,1,1,1,3
+17,3341164,9648390,U1068,Cotija and Corn Tacos with Lime and Mango,1,2,1,5
+18,3341164,9648390,U1068,Cotija and Corn Tacos with Lime and Mango,1,1,1,5
+19,2552596,9648390,U1067,Mexican Beef and Cheese Wontons with Salsa,1,2,1,4
+20,2552596,9648390,U1067,Mexican Beef and Cheese Wontons with Salsa,1,1,1,6
+21,817513,9648390,U1103,Mexican-style Lasagna,1,2,1,3
+22,817513,9648390,U1123,Mexican-style Lasagna,1,1,1,6
+23,9635009,9648390,U1103,Mexican Ham and Bean Soup,1,2,1,6
+24,9635009,9648390,U1068,Mexican Ham and Bean Soup,1,1,1,2
+25,5613349,9648390,U1068,Mexican Style Jalapeno Burger,1,2,1,3
+26,5430038,1778290,U1082,Cilantro-Lime Rice,0,0,0,6
+27,5430038,1778290,U1070,Cilantro-Lime Rice,2,2,1,6
+28,5430038,1778290,U1082,Cilantro-Lime Rice,1,2,0,8
+29,213517,1778290,U1123,Sherry's Wild West Soup,0,0,0,4
+30,213517,1778290,U1082,Sherry's Wild West Soup,2,2,1,6
+31,213517,1778290,U1123,Sherry's Wild West Soup,1,2,0,11
+32,3341164,1778290,U1070,Cotija and Corn Tacos with Lime and Mango,0,0,0,6
+33,3341164,1778290,U1070,Cotija and Corn Tacos with Lime and Mango,2,2,1,2
+34,3341164,1778290,U1123,Cotija and Corn Tacos with Lime and Mango,1,2,0,12
+35,2552596,1778290,U1070,Mexican Beef and Cheese Wontons with Salsa,0,0,0,2
+36,2552596,1778290,U1123,Mexican Beef and Cheese Wontons with Salsa,2,2,1,6
+37,2552596,1778290,U1070,Mexican Beef and Cheese Wontons with Salsa,1,2,0,9
+38,5430038,7343438,U1081,Cilantro-Lime Rice,2,2,2,8
+39,5430038,7343438,U1076,Cilantro-Lime Rice,1,2,2,7
+40,213517,7343438,U1056,Sherry's Wild West Soup,2,2,2,13
+41,213517,7343438,U1056,Sherry's Wild West Soup,1,2,2,13
+42,3341164,7343438,U1076,Cotija and Corn Tacos with Lime and Mango,2,2,2,8
+43,3341164,7343438,U1076,Cotija and Corn Tacos with Lime and Mango,1,2,2,7
+44,2552596,7343438,U1116,Mexican Beef and Cheese Wontons with Salsa,2,2,2,8
+45,2552596,7343438,U1056,Mexican Beef and Cheese Wontons with Salsa,1,2,2,9
+46,817513,7343438,U1076,Mexican-style Lasagna,2,2,2,12
+47,817513,7343438,U1076,Mexican-style Lasagna,1,2,2,14
+48,9635009,7343438,U1076,Mexican Ham and Bean Soup,2,2,2,7
+49,5430038,2230542,U1021,Cilantro-Lime Rice,1,1,1,2
+50,5430038,2230542,U1060,Cilantro-Lime Rice,1,1,1,6
+51,213517,2230542,U1068,Sherry's Wild West Soup,1,1,1,6
+52,213517,2230542,U1023,Sherry's Wild West Soup,1,1,1,3
+53,3341164,2230542,U1068,Cotija and Corn Tacos with Lime and Mango,1,1,1,4
+54,3341164,2230542,U1068,Cotija and Corn Tacos with Lime and Mango,1,1,1,5
+55,2552596,2230542,U1021,Mexican Beef and Cheese Wontons with Salsa,1,1,1,3
+56,2552596,2230542,U1068,Mexican Beef and Cheese Wontons with Salsa,1,1,1,6
+57,817513,2230542,U1021,Mexican-style Lasagna,1,1,1,5
+58,817513,2230542,U1060,Mexican-style Lasagna,1,1,1,6
+59,5430038,5289403,U1030,Cilantro-Lime Rice,2,2,2,12
+60,213517,5289403,U1030,Sherry's Wild West Soup,2,2,2,12
+61,3341164,5289403,U1051,Cotija and Corn Tacos with Lime and Mango,2,2,2,9
+62,2208462,4247650,U1013,Bramblewood Blackberry Pie,1,2,2,11
+63,2208462,4247650,U1083,Bramblewood Blackberry Pie,1,2,2,11
+64,5430038,105554,U1103,Cilantro-Lime Rice,0,0,0,4
+65,213517,105554,U1067,Sherry's Wild West Soup,0,0,0,6
+66,2208462,4247650,U1084,Bramblewood Blackberry Pie,1,2,2,11
+67,2208462,4247650,U1084,Bramblewood Blackberry Pie,1,2,2,11
+68,5436564,4247650,U1084,Roasted Vegetables,1,2,2,14
+69,5436564,4247650,U1095,Roasted Vegetables,1,2,2,14
+70,2186602,4247650,U1013,Grilled Salmon and Spinach Salad with Peach Dressing,1,2,2,9
+71,2186602,4247650,U1095,Grilled Salmon and Spinach Salad with Peach Dressing,1,2,2,9
+72,2662619,4247650,U1013,Cowboy Nachos,1,2,2,14
+73,2662619,4247650,U1083,Cowboy Nachos,1,2,2,14
+74,4252503,4247650,U1013,The Munroe Melt,1,2,2,11
+75,4252503,4247650,U1095,The Munroe Melt,1,2,2,11
+76,1970456,4247650,U1084,Roasted-Garlic Mashed Potatoes,1,2,2,13
+77,1970456,4247650,U1095,Roasted-Garlic Mashed Potatoes,1,2,2,13
+78,5430038,8596282,U1031,Cilantro-Lime Rice,0,2,0,11
+79,213517,8596282,U1031,Sherry's Wild West Soup,0,2,0,14
+80,3341164,8596282,U1031,Cotija and Corn Tacos with Lime and Mango,0,2,0,12
+81,2552596,8596282,U1026,Mexican Beef and Cheese Wontons with Salsa,0,2,0,11
+82,817513,8596282,U1031,Mexican-style Lasagna,0,2,0,7
+83,9635009,8596282,U1065,Mexican Ham and Bean Soup,0,2,0,10
+84,5613349,8596282,U1065,Mexican Style Jalapeno Burger,0,2,0,11
+85,5430038,2784333,U1083,Cilantro-Lime Rice,1,1,1,10
+86,213517,2784333,U1083,Sherry's Wild West Soup,1,1,1,8
+87,5430038,1213749,U1003,Cilantro-Lime Rice,2,2,2,3
+88,5430038,1213749,U1137,Cilantro-Lime Rice,1,1,1,10
+89,5430038,105554,U1067,Cilantro-Lime Rice,0,0,0,4
+90,213517,105554,U1103,Sherry's Wild West Soup,0,0,0,6
+91,3341164,105554,U1068,Cotija and Corn Tacos with Lime and Mango,0,0,0,5
+92,2552596,105554,U1067,Mexican Beef and Cheese Wontons with Salsa,0,0,0,6
+93,817513,105554,U1067,Mexican-style Lasagna,0,0,0,5
+94,9635009,105554,U1067,Mexican Ham and Bean Soup,0,0,0,6
+95,5613349,105554,U1067,Mexican Style Jalapeno Burger,0,0,0,6
+96,5257024,105554,U1067,Layered Chicken and Black Bean Enchilada Casserole,0,0,0,5
+97,9396622,105554,U1103,Mexican Bean Pizza,0,0,0,3
+98,6186658,105554,U1067,Lobster and Crab Enchiladas,0,0,0,3
+99,5430038,54171,U1068,Cilantro-Lime Rice,0,0,0,3
+100,5430038,54171,U1123,Cilantro-Lime Rice,2,2,1,3
+101,213517,54171,U1021,Sherry's Wild West Soup,0,0,0,3
+102,5430038,1436916,U1037,Cilantro-Lime Rice,1,0,2,11
+103,213517,1436916,U1069,Sherry's Wild West Soup,1,0,2,11
+104,5430038,5001975,U1067,Cilantro-Lime Rice,1,2,1,4
+105,5430038,5001975,U1107,Cilantro-Lime Rice,0,0,0,14
+106,213517,5001975,U1123,Sherry's Wild West Soup,1,2,1,3
+107,213517,5001975,U1123,Sherry's Wild West Soup,0,0,0,12
+108,3341164,5001975,U1067,Cotija and Corn Tacos with Lime and Mango,1,2,1,5
+109,3341164,5001975,U1107,Cotija and Corn Tacos with Lime and Mango,0,0,0,8
+110,2552596,5001975,U1067,Mexican Beef and Cheese Wontons with Salsa,1,2,1,4
+111,2552596,5001975,U1123,Mexican Beef and Cheese Wontons with Salsa,0,0,0,13
+112,817513,5001975,U1103,Mexican-style Lasagna,1,2,1,3
+113,2208462,466093,U1052,Bramblewood Blackberry Pie,1,0,2,5
+114,5436564,466093,U1008,Roasted Vegetables,1,0,2,6
+115,2186602,466093,U1008,Grilled Salmon and Spinach Salad with Peach Dressing,1,0,2,5
+116,2662619,466093,U1052,Cowboy Nachos,1,0,2,4
+117,4252503,466093,U1069,The Munroe Melt,1,0,2,2
+118,1970456,466093,U1052,Roasted-Garlic Mashed Potatoes,1,0,2,2
+119,7512788,466093,U1052,Dave's BBQ Sauce,1,0,2,5
+120,4798509,466093,U1069,Curried Chicken Salad,1,0,2,2
+121,9580009,466093,U1069,Lemon Asparagus,1,0,2,2
+122,5430038,8543491,U1103,Cilantro-Lime Rice,0,0,0,3
+123,5430038,5933155,U1046,Cilantro-Lime Rice,1,2,1,2
+124,5430038,5933155,U1083,Cilantro-Lime Rice,2,2,2,36
+125,213517,5933155,U1134,Sherry's Wild West Soup,1,2,1,3
+126,213517,5933155,U1046,Sherry's Wild West Soup,2,2,2,25
+127,3341164,5933155,U1083,Cotija and Corn Tacos with Lime and Mango,1,2,1,2
+128,3341164,5933155,U1083,Cotija and Corn Tacos with Lime and Mango,2,2,2,26
+129,2552596,5933155,U1083,Mexican Beef and Cheese Wontons with Salsa,1,2,1,5
+130,2552596,5933155,U1134,Mexican Beef and Cheese Wontons with Salsa,2,2,2,44
+131,817513,5933155,U1134,Mexican-style Lasagna,1,2,1,6
+132,5430038,2422807,U1067,Cilantro-Lime Rice,2,2,2,9
+133,5430038,2422807,U1028,Cilantro-Lime Rice,2,2,2,9
+134,213517,2422807,U1103,Sherry's Wild West Soup,2,2,2,11
+135,213517,2422807,U1068,Sherry's Wild West Soup,2,2,2,13
+136,5430038,2085629,U1137,Cilantro-Lime Rice,2,2,2,3
+137,5430038,2085629,U1083,Cilantro-Lime Rice,1,1,1,10
+138,213517,2085629,U1083,Sherry's Wild West Soup,2,2,2,4
+139,213517,2085629,U1083,Sherry's Wild West Soup,1,1,1,8
+140,3341164,2085629,U1048,Cotija and Corn Tacos with Lime and Mango,2,2,2,6
+141,3341164,2085629,U1003,Cotija and Corn Tacos with Lime and Mango,1,1,1,13
+142,2552596,2085629,U1003,Mexican Beef and Cheese Wontons with Salsa,2,2,2,4
+143,5430038,8629545,U1111,Cilantro-Lime Rice,0,0,0,9
+144,213517,8629545,U1052,Sherry's Wild West Soup,0,0,0,7
+145,3341164,8629545,U1111,Cotija and Corn Tacos with Lime and Mango,0,0,0,8
+146,2552596,8629545,U1008,Mexican Beef and Cheese Wontons with Salsa,0,0,0,8
+147,817513,8629545,U1008,Mexican-style Lasagna,0,0,0,12
+148,9635009,8629545,U1008,Mexican Ham and Bean Soup,0,0,0,7
+149,5613349,8629545,U1008,Mexican Style Jalapeno Burger,0,0,0,12
+150,5430038,5976270,U1076,Cilantro-Lime Rice,0,1,1,13
+151,213517,5976270,U1024,Sherry's Wild West Soup,0,1,1,14
+152,3341164,5976270,U1132,Cotija and Corn Tacos with Lime and Mango,0,1,1,10
+153,2552596,5976270,U1081,Mexican Beef and Cheese Wontons with Salsa,0,1,1,10
+154,817513,5976270,U1081,Mexican-style Lasagna,0,1,1,13
+155,9635009,5976270,U1024,Mexican Ham and Bean Soup,0,1,1,14
+156,5613349,5976270,U1056,Mexican Style Jalapeno Burger,0,1,1,14
+157,5257024,5976270,U1116,Layered Chicken and Black Bean Enchilada Casserole,0,1,1,9
+158,5430038,5019853,U1080,Cilantro-Lime Rice,1,1,1,6
+159,5430038,5019853,U1082,Cilantro-Lime Rice,1,1,0,13
+160,213517,5019853,U1082,Sherry's Wild West Soup,1,1,1,5
+161,213517,5019853,U1082,Sherry's Wild West Soup,1,1,0,11
+162,3341164,5019853,U1080,Cotija and Corn Tacos with Lime and Mango,1,1,1,3
+163,3341164,5019853,U1070,Cotija and Corn Tacos with Lime and Mango,1,1,0,12
+164,2552596,5019853,U1123,Mexican Beef and Cheese Wontons with Salsa,1,1,1,4
+165,2552596,5019853,U1082,Mexican Beef and Cheese Wontons with Salsa,1,1,0,11
+166,817513,5019853,U1123,Mexican-style Lasagna,1,1,1,3
+167,817513,5019853,U1080,Mexican-style Lasagna,1,1,0,8
+168,9635009,5019853,U1070,Mexican Ham and Bean Soup,1,1,1,2
+169,9635009,5019853,U1080,Mexican Ham and Bean Soup,1,1,0,13
+170,5430038,54171,U1060,Cilantro-Lime Rice,0,0,0,3
+171,5430038,54171,U1021,Cilantro-Lime Rice,2,2,1,3
+172,213517,54171,U1021,Sherry's Wild West Soup,0,0,0,3
+173,213517,54171,U1123,Sherry's Wild West Soup,2,2,1,6
+174,3341164,54171,U1060,Cotija and Corn Tacos with Lime and Mango,0,0,0,2
+175,3341164,54171,U1123,Cotija and Corn Tacos with Lime and Mango,2,2,1,2
+176,2552596,54171,U1021,Mexican Beef and Cheese Wontons with Salsa,0,0,0,2
+177,2552596,54171,U1068,Mexican Beef and Cheese Wontons with Salsa,2,2,1,4
+178,817513,54171,U1060,Mexican-style Lasagna,0,0,0,6
+179,817513,54171,U1060,Mexican-style Lasagna,2,2,1,5
+180,9635009,54171,U1021,Mexican Ham and Bean Soup,0,0,0,5
+181,9635009,54171,U1060,Mexican Ham and Bean Soup,2,2,1,4
+182,5613349,54171,U1021,Mexican Style Jalapeno Burger,0,0,0,3
+183,5613349,54171,U1123,Mexican Style Jalapeno Burger,2,2,1,2
+184,5257024,54171,U1068,Layered Chicken and Black Bean Enchilada Casserole,0,0,0,5
+185,3035102,6769062,U1074,Udon-Beef Noodle Bowl,2,2,2,7
+186,9985242,6769062,U1093,Fettuccine Carbonara,2,2,2,14
+187,9948063,6769062,U1093,Sushi Deviled Eggs | Elegant Appetizers,2,2,2,13
+188,5430038,9000916,U1026,Cilantro-Lime Rice,2,2,2,4
+189,5430038,6493352,U1082,Cilantro-Lime Rice,0,0,0,3
+190,213517,6493352,U1082,Sherry's Wild West Soup,0,0,0,3
+191,3341164,6493352,U1082,Cotija and Corn Tacos with Lime and Mango,0,0,0,2
+192,2552596,6493352,U1068,Mexican Beef and Cheese Wontons with Salsa,0,0,0,2
+193,817513,6493352,U1067,Mexican-style Lasagna,0,0,0,6
+194,9635009,6493352,U1082,Mexican Ham and Bean Soup,0,0,0,5
+195,5613349,6493352,U1067,Mexican Style Jalapeno Burger,0,0,0,3
+196,5257024,6493352,U1103,Layered Chicken and Black Bean Enchilada Casserole,0,0,0,5
+197,9396622,6493352,U1082,Mexican Bean Pizza,0,0,0,5
+198,5430038,2230542,U1050,Cilantro-Lime Rice,1,1,1,2
+199,5430038,2230542,U1060,Cilantro-Lime Rice,1,1,1,6
+200,213517,2230542,U1123,Sherry's Wild West Soup,1,1,1,6
+201,213517,2230542,U1060,Sherry's Wild West Soup,1,1,1,3
+202,3341164,2230542,U1021,Cotija and Corn Tacos with Lime and Mango,1,1,1,4
+203,3341164,2230542,U1123,Cotija and Corn Tacos with Lime and Mango,1,1,1,5
+204,2552596,2230542,U1123,Mexican Beef and Cheese Wontons with Salsa,1,1,1,3
+205,2552596,2230542,U1123,Mexican Beef and Cheese Wontons with Salsa,1,1,1,6
+206,5430038,4625314,U1046,Cilantro-Lime Rice,2,1,1,14
+207,213517,4625314,U1046,Sherry's Wild West Soup,2,1,1,12
+208,3341164,4625314,U1134,Cotija and Corn Tacos with Lime and Mango,2,1,1,13
+209,2552596,4625314,U1134,Mexican Beef and Cheese Wontons with Salsa,2,1,1,9
+210,817513,4625314,U1083,Mexican-style Lasagna,2,1,1,11
+211,9635009,4625314,U1134,Mexican Ham and Bean Soup,2,1,1,9
+212,5613349,4625314,U1046,Mexican Style Jalapeno Burger,2,1,1,7
+213,5430038,9505674,U1035,Cilantro-Lime Rice,2,1,2,2
+214,5430038,9505674,U1072,Cilantro-Lime Rice,2,1,2,2
+215,213517,9505674,U1072,Sherry's Wild West Soup,2,1,2,5
+216,213517,9505674,U1117,Sherry's Wild West Soup,2,1,2,5
+217,5430038,654250,U1008,Cilantro-Lime Rice,0,0,0,9
+218,5430038,654250,U1052,Cilantro-Lime Rice,0,0,0,9
+219,213517,654250,U1069,Sherry's Wild West Soup,0,0,0,7
+220,213517,654250,U1008,Sherry's Wild West Soup,0,0,0,7
+221,3341164,654250,U1052,Cotija and Corn Tacos with Lime and Mango,0,0,0,8
+222,3341164,654250,U1069,Cotija and Corn Tacos with Lime and Mango,0,0,0,8
+223,5430038,7711833,U1067,Cilantro-Lime Rice,0,0,0,4
+224,213517,7711833,U1082,Sherry's Wild West Soup,0,0,0,6
+225,3341164,7711833,U1082,Cotija and Corn Tacos with Lime and Mango,0,0,0,5
+226,2552596,7711833,U1068,Mexican Beef and Cheese Wontons with Salsa,0,0,0,6
+227,5430038,9648390,U1067,Cilantro-Lime Rice,1,2,1,4
+228,5430038,9648390,U1067,Cilantro-Lime Rice,1,1,1,6
+229,5430038,8635771,U1009,Cilantro-Lime Rice,2,2,2,12
+230,213517,8635771,U1053,Sherry's Wild West Soup,2,2,2,13
+231,3341164,8635771,U1122,Cotija and Corn Tacos with Lime and Mango,2,2,2,13
+232,2552596,8635771,U1029,Mexican Beef and Cheese Wontons with Salsa,2,2,2,11
+233,817513,8635771,U1106,Mexican-style Lasagna,2,2,2,11
+234,9635009,8635771,U1055,Mexican Ham and Bean Soup,2,2,2,8
+235,5613349,8635771,U1134,Mexican Style Jalapeno Burger,2,2,2,14
+236,5430038,8090349,U1046,Cilantro-Lime Rice,2,2,2,12
+237,213517,8090349,U1083,Sherry's Wild West Soup,2,2,2,10
+238,3341164,8090349,U1083,Cotija and Corn Tacos with Lime and Mango,2,2,2,11
+239,2552596,8090349,U1134,Mexican Beef and Cheese Wontons with Salsa,2,2,2,10
+240,817513,8090349,U1134,Mexican-style Lasagna,2,2,2,9
+241,9635009,8090349,U1134,Mexican Ham and Bean Soup,2,2,2,14
+242,5613349,8090349,U1083,Mexican Style Jalapeno Burger,2,2,2,12
+243,5257024,8090349,U1046,Layered Chicken and Black Bean Enchilada Casserole,2,2,2,14
+244,9396622,8090349,U1134,Mexican Bean Pizza,2,2,2,9
+245,6186658,8090349,U1134,Lobster and Crab Enchiladas,2,2,2,14
+246,3035102,8090349,U1046,Udon-Beef Noodle Bowl,1,2,2,8
+247,9985242,8090349,U1083,Fettuccine Carbonara,1,2,2,10
+248,9948063,8090349,U1046,Sushi Deviled Eggs | Elegant Appetizers,1,2,2,12
+249,9085026,8090349,U1046,Yaki Udon With Beef,1,2,2,12
+250,2208462,7184567,U1013,Bramblewood Blackberry Pie,1,2,2,11
+251,2208462,7184567,U1084,Bramblewood Blackberry Pie,1,2,2,11
+252,5436564,7184567,U1083,Roasted Vegetables,1,2,2,14
+253,5436564,7184567,U1095,Roasted Vegetables,1,2,2,14
+254,2186602,7184567,U1095,Grilled Salmon and Spinach Salad with Peach Dressing,1,2,2,9
+255,5430038,1950167,U1050,Cilantro-Lime Rice,0,0,0,3
+256,213517,1950167,U1050,Sherry's Wild West Soup,0,0,0,5
+257,3341164,1950167,U1123,Cotija and Corn Tacos with Lime and Mango,0,0,0,5
+258,2552596,1950167,U1123,Mexican Beef and Cheese Wontons with Salsa,0,0,0,5
+259,817513,1950167,U1123,Mexican-style Lasagna,0,0,0,5
+260,9635009,1950167,U1050,Mexican Ham and Bean Soup,0,0,0,6
+261,5613349,1950167,U1082,Mexican Style Jalapeno Burger,0,0,0,4
+262,5430038,5289403,U1051,Cilantro-Lime Rice,2,2,2,12
+263,213517,5289403,U1020,Sherry's Wild West Soup,2,2,2,12
+264,3341164,5289403,U1051,Cotija and Corn Tacos with Lime and Mango,2,2,2,9
+265,2552596,5289403,U1030,Mexican Beef and Cheese Wontons with Salsa,2,2,2,14
+266,817513,5289403,U1051,Mexican-style Lasagna,2,2,2,13
+267,5430038,1778290,U1123,Cilantro-Lime Rice,0,0,0,6
+268,5430038,1778290,U1070,Cilantro-Lime Rice,2,2,1,6
+269,5430038,1778290,U1082,Cilantro-Lime Rice,1,2,0,8
+270,213517,1778290,U1123,Sherry's Wild West Soup,0,0,0,4
+271,5430038,7711833,U1067,Cilantro-Lime Rice,0,0,0,4
+272,5430038,6305639,U1067,Cilantro-Lime Rice,1,1,1,4
+273,5430038,6305639,U1067,Cilantro-Lime Rice,1,1,1,4
+274,5430038,6305639,U1103,Cilantro-Lime Rice,2,2,2,9
+275,213517,6305639,U1107,Sherry's Wild West Soup,1,1,1,5
+276,213517,6305639,U1107,Sherry's Wild West Soup,1,1,1,5
+277,213517,6305639,U1123,Sherry's Wild West Soup,2,2,2,11
+278,3341164,6305639,U1067,Cotija and Corn Tacos with Lime and Mango,1,1,1,5
+279,3341164,6305639,U1123,Cotija and Corn Tacos with Lime and Mango,1,1,1,5
+280,3341164,6305639,U1107,Cotija and Corn Tacos with Lime and Mango,2,2,2,11
+281,2552596,6305639,U1123,Mexican Beef and Cheese Wontons with Salsa,1,1,1,3
+282,2552596,6305639,U1107,Mexican Beef and Cheese Wontons with Salsa,1,1,1,3
+283,5430038,6389237,U1026,Cilantro-Lime Rice,0,0,0,3
+284,213517,6389237,U1031,Sherry's Wild West Soup,0,0,0,2
+285,3341164,6389237,U1065,Cotija and Corn Tacos with Lime and Mango,0,0,0,6
+286,2552596,6389237,U1129,Mexican Beef and Cheese Wontons with Salsa,0,0,0,4
+287,817513,6389237,U1129,Mexican-style Lasagna,0,0,0,2
+288,9635009,6389237,U1065,Mexican Ham and Bean Soup,0,0,0,6
+289,5613349,6389237,U1026,Mexican Style Jalapeno Burger,0,0,0,4
+290,5257024,6389237,U1129,Layered Chicken and Black Bean Enchilada Casserole,0,0,0,3
+291,9396622,6389237,U1129,Mexican Bean Pizza,0,0,0,3
+292,6186658,6389237,U1026,Lobster and Crab Enchiladas,0,0,0,3
+293,524398,1053934,U1071,Pesto Tofu Pasta,2,2,2,2
+294,1902691,1053934,U1099,How To Make Panzanella (Italian Bread Salad),2,2,2,6
+295,6455481,1053934,U1071,Lemon Focaccia,2,2,2,5
+296,7558543,1053934,U1036,Pizza Dough,2,2,2,4
+297,3501907,1053934,U1104,Spicy Italian White Bean and Sausage Soup,2,2,2,2
+298,5192832,1053934,U1099,Slow-Cooker Cheesy Italian Tortellini,2,2,2,6
+299,5430038,892073,U1061,Cilantro-Lime Rice,1,2,1,4
+300,213517,892073,U1083,Sherry's Wild West Soup,1,2,1,4
+301,3341164,892073,U1083,Cotija and Corn Tacos with Lime and Mango,1,2,1,2
+302,2552596,892073,U1095,Mexican Beef and Cheese Wontons with Salsa,1,2,1,4
+303,817513,892073,U1083,Mexican-style Lasagna,1,2,1,3
+304,9635009,892073,U1061,Mexican Ham and Bean Soup,1,2,1,4
+305,5613349,892073,U1061,Mexican Style Jalapeno Burger,1,2,1,4
+306,5257024,892073,U1048,Layered Chicken and Black Bean Enchilada Casserole,1,2,1,3
+307,9396622,892073,U1061,Mexican Bean Pizza,1,2,1,3
+308,6186658,892073,U1048,Lobster and Crab Enchiladas,1,2,1,5
+309,2208462,892073,U1083,Bramblewood Blackberry Pie,2,2,2,2
+310,5436564,892073,U1048,Roasted Vegetables,2,2,2,4
+311,2186602,892073,U1048,Grilled Salmon and Spinach Salad with Peach Dressing,2,2,2,4
+312,2662619,892073,U1095,Cowboy Nachos,2,2,2,4
+313,5430038,5753937,U1068,Cilantro-Lime Rice,0,0,0,3
+314,5430038,5753937,U1068,Cilantro-Lime Rice,1,1,1,2
+315,5430038,5753937,U1103,Cilantro-Lime Rice,1,1,1,2
+316,213517,5753937,U1068,Sherry's Wild West Soup,0,0,0,3
+317,213517,5753937,U1067,Sherry's Wild West Soup,1,1,1,6
+318,5430038,3594589,U1107,Cilantro-Lime Rice,1,1,1,6
+319,213517,3594589,U1107,Sherry's Wild West Soup,1,1,1,3
+320,3341164,3594589,U1067,Cotija and Corn Tacos with Lime and Mango,1,1,1,2
+321,2552596,3594589,U1067,Mexican Beef and Cheese Wontons with Salsa,1,1,1,5
+322,817513,3594589,U1107,Mexican-style Lasagna,1,1,1,2
+323,9635009,3594589,U1067,Mexican Ham and Bean Soup,1,1,1,3
+324,5430038,2449776,U1116,Cilantro-Lime Rice,1,1,1,10
+325,213517,2449776,U1116,Sherry's Wild West Soup,1,1,1,11
+326,3341164,2449776,U1075,Cotija and Corn Tacos with Lime and Mango,1,1,1,7
+327,2552596,2449776,U1116,Mexican Beef and Cheese Wontons with Salsa,1,1,1,7
+328,817513,2449776,U1116,Mexican-style Lasagna,1,1,1,13
+329,9635009,2449776,U1075,Mexican Ham and Bean Soup,1,1,1,8
+330,5613349,2449776,U1116,Mexican Style Jalapeno Burger,1,1,1,14
+331,5257024,2449776,U1024,Layered Chicken and Black Bean Enchilada Casserole,1,1,1,11
+332,5430038,4059108,U1024,Cilantro-Lime Rice,1,1,1,3
+333,213517,4059108,U1071,Sherry's Wild West Soup,1,1,1,6
+334,3341164,4059108,U1135,Cotija and Corn Tacos with Lime and Mango,1,1,1,2
+335,2552596,4059108,U1076,Mexican Beef and Cheese Wontons with Salsa,1,1,1,6
+336,817513,4059108,U1016,Mexican-style Lasagna,1,1,1,5
+337,9635009,4059108,U1016,Mexican Ham and Bean Soup,1,1,1,3
+338,5613349,4059108,U1016,Mexican Style Jalapeno Burger,1,1,1,6
+339,5257024,4059108,U1016,Layered Chicken and Black Bean Enchilada Casserole,1,1,1,5
+340,9396622,4059108,U1032,Mexican Bean Pizza,1,1,1,5
+341,6186658,4059108,U1005,Lobster and Crab Enchiladas,1,1,1,6
+342,2208462,4059108,U1036,Bramblewood Blackberry Pie,1,1,2,14
+343,5436564,4059108,U1024,Roasted Vegetables,1,1,2,8
+344,2186602,4059108,U1106,Grilled Salmon and Spinach Salad with Peach Dressing,1,1,2,11
+345,2662619,4059108,U1014,Cowboy Nachos,1,1,2,10
+346,5430038,9000916,U1026,Cilantro-Lime Rice,2,2,2,4
+347,5430038,9000916,U1039,Cilantro-Lime Rice,0,2,0,11
+348,213517,9000916,U1026,Sherry's Wild West Soup,2,2,2,5
+349,213517,9000916,U1065,Sherry's Wild West Soup,0,2,0,14
+350,3341164,9000916,U1026,Cotija and Corn Tacos with Lime and Mango,2,2,2,2
+351,3341164,9000916,U1065,Cotija and Corn Tacos with Lime and Mango,0,2,0,12
+352,2552596,9000916,U1026,Mexican Beef and Cheese Wontons with Salsa,2,2,2,3
+353,2552596,9000916,U1065,Mexican Beef and Cheese Wontons with Salsa,0,2,0,11
+354,817513,9000916,U1039,Mexican-style Lasagna,2,2,2,6
+355,5430038,654250,U1052,Cilantro-Lime Rice,0,0,0,9
+356,5430038,3307340,U1027,Cilantro-Lime Rice,2,2,2,11
+357,524398,1053934,U1032,Pesto Tofu Pasta,2,2,2,2
+358,1902691,1053934,U1016,How To Make Panzanella (Italian Bread Salad),2,2,2,6
+359,6455481,1053934,U1116,Lemon Focaccia,2,2,2,5
+360,7558543,1053934,U1036,Pizza Dough,2,2,2,4
+361,3501907,1053934,U1135,Spicy Italian White Bean and Sausage Soup,2,2,2,2
+362,5430038,4364952,U1035,Cilantro-Lime Rice,2,1,2,2
+363,213517,4364952,U1035,Sherry's Wild West Soup,2,1,2,5
+364,3341164,4364952,U1035,Cotija and Corn Tacos with Lime and Mango,2,1,2,5
+365,5430038,8629545,U1008,Cilantro-Lime Rice,0,0,0,9
+366,213517,8629545,U1052,Sherry's Wild West Soup,0,0,0,7
+367,3341164,8629545,U1008,Cotija and Corn Tacos with Lime and Mango,0,0,0,8
+368,5430038,2711689,U1068,Cilantro-Lime Rice,0,0,0,3
+369,5430038,2711689,U1068,Cilantro-Lime Rice,1,1,1,6
+370,5430038,2711689,U1031,Cilantro-Lime Rice,1,2,1,10
+371,213517,2711689,U1068,Sherry's Wild West Soup,0,0,0,3
+372,213517,2711689,U1031,Sherry's Wild West Soup,1,1,1,3
+373,213517,2711689,U1031,Sherry's Wild West Soup,1,2,1,13
+374,3341164,2711689,U1103,Cotija and Corn Tacos with Lime and Mango,0,0,0,2
+375,3341164,2711689,U1068,Cotija and Corn Tacos with Lime and Mango,1,1,1,5
+376,3341164,2711689,U1031,Cotija and Corn Tacos with Lime and Mango,1,2,1,8
+377,2552596,2711689,U1031,Mexican Beef and Cheese Wontons with Salsa,0,0,0,2
+378,2552596,2711689,U1103,Mexican Beef and Cheese Wontons with Salsa,1,1,1,6
+379,5430038,2784333,U1083,Cilantro-Lime Rice,1,1,1,10
+380,213517,2784333,U1083,Sherry's Wild West Soup,1,1,1,8
+381,3341164,2784333,U1084,Cotija and Corn Tacos with Lime and Mango,1,1,1,13
+382,2552596,2784333,U1084,Mexican Beef and Cheese Wontons with Salsa,1,1,1,14
+383,817513,2784333,U1083,Mexican-style Lasagna,1,1,1,9
+384,9635009,2784333,U1084,Mexican Ham and Bean Soup,1,1,1,14
+385,5613349,2784333,U1083,Mexican Style Jalapeno Burger,1,1,1,8
+386,5257024,2784333,U1083,Layered Chicken and Black Bean Enchilada Casserole,1,1,1,11
+387,9396622,2784333,U1083,Mexican Bean Pizza,1,1,1,8
+388,6186658,2784333,U1083,Lobster and Crab Enchiladas,1,1,1,8
+389,3035102,2784333,U1084,Udon-Beef Noodle Bowl,1,2,2,8
+390,9985242,2784333,U1095,Fettuccine Carbonara,1,2,2,10
+391,9948063,2784333,U1083,Sushi Deviled Eggs | Elegant Appetizers,1,2,2,12
+392,5430038,5778661,U1104,Cilantro-Lime Rice,0,2,2,9
+393,5430038,5778661,U1071,Cilantro-Lime Rice,0,2,2,9
+394,213517,5778661,U1071,Sherry's Wild West Soup,0,2,2,14
+395,213517,5778661,U1036,Sherry's Wild West Soup,0,2,2,14
+396,3341164,5778661,U1116,Cotija and Corn Tacos with Lime and Mango,0,2,2,14
+397,3341164,5778661,U1075,Cotija and Corn Tacos with Lime and Mango,0,2,2,14
+398,2552596,5778661,U1036,Mexican Beef and Cheese Wontons with Salsa,0,2,2,8
+399,2552596,5778661,U1116,Mexican Beef and Cheese Wontons with Salsa,0,2,2,8
+400,817513,5778661,U1116,Mexican-style Lasagna,0,2,2,14
+401,817513,5778661,U1104,Mexican-style Lasagna,0,2,2,14
+402,9635009,5778661,U1024,Mexican Ham and Bean Soup,0,2,2,8
+403,9635009,5778661,U1116,Mexican Ham and Bean Soup,0,2,2,8
+404,5613349,5778661,U1071,Mexican Style Jalapeno Burger,0,2,2,13
+405,5613349,5778661,U1116,Mexican Style Jalapeno Burger,0,2,2,13
+406,5430038,6623276,U1095,Cilantro-Lime Rice,0,0,0,2
+407,5430038,6623276,U1013,Cilantro-Lime Rice,1,1,1,10
+408,213517,6623276,U1013,Sherry's Wild West Soup,0,0,0,5
+409,213517,6623276,U1089,Sherry's Wild West Soup,1,1,1,8
+410,3341164,6623276,U1114,Cotija and Corn Tacos with Lime and Mango,0,0,0,2
+411,3341164,6623276,U1083,Cotija and Corn Tacos with Lime and Mango,1,1,1,13
+412,5430038,2761825,U1118,Cilantro-Lime Rice,2,1,2,4
+413,5430038,2761825,U1118,Cilantro-Lime Rice,1,2,1,8
+414,5430038,2761825,U1035,Cilantro-Lime Rice,1,2,1,8
+415,213517,2761825,U1044,Sherry's Wild West Soup,2,1,2,6
+416,213517,2761825,U1044,Sherry's Wild West Soup,1,2,1,13
+417,213517,2761825,U1118,Sherry's Wild West Soup,1,2,1,13
+418,3341164,2761825,U1118,Cotija and Corn Tacos with Lime and Mango,2,1,2,4
+419,3341164,2761825,U1035,Cotija and Corn Tacos with Lime and Mango,1,2,1,13
+420,5430038,4668716,U1031,Cilantro-Lime Rice,0,0,0,3
+421,213517,4668716,U1031,Sherry's Wild West Soup,0,0,0,2
+422,3341164,4668716,U1065,Cotija and Corn Tacos with Lime and Mango,0,0,0,6
+423,2552596,4668716,U1026,Mexican Beef and Cheese Wontons with Salsa,0,0,0,4
+424,817513,4668716,U1065,Mexican-style Lasagna,0,0,0,2
+425,9635009,4668716,U1031,Mexican Ham and Bean Soup,0,0,0,6
+426,5613349,4668716,U1026,Mexican Style Jalapeno Burger,0,0,0,4
+427,5257024,4668716,U1031,Layered Chicken and Black Bean Enchilada Casserole,0,0,0,3
+428,5430038,8596282,U1026,Cilantro-Lime Rice,0,2,0,11
+429,213517,8596282,U1026,Sherry's Wild West Soup,0,2,0,14
+430,3341164,8596282,U1065,Cotija and Corn Tacos with Lime and Mango,0,2,0,12
+431,2552596,8596282,U1031,Mexican Beef and Cheese Wontons with Salsa,0,2,0,11
+432,817513,8596282,U1065,Mexican-style Lasagna,0,2,0,7
+433,5430038,2133964,U1080,Cilantro-Lime Rice,2,2,2,5
+434,5430038,2133964,U1023,Cilantro-Lime Rice,2,2,2,5
+435,5430038,2133964,U1080,Cilantro-Lime Rice,0,0,0,6
+436,213517,2133964,U1023,Sherry's Wild West Soup,2,2,2,6
+437,213517,2133964,U1023,Sherry's Wild West Soup,2,2,2,6
+438,213517,2133964,U1023,Sherry's Wild West Soup,0,0,0,3
+439,3341164,2133964,U1021,Cotija and Corn Tacos with Lime and Mango,2,2,2,5
+440,3341164,2133964,U1080,Cotija and Corn Tacos with Lime and Mango,2,2,2,5
+441,3341164,2133964,U1021,Cotija and Corn Tacos with Lime and Mango,0,0,0,4
+442,2552596,2133964,U1023,Mexican Beef and Cheese Wontons with Salsa,2,2,2,3
+443,2552596,2133964,U1021,Mexican Beef and Cheese Wontons with Salsa,2,2,2,3
+444,2552596,2133964,U1023,Mexican Beef and Cheese Wontons with Salsa,0,0,0,3
+445,817513,2133964,U1021,Mexican-style Lasagna,2,2,2,4
+446,5430038,3307340,U1090,Cilantro-Lime Rice,2,2,2,11
+447,213517,3307340,U1138,Sherry's Wild West Soup,2,2,2,7
+448,3341164,3307340,U1027,Cotija and Corn Tacos with Lime and Mango,2,2,2,14
+449,2552596,3307340,U1090,Mexican Beef and Cheese Wontons with Salsa,2,2,2,8
+450,817513,3307340,U1090,Mexican-style Lasagna,2,2,2,7
+451,9635009,3307340,U1027,Mexican Ham and Bean Soup,2,2,2,10
+452,5613349,3307340,U1090,Mexican Style Jalapeno Burger,2,2,2,10
+453,5257024,3307340,U1138,Layered Chicken and Black Bean Enchilada Casserole,2,2,2,9
+454,9396622,3307340,U1138,Mexican Bean Pizza,2,2,2,9
+455,6186658,3307340,U1138,Lobster and Crab Enchiladas,2,2,2,13
+456,2208462,3307340,U1138,Bramblewood Blackberry Pie,1,1,1,14
+457,2208462,3307340,U1138,Bramblewood Blackberry Pie,1,1,1,14
+458,5436564,3307340,U1027,Roasted Vegetables,1,1,1,9
+459,5436564,3307340,U1027,Roasted Vegetables,1,1,1,9
+460,5430038,2038259,U1134,Cilantro-Lime Rice,2,2,2,11
+461,213517,2038259,U1053,Sherry's Wild West Soup,2,2,2,9
+462,3341164,2038259,U1122,Cotija and Corn Tacos with Lime and Mango,2,2,2,11
+463,2552596,2038259,U1009,Mexican Beef and Cheese Wontons with Salsa,2,2,2,7
+464,817513,2038259,U1106,Mexican-style Lasagna,2,2,2,10
+465,9635009,2038259,U1122,Mexican Ham and Bean Soup,2,2,2,14
+466,5613349,2038259,U1134,Mexican Style Jalapeno Burger,2,2,2,13
+467,5257024,2038259,U1106,Layered Chicken and Black Bean Enchilada Casserole,2,2,2,7
+468,9396622,2038259,U1122,Mexican Bean Pizza,2,2,2,7
+469,6186658,2038259,U1089,Lobster and Crab Enchiladas,2,2,2,12
+470,5430038,9039387,U1024,Cilantro-Lime Rice,2,2,2,6
+471,213517,9039387,U1055,Sherry's Wild West Soup,2,2,2,4
+472,3341164,9039387,U1126,Cotija and Corn Tacos with Lime and Mango,2,2,2,2
+473,2552596,9039387,U1024,Mexican Beef and Cheese Wontons with Salsa,2,2,2,5
+474,817513,9039387,U1024,Mexican-style Lasagna,2,2,2,4
+475,9635009,9039387,U1024,Mexican Ham and Bean Soup,2,2,2,2
+476,5613349,9039387,U1126,Mexican Style Jalapeno Burger,2,2,2,6
+477,5257024,9039387,U1055,Layered Chicken and Black Bean Enchilada Casserole,2,2,2,4
+478,5430038,7846353,U1103,Cilantro-Lime Rice,1,1,1,4
+479,213517,7846353,U1067,Sherry's Wild West Soup,1,1,1,5
+480,3341164,7846353,U1067,Cotija and Corn Tacos with Lime and Mango,1,1,1,5
+481,2552596,7846353,U1107,Mexican Beef and Cheese Wontons with Salsa,1,1,1,3
+482,817513,7846353,U1107,Mexican-style Lasagna,1,1,1,4
+483,9635009,7846353,U1103,Mexican Ham and Bean Soup,1,1,1,3
+484,5613349,7846353,U1123,Mexican Style Jalapeno Burger,1,1,1,4
+485,5257024,7846353,U1067,Layered Chicken and Black Bean Enchilada Casserole,1,1,1,3
+486,524398,1053934,U1075,Pesto Tofu Pasta,2,2,2,2
+487,5430038,7265810,U1083,Cilantro-Lime Rice,2,1,1,14
+488,213517,7265810,U1083,Sherry's Wild West Soup,2,1,1,12
+489,3341164,7265810,U1134,Cotija and Corn Tacos with Lime and Mango,2,1,1,13
+490,2552596,7265810,U1134,Mexican Beef and Cheese Wontons with Salsa,2,1,1,9
+491,817513,7265810,U1083,Mexican-style Lasagna,2,1,1,11
+492,9635009,7265810,U1134,Mexican Ham and Bean Soup,2,1,1,9
+493,5613349,7265810,U1046,Mexican Style Jalapeno Burger,2,1,1,7
+494,5257024,7265810,U1134,Layered Chicken and Black Bean Enchilada Casserole,2,1,1,12
+495,9396622,7265810,U1046,Mexican Bean Pizza,2,1,1,7
+496,5430038,3669357,U1025,Cilantro-Lime Rice,1,2,1,4
+497,213517,3669357,U1004,Sherry's Wild West Soup,1,2,1,4
+498,3341164,3669357,U1025,Cotija and Corn Tacos with Lime and Mango,1,2,1,2
+499,2552596,3669357,U1061,Mexican Beef and Cheese Wontons with Salsa,1,2,1,4
+500,817513,3669357,U1004,Mexican-style Lasagna,1,2,1,3
+501,9635009,3669357,U1025,Mexican Ham and Bean Soup,1,2,1,4
+502,5613349,3669357,U1025,Mexican Style Jalapeno Burger,1,2,1,4
+503,5257024,3669357,U1061,Layered Chicken and Black Bean Enchilada Casserole,1,2,1,3
+504,9396622,3669357,U1025,Mexican Bean Pizza,1,2,1,3
+505,6186658,3669357,U1004,Lobster and Crab Enchiladas,1,2,1,5
+506,2208462,3669357,U1061,Bramblewood Blackberry Pie,2,2,2,3
+507,5436564,3669357,U1004,Roasted Vegetables,2,2,2,2
+508,2186602,3669357,U1025,Grilled Salmon and Spinach Salad with Peach Dressing,2,2,2,5
+509,2662619,3669357,U1025,Cowboy Nachos,2,2,2,3
+510,5430038,3205918,U1134,Cilantro-Lime Rice,1,2,2,4
+511,5430038,3205918,U1032,Cilantro-Lime Rice,2,1,0,12
+512,213517,3205918,U1009,Sherry's Wild West Soup,1,2,2,3
+513,2208462,7184567,U1084,Bramblewood Blackberry Pie,1,2,2,11
+514,2208462,7184567,U1095,Bramblewood Blackberry Pie,1,2,2,11
+515,5436564,7184567,U1083,Roasted Vegetables,1,2,2,14
+516,5436564,7184567,U1083,Roasted Vegetables,1,2,2,14
+517,2186602,7184567,U1095,Grilled Salmon and Spinach Salad with Peach Dressing,1,2,2,9
+518,5430038,5200338,U1066,Cilantro-Lime Rice,2,2,2,12
+519,213517,5200338,U1030,Sherry's Wild West Soup,2,2,2,12
+520,3341164,5200338,U1066,Cotija and Corn Tacos with Lime and Mango,2,2,2,9
+521,2552596,5200338,U1133,Mexican Beef and Cheese Wontons with Salsa,2,2,2,14
+522,817513,5200338,U1093,Mexican-style Lasagna,2,2,2,13
+523,9635009,5200338,U1133,Mexican Ham and Bean Soup,2,2,2,13
+524,5613349,5200338,U1066,Mexican Style Jalapeno Burger,2,2,2,13
+525,5430038,8556881,U1025,Cilantro-Lime Rice,2,2,2,12
+526,213517,8556881,U1097,Sherry's Wild West Soup,2,2,2,9
+527,3341164,8556881,U1025,Cotija and Corn Tacos with Lime and Mango,2,2,2,14
+528,2552596,8556881,U1061,Mexican Beef and Cheese Wontons with Salsa,2,2,2,14
+529,817513,8556881,U1004,Mexican-style Lasagna,2,2,2,12
+530,9635009,8556881,U1025,Mexican Ham and Bean Soup,2,2,2,12
+531,5430038,4410964,U1117,Cilantro-Lime Rice,2,2,2,12
+532,213517,4410964,U1117,Sherry's Wild West Soup,2,2,2,12
+533,3341164,4410964,U1012,Cotija and Corn Tacos with Lime and Mango,2,2,2,9
+534,2552596,4410964,U1012,Mexican Beef and Cheese Wontons with Salsa,2,2,2,14
+535,817513,4410964,U1012,Mexican-style Lasagna,2,2,2,13
+536,9635009,4410964,U1012,Mexican Ham and Bean Soup,2,2,2,13
+537,5613349,4410964,U1117,Mexican Style Jalapeno Burger,2,2,2,13
+538,5257024,4410964,U1117,Layered Chicken and Black Bean Enchilada Casserole,2,2,2,12
+539,9396622,4410964,U1030,Mexican Bean Pizza,2,2,2,9
+540,3035102,9793837,U1083,Udon-Beef Noodle Bowl,2,2,2,12
+541,9985242,9793837,U1083,Fettuccine Carbonara,2,2,2,9
+542,9948063,9793837,U1048,Sushi Deviled Eggs | Elegant Appetizers,2,2,2,12
+543,9085026,9793837,U1083,Yaki Udon With Beef,2,2,2,14
+544,5430038,2761825,U1118,Cilantro-Lime Rice,2,1,2,4
+545,5430038,2761825,U1118,Cilantro-Lime Rice,1,2,1,8
+546,5430038,2761825,U1118,Cilantro-Lime Rice,1,2,1,8
+547,213517,2761825,U1044,Sherry's Wild West Soup,2,1,2,6
+548,213517,2761825,U1118,Sherry's Wild West Soup,1,2,1,13
+549,213517,2761825,U1044,Sherry's Wild West Soup,1,2,1,13
+550,3341164,2761825,U1035,Cotija and Corn Tacos with Lime and Mango,2,1,2,4
+551,3341164,2761825,U1035,Cotija and Corn Tacos with Lime and Mango,1,2,1,13
+552,5430038,9582713,U1117,Cilantro-Lime Rice,2,2,2,12
+553,213517,9582713,U1030,Sherry's Wild West Soup,2,2,2,12
+554,3341164,9582713,U1030,Cotija and Corn Tacos with Lime and Mango,2,2,2,9
+555,2552596,9582713,U1030,Mexican Beef and Cheese Wontons with Salsa,2,2,2,14
+556,817513,9582713,U1030,Mexican-style Lasagna,2,2,2,13
+557,9635009,9582713,U1117,Mexican Ham and Bean Soup,2,2,2,13
+558,5613349,9582713,U1012,Mexican Style Jalapeno Burger,2,2,2,13
+559,5257024,9582713,U1117,Layered Chicken and Black Bean Enchilada Casserole,2,2,2,12
+560,5430038,4825286,U1129,Cilantro-Lime Rice,2,2,2,4
+561,5430038,4825286,U1129,Cilantro-Lime Rice,2,2,2,4
+562,5430038,4825286,U1026,Cilantro-Lime Rice,0,2,0,11
+563,213517,4825286,U1065,Sherry's Wild West Soup,2,2,2,5
+564,213517,4825286,U1026,Sherry's Wild West Soup,2,2,2,5
+565,213517,4825286,U1065,Sherry's Wild West Soup,0,2,0,14
+566,3341164,4825286,U1065,Cotija and Corn Tacos with Lime and Mango,2,2,2,2
+567,3341164,4825286,U1129,Cotija and Corn Tacos with Lime and Mango,2,2,2,2
+568,3341164,4825286,U1129,Cotija and Corn Tacos with Lime and Mango,0,2,0,12
+569,2552596,4825286,U1026,Mexican Beef and Cheese Wontons with Salsa,2,2,2,3
+570,2552596,4825286,U1065,Mexican Beef and Cheese Wontons with Salsa,2,2,2,3
+571,2552596,4825286,U1026,Mexican Beef and Cheese Wontons with Salsa,0,2,0,11
+572,817513,4825286,U1129,Mexican-style Lasagna,2,2,2,6
+573,817513,4825286,U1026,Mexican-style Lasagna,2,2,2,6
+574,817513,4825286,U1026,Mexican-style Lasagna,0,2,0,7
+575,5430038,3561938,U1061,Cilantro-Lime Rice,1,2,1,4
+576,213517,3561938,U1061,Sherry's Wild West Soup,1,2,1,4
+577,3341164,3561938,U1025,Cotija and Corn Tacos with Lime and Mango,1,2,1,2
+578,2552596,3561938,U1061,Mexican Beef and Cheese Wontons with Salsa,1,2,1,4
+579,5430038,5813671,U1044,Cilantro-Lime Rice,2,1,2,4
+580,5430038,5813671,U1044,Cilantro-Lime Rice,1,2,1,8
+581,5430038,5813671,U1118,Cilantro-Lime Rice,1,2,1,8
+582,213517,5813671,U1044,Sherry's Wild West Soup,2,1,2,6
+583,213517,5813671,U1118,Sherry's Wild West Soup,1,2,1,13
+584,213517,5813671,U1035,Sherry's Wild West Soup,1,2,1,13
+585,3341164,5813671,U1118,Cotija and Corn Tacos with Lime and Mango,2,1,2,4
+586,3341164,5813671,U1118,Cotija and Corn Tacos with Lime and Mango,1,2,1,13
+587,3341164,5813671,U1118,Cotija and Corn Tacos with Lime and Mango,1,2,1,13
+588,2552596,5813671,U1035,Mexican Beef and Cheese Wontons with Salsa,2,1,2,3
+589,2552596,5813671,U1118,Mexican Beef and Cheese Wontons with Salsa,1,2,1,10
+590,2552596,5813671,U1044,Mexican Beef and Cheese Wontons with Salsa,1,2,1,10
+591,817513,5813671,U1035,Mexican-style Lasagna,2,1,2,3
+592,5430038,4637953,U1129,Cilantro-Lime Rice,2,2,2,4
+593,5430038,4637953,U1065,Cilantro-Lime Rice,2,2,2,4
+594,5430038,4637953,U1026,Cilantro-Lime Rice,0,2,0,11
+595,213517,4637953,U1065,Sherry's Wild West Soup,2,2,2,5
+596,213517,4637953,U1129,Sherry's Wild West Soup,2,2,2,5
+597,213517,4637953,U1026,Sherry's Wild West Soup,0,2,0,14
+598,3341164,4637953,U1129,Cotija and Corn Tacos with Lime and Mango,2,2,2,2
+599,3341164,4637953,U1129,Cotija and Corn Tacos with Lime and Mango,2,2,2,2
+600,3341164,4637953,U1065,Cotija and Corn Tacos with Lime and Mango,0,2,0,12
+601,2552596,4637953,U1129,Mexican Beef and Cheese Wontons with Salsa,2,2,2,3
+602,7668584,8764874,U1053,Sweet and Spicy Chinese Takeout Chicken,2,1,2,10
+603,2199744,8764874,U1022,Easy Chinese Soy Sauce Chicken,2,1,2,14
+604,8633036,8764874,U1116,MAMA’S BRAISED CHICKEN LEGS ON RICE W/ FRIED CHILI CAPERS,2,1,2,13
+605,129016,8764874,U1116,Sesame Beef and Asian Vegetable Stir-Fry,2,1,2,12
+606,9378776,8764874,U1022,Fried Rice,2,1,2,7
+607,5426133,8764874,U1055,The Best Chinese Sesame Chicken,2,1,2,11
+608,3215406,8764874,U1116,Chinese Chicken Salad,2,1,2,7
+609,4840546,8764874,U1055,Pot Stickers,2,1,2,10
+610,5430038,784164,U1133,Cilantro-Lime Rice,2,2,2,12
+611,213517,784164,U1093,Sherry's Wild West Soup,2,2,2,12
+612,5430038,5753937,U1103,Cilantro-Lime Rice,0,0,0,3
+613,5430038,5753937,U1067,Cilantro-Lime Rice,1,1,1,2
+614,5430038,5753937,U1103,Cilantro-Lime Rice,1,1,1,2
+615,213517,5753937,U1067,Sherry's Wild West Soup,0,0,0,3
+616,213517,5753937,U1103,Sherry's Wild West Soup,1,1,1,6
+617,213517,5753937,U1067,Sherry's Wild West Soup,1,1,1,3
+618,3341164,5753937,U1068,Cotija and Corn Tacos with Lime and Mango,0,0,0,2
+619,3341164,5753937,U1067,Cotija and Corn Tacos with Lime and Mango,1,1,1,4
+620,3341164,5753937,U1103,Cotija and Corn Tacos with Lime and Mango,1,1,1,2
+621,2552596,5753937,U1103,Mexican Beef and Cheese Wontons with Salsa,0,0,0,2
+622,2552596,5753937,U1103,Mexican Beef and Cheese Wontons with Salsa,1,1,1,3
+623,5430038,8629545,U1111,Cilantro-Lime Rice,0,0,0,9
+624,213517,8629545,U1008,Sherry's Wild West Soup,0,0,0,7
+625,3341164,8629545,U1069,Cotija and Corn Tacos with Lime and Mango,0,0,0,8
+626,2552596,8629545,U1052,Mexican Beef and Cheese Wontons with Salsa,0,0,0,8
+627,817513,8629545,U1069,Mexican-style Lasagna,0,0,0,12
+628,9635009,8629545,U1052,Mexican Ham and Bean Soup,0,0,0,7
+629,5613349,8629545,U1052,Mexican Style Jalapeno Burger,0,0,0,12
+630,5257024,8629545,U1008,Layered Chicken and Black Bean Enchilada Casserole,0,0,0,9
+631,9396622,8629545,U1052,Mexican Bean Pizza,0,0,0,13
+632,6186658,8629545,U1111,Lobster and Crab Enchiladas,0,0,0,11
+633,5430038,5114032,U1051,Cilantro-Lime Rice,2,2,2,12
+634,5430038,5114032,U1051,Cilantro-Lime Rice,2,2,2,12
+635,213517,5114032,U1030,Sherry's Wild West Soup,2,2,2,12
+636,213517,5114032,U1030,Sherry's Wild West Soup,2,2,2,12
+637,5430038,3594589,U1103,Cilantro-Lime Rice,1,1,1,6
+638,213517,3594589,U1123,Sherry's Wild West Soup,1,1,1,3
+639,5430038,1658462,U1134,Cilantro-Lime Rice,1,1,1,10
+640,5430038,1658462,U1046,Cilantro-Lime Rice,2,1,1,14
+641,213517,1658462,U1046,Sherry's Wild West Soup,1,1,1,8
+642,213517,1658462,U1046,Sherry's Wild West Soup,2,1,1,12
+643,3341164,1658462,U1046,Cotija and Corn Tacos with Lime and Mango,1,1,1,13
+644,3341164,1658462,U1134,Cotija and Corn Tacos with Lime and Mango,2,1,1,13
+645,2552596,1658462,U1046,Mexican Beef and Cheese Wontons with Salsa,1,1,1,14
+646,2552596,1658462,U1134,Mexican Beef and Cheese Wontons with Salsa,2,1,1,9
+647,817513,1658462,U1083,Mexican-style Lasagna,1,1,1,9
+648,817513,1658462,U1083,Mexican-style Lasagna,2,1,1,11
+649,9635009,1658462,U1046,Mexican Ham and Bean Soup,1,1,1,14
+650,9635009,1658462,U1083,Mexican Ham and Bean Soup,2,1,1,9
+651,5613349,1658462,U1083,Mexican Style Jalapeno Burger,1,1,1,8
+652,5613349,1658462,U1134,Mexican Style Jalapeno Burger,2,1,1,7
+653,5257024,1658462,U1134,Layered Chicken and Black Bean Enchilada Casserole,1,1,1,11
+654,5430038,2761825,U1035,Cilantro-Lime Rice,2,1,2,4
+655,5430038,2761825,U1044,Cilantro-Lime Rice,1,2,1,8
+656,5430038,2761825,U1118,Cilantro-Lime Rice,1,2,1,8
+657,213517,2761825,U1044,Sherry's Wild West Soup,2,1,2,6
+658,213517,2761825,U1044,Sherry's Wild West Soup,1,2,1,13
+659,213517,2761825,U1118,Sherry's Wild West Soup,1,2,1,13
+660,3341164,2761825,U1118,Cotija and Corn Tacos with Lime and Mango,2,1,2,4
+661,3341164,2761825,U1118,Cotija and Corn Tacos with Lime and Mango,1,2,1,13
+662,3341164,2761825,U1035,Cotija and Corn Tacos with Lime and Mango,1,2,1,13
+663,5430038,2230542,U1123,Cilantro-Lime Rice,1,1,1,2
+664,5430038,2230542,U1050,Cilantro-Lime Rice,1,1,1,6
+665,213517,2230542,U1050,Sherry's Wild West Soup,1,1,1,6
+666,213517,2230542,U1023,Sherry's Wild West Soup,1,1,1,3
+667,3341164,2230542,U1123,Cotija and Corn Tacos with Lime and Mango,1,1,1,4
+668,3341164,2230542,U1068,Cotija and Corn Tacos with Lime and Mango,1,1,1,5
+669,2552596,2230542,U1068,Mexican Beef and Cheese Wontons with Salsa,1,1,1,3
+670,2552596,2230542,U1068,Mexican Beef and Cheese Wontons with Salsa,1,1,1,6
+671,817513,2230542,U1123,Mexican-style Lasagna,1,1,1,5
+672,817513,2230542,U1068,Mexican-style Lasagna,1,1,1,6
+673,9635009,2230542,U1021,Mexican Ham and Bean Soup,1,1,1,5
+674,9635009,2230542,U1021,Mexican Ham and Bean Soup,1,1,1,2
+675,5613349,2230542,U1021,Mexican Style Jalapeno Burger,1,1,1,3
+676,5430038,6890144,U1020,Cilantro-Lime Rice,2,2,2,12
+677,213517,6890144,U1051,Sherry's Wild West Soup,2,2,2,12
+678,3341164,6890144,U1020,Cotija and Corn Tacos with Lime and Mango,2,2,2,9
+679,2552596,6890144,U1030,Mexican Beef and Cheese Wontons with Salsa,2,2,2,14
+680,817513,6890144,U1051,Mexican-style Lasagna,2,2,2,13
+681,9635009,6890144,U1051,Mexican Ham and Bean Soup,2,2,2,13
+682,5613349,6890144,U1020,Mexican Style Jalapeno Burger,2,2,2,13
+683,5257024,6890144,U1020,Layered Chicken and Black Bean Enchilada Casserole,2,2,2,12
+684,5430038,7962883,U1029,Cilantro-Lime Rice,2,2,2,12
+685,5430038,2230542,U1023,Cilantro-Lime Rice,1,1,1,2
+686,5430038,2230542,U1021,Cilantro-Lime Rice,1,1,1,6
+687,213517,2230542,U1021,Sherry's Wild West Soup,1,1,1,6
+688,213517,2230542,U1023,Sherry's Wild West Soup,1,1,1,3
+689,3341164,2230542,U1023,Cotija and Corn Tacos with Lime and Mango,1,1,1,4
+690,3341164,2230542,U1060,Cotija and Corn Tacos with Lime and Mango,1,1,1,5
+691,5430038,2230542,U1060,Cilantro-Lime Rice,1,1,1,2
+692,5430038,2230542,U1123,Cilantro-Lime Rice,1,1,1,6
+693,213517,2230542,U1021,Sherry's Wild West Soup,1,1,1,6
+694,213517,2230542,U1050,Sherry's Wild West Soup,1,1,1,3
+695,5430038,5753937,U1103,Cilantro-Lime Rice,0,0,0,3
+696,5430038,784164,U1093,Cilantro-Lime Rice,2,2,2,12
+697,213517,784164,U1133,Sherry's Wild West Soup,2,2,2,12
+698,3341164,784164,U1133,Cotija and Corn Tacos with Lime and Mango,2,2,2,9
+699,2552596,784164,U1133,Mexican Beef and Cheese Wontons with Salsa,2,2,2,14
+700,817513,784164,U1093,Mexican-style Lasagna,2,2,2,13
+701,9635009,784164,U1066,Mexican Ham and Bean Soup,2,2,2,13
+702,5613349,784164,U1133,Mexican Style Jalapeno Burger,2,2,2,13
+703,5257024,784164,U1093,Layered Chicken and Black Bean Enchilada Casserole,2,2,2,12
+704,9396622,784164,U1133,Mexican Bean Pizza,2,2,2,9
+705,6186658,784164,U1066,Lobster and Crab Enchiladas,2,2,2,12
+706,3035102,784164,U1133,Udon-Beef Noodle Bowl,2,2,2,7
+707,3035102,784164,U1133,Udon-Beef Noodle Bowl,2,2,2,7
+708,9985242,784164,U1066,Fettuccine Carbonara,2,2,2,14
+709,9985242,784164,U1066,Fettuccine Carbonara,2,2,2,14
+710,9948063,784164,U1133,Sushi Deviled Eggs | Elegant Appetizers,2,2,2,13
+711,5430038,2711689,U1031,Cilantro-Lime Rice,0,0,0,3
+712,5430038,2711689,U1082,Cilantro-Lime Rice,1,1,1,6
+713,5430038,5753937,U1067,Cilantro-Lime Rice,0,0,0,3
+714,5430038,5753937,U1068,Cilantro-Lime Rice,1,1,1,2
+715,5430038,5753937,U1068,Cilantro-Lime Rice,1,1,1,2
+716,213517,5753937,U1103,Sherry's Wild West Soup,0,0,0,3
+717,213517,5753937,U1067,Sherry's Wild West Soup,1,1,1,6
+718,213517,5753937,U1068,Sherry's Wild West Soup,1,1,1,3
+719,3341164,5753937,U1068,Cotija and Corn Tacos with Lime and Mango,0,0,0,2
+720,3341164,5753937,U1103,Cotija and Corn Tacos with Lime and Mango,1,1,1,4
+721,3341164,5753937,U1068,Cotija and Corn Tacos with Lime and Mango,1,1,1,2
+722,2552596,5753937,U1103,Mexican Beef and Cheese Wontons with Salsa,0,0,0,2
+723,5430038,8786361,U1051,Cilantro-Lime Rice,2,2,2,12
+724,213517,8786361,U1051,Sherry's Wild West Soup,2,2,2,12
+725,3341164,8786361,U1051,Cotija and Corn Tacos with Lime and Mango,2,2,2,9
+726,2552596,8786361,U1020,Mexican Beef and Cheese Wontons with Salsa,2,2,2,14
+727,817513,8786361,U1051,Mexican-style Lasagna,2,2,2,13
+728,9635009,8786361,U1020,Mexican Ham and Bean Soup,2,2,2,13
+729,5430038,1700689,U1135,Cilantro-Lime Rice,1,1,1,3
+730,213517,1700689,U1016,Sherry's Wild West Soup,1,1,1,6
+731,3341164,1700689,U1135,Cotija and Corn Tacos with Lime and Mango,1,1,1,2
+732,3071025,7966113,U1066,Lemongrass Beef and Onions over Rice Vermicelli (Bun Bo),2,2,2,13
+733,5430038,7440515,U1117,Cilantro-Lime Rice,2,1,2,2
+734,213517,7440515,U1072,Sherry's Wild West Soup,2,1,2,5
+735,3341164,7440515,U1117,Cotija and Corn Tacos with Lime and Mango,2,1,2,5
+736,2552596,7440515,U1072,Mexican Beef and Cheese Wontons with Salsa,2,1,2,4
+737,817513,7440515,U1035,Mexican-style Lasagna,2,1,2,6
+738,9635009,7440515,U1035,Mexican Ham and Bean Soup,2,1,2,3
+739,5613349,7440515,U1035,Mexican Style Jalapeno Burger,2,1,2,5
+740,5430038,4625314,U1046,Cilantro-Lime Rice,2,1,1,14
+741,213517,4625314,U1134,Sherry's Wild West Soup,2,1,1,12
+742,3341164,4625314,U1083,Cotija and Corn Tacos with Lime and Mango,2,1,1,13
+743,2552596,4625314,U1046,Mexican Beef and Cheese Wontons with Salsa,2,1,1,9
+744,817513,4625314,U1083,Mexican-style Lasagna,2,1,1,11
+745,9635009,4625314,U1134,Mexican Ham and Bean Soup,2,1,1,9
+746,5613349,4625314,U1134,Mexican Style Jalapeno Burger,2,1,1,7
+747,5257024,4625314,U1134,Layered Chicken and Black Bean Enchilada Casserole,2,1,1,12
+748,5430038,7303379,U1083,Cilantro-Lime Rice,1,1,1,10
+749,213517,7303379,U1095,Sherry's Wild West Soup,1,1,1,8
+750,3341164,7303379,U1095,Cotija and Corn Tacos with Lime and Mango,1,1,1,13
+751,2552596,7303379,U1083,Mexican Beef and Cheese Wontons with Salsa,1,1,1,14
+752,817513,7303379,U1084,Mexican-style Lasagna,1,1,1,9
+753,5430038,8635771,U1055,Cilantro-Lime Rice,2,2,2,12
+754,213517,8635771,U1053,Sherry's Wild West Soup,2,2,2,13
+755,3341164,8635771,U1134,Cotija and Corn Tacos with Lime and Mango,2,2,2,13
+756,2552596,8635771,U1134,Mexican Beef and Cheese Wontons with Salsa,2,2,2,11
+757,817513,8635771,U1009,Mexican-style Lasagna,2,2,2,11
+758,9635009,8635771,U1029,Mexican Ham and Bean Soup,2,2,2,8
+759,5430038,8955001,U1035,Cilantro-Lime Rice,1,1,1,13
+760,213517,8955001,U1035,Sherry's Wild West Soup,1,1,1,14
+761,5430038,7343438,U1056,Cilantro-Lime Rice,2,2,2,8
+762,5430038,7343438,U1076,Cilantro-Lime Rice,1,2,2,7
+763,213517,7343438,U1076,Sherry's Wild West Soup,2,2,2,13
+764,213517,7343438,U1056,Sherry's Wild West Soup,1,2,2,13
+765,3341164,7343438,U1056,Cotija and Corn Tacos with Lime and Mango,2,2,2,8
+766,3341164,7343438,U1076,Cotija and Corn Tacos with Lime and Mango,1,2,2,7
+767,2552596,7343438,U1116,Mexican Beef and Cheese Wontons with Salsa,2,2,2,8
+768,5430038,1213749,U1137,Cilantro-Lime Rice,2,2,2,3
+769,5430038,1213749,U1003,Cilantro-Lime Rice,1,1,1,10
+770,213517,1213749,U1137,Sherry's Wild West Soup,2,2,2,4
+771,213517,1213749,U1137,Sherry's Wild West Soup,1,1,1,8
+772,3341164,1213749,U1048,Cotija and Corn Tacos with Lime and Mango,2,2,2,6
+773,3341164,1213749,U1048,Cotija and Corn Tacos with Lime and Mango,1,1,1,13
+774,5430038,143733,U1040,Cilantro-Lime Rice,1,1,1,6
+775,213517,143733,U1093,Sherry's Wild West Soup,1,1,1,3
+776,3341164,143733,U1093,Cotija and Corn Tacos with Lime and Mango,1,1,1,4
+777,2552596,143733,U1040,Mexican Beef and Cheese Wontons with Salsa,1,1,1,3
+778,5430038,3205918,U1106,Cilantro-Lime Rice,1,2,2,4
+779,5430038,3205918,U1019,Cilantro-Lime Rice,2,1,0,12
+780,213517,3205918,U1098,Sherry's Wild West Soup,1,2,2,3
+781,213517,3205918,U1134,Sherry's Wild West Soup,2,1,0,9
+782,3341164,3205918,U1134,Cotija and Corn Tacos with Lime and Mango,1,2,2,2
+783,3341164,3205918,U1106,Cotija and Corn Tacos with Lime and Mango,2,1,0,8
+784,2552596,3205918,U1036,Mexican Beef and Cheese Wontons with Salsa,1,2,2,5
+785,2552596,3205918,U1009,Mexican Beef and Cheese Wontons with Salsa,2,1,0,9
+786,817513,3205918,U1098,Mexican-style Lasagna,1,2,2,6
+787,817513,3205918,U1098,Mexican-style Lasagna,2,1,0,14
+788,9635009,3205918,U1106,Mexican Ham and Bean Soup,1,2,2,6
+789,9635009,3205918,U1089,Mexican Ham and Bean Soup,2,1,0,10
+790,5613349,3205918,U1032,Mexican Style Jalapeno Burger,1,2,2,5
+791,5430038,2270349,U1123,Cilantro-Lime Rice,1,1,1,6
+792,5430038,2270349,U1123,Cilantro-Lime Rice,1,1,0,13
+793,213517,2270349,U1082,Sherry's Wild West Soup,1,1,1,5
+794,213517,2270349,U1082,Sherry's Wild West Soup,1,1,0,11
+795,3341164,2270349,U1070,Cotija and Corn Tacos with Lime and Mango,1,1,1,3
+796,3341164,2270349,U1082,Cotija and Corn Tacos with Lime and Mango,1,1,0,12
+797,2552596,2270349,U1080,Mexican Beef and Cheese Wontons with Salsa,1,1,1,4
+798,2552596,2270349,U1082,Mexican Beef and Cheese Wontons with Salsa,1,1,0,11
+799,817513,2270349,U1080,Mexican-style Lasagna,1,1,1,3
+800,817513,2270349,U1123,Mexican-style Lasagna,1,1,0,8
+801,9635009,2270349,U1082,Mexican Ham and Bean Soup,1,1,1,2
+802,9635009,2270349,U1080,Mexican Ham and Bean Soup,1,1,0,13
+803,5430038,2085629,U1137,Cilantro-Lime Rice,2,2,2,3
+804,5430038,2085629,U1137,Cilantro-Lime Rice,1,1,1,10
+805,213517,2085629,U1083,Sherry's Wild West Soup,2,2,2,4
+806,213517,2085629,U1048,Sherry's Wild West Soup,1,1,1,8
+807,3341164,2085629,U1003,Cotija and Corn Tacos with Lime and Mango,2,2,2,6
+808,3341164,2085629,U1003,Cotija and Corn Tacos with Lime and Mango,1,1,1,13
+809,2552596,2085629,U1137,Mexican Beef and Cheese Wontons with Salsa,2,2,2,4
+810,2552596,2085629,U1003,Mexican Beef and Cheese Wontons with Salsa,1,1,1,14
+811,817513,2085629,U1003,Mexican-style Lasagna,2,2,2,2
+812,817513,2085629,U1137,Mexican-style Lasagna,1,1,1,9
+813,9635009,2085629,U1003,Mexican Ham and Bean Soup,2,2,2,6
+814,9635009,2085629,U1003,Mexican Ham and Bean Soup,1,1,1,14
+815,5613349,2085629,U1083,Mexican Style Jalapeno Burger,2,2,2,2
+816,5613349,2085629,U1083,Mexican Style Jalapeno Burger,1,1,1,8
+817,5430038,8543491,U1103,Cilantro-Lime Rice,0,0,0,3
+818,213517,8543491,U1068,Sherry's Wild West Soup,0,0,0,3
+819,3341164,8543491,U1067,Cotija and Corn Tacos with Lime and Mango,0,0,0,2
+820,2552596,8543491,U1103,Mexican Beef and Cheese Wontons with Salsa,0,0,0,2
+821,817513,8543491,U1067,Mexican-style Lasagna,0,0,0,6
+822,9635009,8543491,U1067,Mexican Ham and Bean Soup,0,0,0,5
+823,5613349,8543491,U1067,Mexican Style Jalapeno Burger,0,0,0,3
+824,5257024,8543491,U1067,Layered Chicken and Black Bean Enchilada Casserole,0,0,0,5
+825,9396622,8543491,U1103,Mexican Bean Pizza,0,0,0,5
+826,3035102,9904212,U1030,Udon-Beef Noodle Bowl,2,2,2,7
+827,9985242,9904212,U1093,Fettuccine Carbonara,2,2,2,14
+828,5430038,5813671,U1035,Cilantro-Lime Rice,2,1,2,4
+829,5430038,5813671,U1044,Cilantro-Lime Rice,1,2,1,8
+830,5430038,5813671,U1118,Cilantro-Lime Rice,1,2,1,8
+831,213517,5813671,U1044,Sherry's Wild West Soup,2,1,2,6
+832,213517,5813671,U1035,Sherry's Wild West Soup,1,2,1,13
+833,213517,5813671,U1035,Sherry's Wild West Soup,1,2,1,13
+834,3341164,5813671,U1044,Cotija and Corn Tacos with Lime and Mango,2,1,2,4
+835,3341164,5813671,U1035,Cotija and Corn Tacos with Lime and Mango,1,2,1,13
+836,3341164,5813671,U1118,Cotija and Corn Tacos with Lime and Mango,1,2,1,13
+837,2552596,5813671,U1044,Mexican Beef and Cheese Wontons with Salsa,2,1,2,3
+838,5430038,5562664,U1028,Cilantro-Lime Rice,0,0,0,4
+839,5430038,7326576,U1117,Cilantro-Lime Rice,2,2,2,12
+840,213517,7326576,U1012,Sherry's Wild West Soup,2,2,2,12
+841,3341164,7326576,U1117,Cotija and Corn Tacos with Lime and Mango,2,2,2,9
+842,2552596,7326576,U1117,Mexican Beef and Cheese Wontons with Salsa,2,2,2,14
+843,817513,7326576,U1117,Mexican-style Lasagna,2,2,2,13
+844,9635009,7326576,U1012,Mexican Ham and Bean Soup,2,2,2,13
+845,5430038,7653545,U1068,Cilantro-Lime Rice,0,0,0,3
+846,213517,7653545,U1103,Sherry's Wild West Soup,0,0,0,3
+847,3341164,7653545,U1068,Cotija and Corn Tacos with Lime and Mango,0,0,0,2
+848,2552596,7653545,U1103,Mexican Beef and Cheese Wontons with Salsa,0,0,0,2
+849,817513,7653545,U1068,Mexican-style Lasagna,0,0,0,6
+850,9635009,7653545,U1103,Mexican Ham and Bean Soup,0,0,0,5
+851,5613349,7653545,U1067,Mexican Style Jalapeno Burger,0,0,0,3
+852,2208462,5459079,U1095,Bramblewood Blackberry Pie,1,2,2,11
+853,5436564,5459079,U1095,Roasted Vegetables,1,2,2,14
+854,5430038,2846332,U1055,Cilantro-Lime Rice,2,2,2,12
+855,213517,2846332,U1055,Sherry's Wild West Soup,2,2,2,13
+856,3341164,2846332,U1055,Cotija and Corn Tacos with Lime and Mango,2,2,2,13
+857,2552596,2846332,U1024,Mexican Beef and Cheese Wontons with Salsa,2,2,2,11
+858,817513,2846332,U1055,Mexican-style Lasagna,2,2,2,11
+859,9635009,2846332,U1024,Mexican Ham and Bean Soup,2,2,2,8
+860,5613349,2846332,U1126,Mexican Style Jalapeno Burger,2,2,2,14
+861,5257024,2846332,U1055,Layered Chicken and Black Bean Enchilada Casserole,2,2,2,7
+862,5430038,9331664,U1023,Cilantro-Lime Rice,1,1,1,2
+863,5430038,9331664,U1021,Cilantro-Lime Rice,1,1,1,6
+864,213517,9331664,U1123,Sherry's Wild West Soup,1,1,1,6
+865,213517,9331664,U1068,Sherry's Wild West Soup,1,1,1,3
+866,3341164,9331664,U1123,Cotija and Corn Tacos with Lime and Mango,1,1,1,4
+867,3341164,9331664,U1023,Cotija and Corn Tacos with Lime and Mango,1,1,1,5
+868,2552596,9331664,U1023,Mexican Beef and Cheese Wontons with Salsa,1,1,1,3
+869,2552596,9331664,U1123,Mexican Beef and Cheese Wontons with Salsa,1,1,1,6
+870,817513,9331664,U1123,Mexican-style Lasagna,1,1,1,5
+871,817513,9331664,U1021,Mexican-style Lasagna,1,1,1,6
+872,9635009,9331664,U1068,Mexican Ham and Bean Soup,1,1,1,5
+873,9635009,9331664,U1023,Mexican Ham and Bean Soup,1,1,1,2
+874,5613349,9331664,U1060,Mexican Style Jalapeno Burger,1,1,1,3
+875,5613349,9331664,U1060,Mexican Style Jalapeno Burger,1,1,1,4
+876,5257024,9331664,U1068,Layered Chicken and Black Bean Enchilada Casserole,1,1,1,2
+877,5430038,8090349,U1134,Cilantro-Lime Rice,2,2,2,12
+878,213517,8090349,U1083,Sherry's Wild West Soup,2,2,2,10
+879,3341164,8090349,U1083,Cotija and Corn Tacos with Lime and Mango,2,2,2,11
+880,2552596,8090349,U1046,Mexican Beef and Cheese Wontons with Salsa,2,2,2,10
+881,5430038,8800176,U1123,Cilantro-Lime Rice,2,2,1,6
+882,5430038,8800176,U1080,Cilantro-Lime Rice,1,1,0,13
+883,213517,8800176,U1070,Sherry's Wild West Soup,2,2,1,6
+884,213517,8800176,U1050,Sherry's Wild West Soup,1,1,0,11
+885,5430038,6503871,U1134,Cilantro-Lime Rice,1,2,1,2
+886,213517,6503871,U1046,Sherry's Wild West Soup,1,2,1,3
+887,3035102,9793837,U1083,Udon-Beef Noodle Bowl,2,2,2,12
+888,9985242,9793837,U1083,Fettuccine Carbonara,2,2,2,9
+889,9948063,9793837,U1048,Sushi Deviled Eggs | Elegant Appetizers,2,2,2,12
+890,9085026,9793837,U1083,Yaki Udon With Beef,2,2,2,14
+891,1593462,9793837,U1095,Udon Noodles with Bay Scallops and Baby Bok Choy,2,2,2,8
+892,3121700,9793837,U1083,Miso Soup,2,2,2,11
+893,5430038,7189943,U1090,Cilantro-Lime Rice,2,2,2,11
+894,213517,7189943,U1027,Sherry's Wild West Soup,2,2,2,7
+895,3341164,7189943,U1027,Cotija and Corn Tacos with Lime and Mango,2,2,2,14
+896,2552596,7189943,U1027,Mexican Beef and Cheese Wontons with Salsa,2,2,2,8
+897,817513,7189943,U1138,Mexican-style Lasagna,2,2,2,7
+898,9635009,7189943,U1090,Mexican Ham and Bean Soup,2,2,2,10
+899,5613349,7189943,U1090,Mexican Style Jalapeno Burger,2,2,2,10
+900,5257024,7189943,U1090,Layered Chicken and Black Bean Enchilada Casserole,2,2,2,9
+901,5430038,7270622,U1116,Cilantro-Lime Rice,1,2,2,7
+902,213517,7270622,U1024,Sherry's Wild West Soup,1,2,2,13
+903,3341164,7270622,U1024,Cotija and Corn Tacos with Lime and Mango,1,2,2,7
+904,2552596,7270622,U1056,Mexican Beef and Cheese Wontons with Salsa,1,2,2,9
+905,817513,7270622,U1056,Mexican-style Lasagna,1,2,2,14
+906,9635009,7270622,U1132,Mexican Ham and Bean Soup,1,2,2,12
+907,5613349,7270622,U1076,Mexican Style Jalapeno Burger,1,2,2,8
+908,5257024,7270622,U1132,Layered Chicken and Black Bean Enchilada Casserole,1,2,2,8
+909,9396622,7270622,U1024,Mexican Bean Pizza,1,2,2,11
+910,5430038,2010044,U1083,Cilantro-Lime Rice,1,1,1,10
+911,5430038,2010044,U1083,Cilantro-Lime Rice,2,2,2,12
+912,213517,2010044,U1048,Sherry's Wild West Soup,1,1,1,8
+913,213517,2010044,U1083,Sherry's Wild West Soup,2,2,2,10
+914,3341164,2010044,U1048,Cotija and Corn Tacos with Lime and Mango,1,1,1,13
+915,3341164,2010044,U1083,Cotija and Corn Tacos with Lime and Mango,2,2,2,11
+916,2208462,6134876,U1084,Bramblewood Blackberry Pie,1,2,2,11
+917,5436564,6134876,U1084,Roasted Vegetables,1,2,2,14
+918,2186602,6134876,U1034,Grilled Salmon and Spinach Salad with Peach Dressing,1,2,2,9
+919,2662619,6134876,U1095,Cowboy Nachos,1,2,2,14
+920,4252503,6134876,U1034,The Munroe Melt,1,2,2,11
+921,1970456,6134876,U1095,Roasted-Garlic Mashed Potatoes,1,2,2,13
+922,5430038,2230542,U1050,Cilantro-Lime Rice,1,1,1,2
+923,5430038,2230542,U1021,Cilantro-Lime Rice,1,1,1,6
+924,213517,2230542,U1021,Sherry's Wild West Soup,1,1,1,6
+925,213517,2230542,U1023,Sherry's Wild West Soup,1,1,1,3
+926,3341164,2230542,U1023,Cotija and Corn Tacos with Lime and Mango,1,1,1,4
+927,3341164,2230542,U1068,Cotija and Corn Tacos with Lime and Mango,1,1,1,5
+928,2552596,2230542,U1060,Mexican Beef and Cheese Wontons with Salsa,1,1,1,3
+929,2552596,2230542,U1050,Mexican Beef and Cheese Wontons with Salsa,1,1,1,6
+930,817513,2230542,U1068,Mexican-style Lasagna,1,1,1,5
+931,817513,2230542,U1021,Mexican-style Lasagna,1,1,1,6
+932,9635009,2230542,U1050,Mexican Ham and Bean Soup,1,1,1,5
+933,3035102,6852953,U1048,Udon-Beef Noodle Bowl,1,2,2,8
+934,9985242,6852953,U1083,Fettuccine Carbonara,1,2,2,10
+935,9948063,6852953,U1003,Sushi Deviled Eggs | Elegant Appetizers,1,2,2,12
+936,9085026,6852953,U1048,Yaki Udon With Beef,1,2,2,12
+937,1593462,6852953,U1003,Udon Noodles with Bay Scallops and Baby Bok Choy,1,2,2,7
+938,3121700,6852953,U1048,Miso Soup,1,2,2,7
+939,3952455,6852953,U1083,Grilled Teriyaki-Glazed Salmon,1,2,2,9
+940,3885547,6852953,U1083,Negimaki,1,2,2,12
+941,2929996,6852953,U1083,Japanese Beef and Vegetable Hot Pot (Sukiyaki),1,2,2,11
+942,8502390,6852953,U1003,Miso-Glazed Sea Bass,1,2,2,7
+943,5430038,828039,U1066,Cilantro-Lime Rice,2,2,2,12
+944,213517,828039,U1093,Sherry's Wild West Soup,2,2,2,12
+945,3341164,828039,U1030,Cotija and Corn Tacos with Lime and Mango,2,2,2,9
+946,2552596,828039,U1030,Mexican Beef and Cheese Wontons with Salsa,2,2,2,14
+947,817513,828039,U1030,Mexican-style Lasagna,2,2,2,13
+948,9635009,828039,U1133,Mexican Ham and Bean Soup,2,2,2,13
+949,5613349,828039,U1066,Mexican Style Jalapeno Burger,2,2,2,13
+950,5257024,828039,U1066,Layered Chicken and Black Bean Enchilada Casserole,2,2,2,12
+951,5430038,7665918,U1026,Cilantro-Lime Rice,2,2,2,4
+952,5430038,7665918,U1026,Cilantro-Lime Rice,2,2,2,4
+953,5430038,7665918,U1065,Cilantro-Lime Rice,0,2,0,11
+954,213517,7665918,U1065,Sherry's Wild West Soup,2,2,2,5
+955,213517,7665918,U1026,Sherry's Wild West Soup,2,2,2,5
+956,213517,7665918,U1129,Sherry's Wild West Soup,0,2,0,14
+957,3341164,7665918,U1065,Cotija and Corn Tacos with Lime and Mango,2,2,2,2
+958,3341164,7665918,U1026,Cotija and Corn Tacos with Lime and Mango,2,2,2,2
+959,3341164,7665918,U1026,Cotija and Corn Tacos with Lime and Mango,0,2,0,12
+960,2552596,7665918,U1026,Mexican Beef and Cheese Wontons with Salsa,2,2,2,3
+961,2552596,7665918,U1065,Mexican Beef and Cheese Wontons with Salsa,2,2,2,3
+962,2552596,7665918,U1065,Mexican Beef and Cheese Wontons with Salsa,0,2,0,11
+963,817513,7665918,U1065,Mexican-style Lasagna,2,2,2,6
+964,817513,7665918,U1026,Mexican-style Lasagna,2,2,2,6
+965,817513,7665918,U1129,Mexican-style Lasagna,0,2,0,7
+966,5430038,1153571,U1123,Cilantro-Lime Rice,0,0,0,3
+967,5430038,1153571,U1068,Cilantro-Lime Rice,2,2,1,3
+968,213517,1153571,U1021,Sherry's Wild West Soup,0,0,0,3
+969,5430038,8825768,U1070,Cilantro-Lime Rice,1,2,1,10
+970,213517,8825768,U1082,Sherry's Wild West Soup,1,2,1,13
+971,5430038,8090349,U1134,Cilantro-Lime Rice,2,2,2,12
+972,213517,8090349,U1083,Sherry's Wild West Soup,2,2,2,10
+973,3341164,8090349,U1134,Cotija and Corn Tacos with Lime and Mango,2,2,2,11
+974,5430038,5200338,U1093,Cilantro-Lime Rice,2,2,2,12
+975,213517,5200338,U1133,Sherry's Wild West Soup,2,2,2,12
+976,3341164,5200338,U1133,Cotija and Corn Tacos with Lime and Mango,2,2,2,9
+977,2552596,5200338,U1093,Mexican Beef and Cheese Wontons with Salsa,2,2,2,14
+978,817513,5200338,U1093,Mexican-style Lasagna,2,2,2,13
+979,9635009,5200338,U1093,Mexican Ham and Bean Soup,2,2,2,13
+980,5613349,5200338,U1093,Mexican Style Jalapeno Burger,2,2,2,13
+981,5257024,5200338,U1133,Layered Chicken and Black Bean Enchilada Casserole,2,2,2,12
+982,9396622,5200338,U1030,Mexican Bean Pizza,2,2,2,9
+983,6186658,5200338,U1066,Lobster and Crab Enchiladas,2,2,2,12
+984,5430038,3959301,U1103,Cilantro-Lime Rice,0,0,0,3
+985,5430038,3959301,U1068,Cilantro-Lime Rice,1,1,1,6
+986,5430038,3959301,U1103,Cilantro-Lime Rice,1,2,1,10
+987,213517,3959301,U1103,Sherry's Wild West Soup,0,0,0,3
+988,213517,3959301,U1031,Sherry's Wild West Soup,1,1,1,3
+989,213517,3959301,U1031,Sherry's Wild West Soup,1,2,1,13
+990,3341164,3959301,U1103,Cotija and Corn Tacos with Lime and Mango,0,0,0,2
+991,3341164,3959301,U1031,Cotija and Corn Tacos with Lime and Mango,1,1,1,5
+992,2208462,5434450,U1118,Bramblewood Blackberry Pie,1,2,1,6
+993,5436564,5434450,U1035,Roasted Vegetables,1,2,1,2
+994,2186602,5434450,U1044,Grilled Salmon and Spinach Salad with Peach Dressing,1,2,1,4
+995,2662619,5434450,U1118,Cowboy Nachos,1,2,1,5
+996,4252503,5434450,U1118,The Munroe Melt,1,2,1,4
+997,1970456,5434450,U1118,Roasted-Garlic Mashed Potatoes,1,2,1,3
+998,7512788,5434450,U1118,Dave's BBQ Sauce,1,2,1,4
+999,4798509,5434450,U1035,Curried Chicken Salad,1,2,1,4
+1000,9580009,5434450,U1044,Lemon Asparagus,1,2,1,2
+1001,3071025,3670347,U1066,Lemongrass Beef and Onions over Rice Vermicelli (Bun Bo),2,2,2,13
+1002,3035102,9793837,U1048,Udon-Beef Noodle Bowl,2,2,2,12
+1003,9985242,9793837,U1095,Fettuccine Carbonara,2,2,2,9
+1004,9948063,9793837,U1095,Sushi Deviled Eggs | Elegant Appetizers,2,2,2,12
+1005,9085026,9793837,U1083,Yaki Udon With Beef,2,2,2,14
+1006,1593462,9793837,U1083,Udon Noodles with Bay Scallops and Baby Bok Choy,2,2,2,8
+1007,3121700,9793837,U1048,Miso Soup,2,2,2,11
+1008,3952455,9793837,U1083,Grilled Teriyaki-Glazed Salmon,2,2,2,9
+1009,3885547,9793837,U1048,Negimaki,2,2,2,13
+1010,2929996,9793837,U1095,Japanese Beef and Vegetable Hot Pot (Sukiyaki),2,2,2,10
+1011,5430038,9966595,U1083,Cilantro-Lime Rice,1,1,1,10
+1012,5430038,9966595,U1048,Cilantro-Lime Rice,2,2,2,12
+1013,213517,9966595,U1003,Sherry's Wild West Soup,1,1,1,8
+1014,213517,9966595,U1083,Sherry's Wild West Soup,2,2,2,10
+1015,3341164,9966595,U1003,Cotija and Corn Tacos with Lime and Mango,1,1,1,13
+1016,3341164,9966595,U1083,Cotija and Corn Tacos with Lime and Mango,2,2,2,11
+1017,2552596,9966595,U1048,Mexican Beef and Cheese Wontons with Salsa,1,1,1,14
+1018,2552596,9966595,U1083,Mexican Beef and Cheese Wontons with Salsa,2,2,2,10
+1019,817513,9966595,U1003,Mexican-style Lasagna,1,1,1,9
+1020,817513,9966595,U1003,Mexican-style Lasagna,2,2,2,9
+1021,9635009,9966595,U1003,Mexican Ham and Bean Soup,1,1,1,14
+1022,9635009,9966595,U1083,Mexican Ham and Bean Soup,2,2,2,14
+1023,5613349,9966595,U1083,Mexican Style Jalapeno Burger,1,1,1,8
+1024,5613349,9966595,U1048,Mexican Style Jalapeno Burger,2,2,2,12
+1025,5257024,9966595,U1083,Layered Chicken and Black Bean Enchilada Casserole,1,1,1,11
+1026,5430038,1778290,U1123,Cilantro-Lime Rice,0,0,0,6
+1027,5430038,1778290,U1123,Cilantro-Lime Rice,2,2,1,6
+1028,5430038,1778290,U1070,Cilantro-Lime Rice,1,2,0,8
+1029,213517,1778290,U1123,Sherry's Wild West Soup,0,0,0,4
+1030,213517,1778290,U1082,Sherry's Wild West Soup,2,2,1,6
+1031,213517,1778290,U1123,Sherry's Wild West Soup,1,2,0,11
+1032,3341164,1778290,U1123,Cotija and Corn Tacos with Lime and Mango,0,0,0,6
+1033,3341164,1778290,U1070,Cotija and Corn Tacos with Lime and Mango,2,2,1,2
+1034,3341164,1778290,U1070,Cotija and Corn Tacos with Lime and Mango,1,2,0,12
+1035,2552596,1778290,U1082,Mexican Beef and Cheese Wontons with Salsa,0,0,0,2
+1036,2552596,1778290,U1123,Mexican Beef and Cheese Wontons with Salsa,2,2,1,6
+1037,2552596,1778290,U1082,Mexican Beef and Cheese Wontons with Salsa,1,2,0,9
+1038,817513,1778290,U1123,Mexican-style Lasagna,0,0,0,4
+1039,817513,1778290,U1123,Mexican-style Lasagna,2,2,1,5
+1040,817513,1778290,U1082,Mexican-style Lasagna,1,2,0,10
+1041,5430038,8547396,U1067,Cilantro-Lime Rice,1,2,2,3
+1042,5430038,8547396,U1067,Cilantro-Lime Rice,2,2,2,9
+1043,213517,8547396,U1107,Sherry's Wild West Soup,1,2,2,3
+1044,213517,8547396,U1123,Sherry's Wild West Soup,2,2,2,11
+1045,3341164,8547396,U1107,Cotija and Corn Tacos with Lime and Mango,1,2,2,6
+1046,3341164,8547396,U1103,Cotija and Corn Tacos with Lime and Mango,2,2,2,11
+1047,2552596,8547396,U1103,Mexican Beef and Cheese Wontons with Salsa,1,2,2,4
+1048,2552596,8547396,U1067,Mexican Beef and Cheese Wontons with Salsa,2,2,2,13
+1049,817513,8547396,U1107,Mexican-style Lasagna,1,2,2,4
+1050,817513,8547396,U1107,Mexican-style Lasagna,2,2,2,13
+1051,9635009,8547396,U1063,Mexican Ham and Bean Soup,1,2,2,6
+1052,9635009,8547396,U1103,Mexican Ham and Bean Soup,2,2,2,9
+1053,5613349,8547396,U1063,Mexican Style Jalapeno Burger,1,2,2,2
+1054,5613349,8547396,U1063,Mexican Style Jalapeno Burger,2,2,2,7
+1055,5430038,3693357,U1069,Cilantro-Lime Rice,1,0,2,11
+1056,213517,3693357,U1120,Sherry's Wild West Soup,1,0,2,11
+1057,3341164,3693357,U1120,Cotija and Corn Tacos with Lime and Mango,1,0,2,12
+1058,2552596,3693357,U1069,Mexican Beef and Cheese Wontons with Salsa,1,0,2,7
+1059,817513,3693357,U1037,Mexican-style Lasagna,1,0,2,7
+1060,9635009,3693357,U1037,Mexican Ham and Bean Soup,1,0,2,11
+1061,5613349,3693357,U1037,Mexican Style Jalapeno Burger,1,0,2,9
+1062,5430038,8596282,U1031,Cilantro-Lime Rice,0,2,0,11
+1063,213517,8596282,U1065,Sherry's Wild West Soup,0,2,0,14
+1064,3341164,8596282,U1026,Cotija and Corn Tacos with Lime and Mango,0,2,0,12
+1065,2552596,8596282,U1026,Mexican Beef and Cheese Wontons with Salsa,0,2,0,11
+1066,817513,8596282,U1026,Mexican-style Lasagna,0,2,0,7
+1067,9635009,8596282,U1031,Mexican Ham and Bean Soup,0,2,0,10
+1068,5613349,8596282,U1065,Mexican Style Jalapeno Burger,0,2,0,11
+1069,5257024,8596282,U1065,Layered Chicken and Black Bean Enchilada Casserole,0,2,0,14
+1070,5430038,7962883,U1089,Cilantro-Lime Rice,2,2,2,12
+1071,213517,7962883,U1009,Sherry's Wild West Soup,2,2,2,13
+1072,3341164,7962883,U1053,Cotija and Corn Tacos with Lime and Mango,2,2,2,13
+1073,2552596,7962883,U1134,Mexican Beef and Cheese Wontons with Salsa,2,2,2,11
+1074,817513,7962883,U1009,Mexican-style Lasagna,2,2,2,11
+1075,9635009,7962883,U1029,Mexican Ham and Bean Soup,2,2,2,8
+1076,5613349,7962883,U1106,Mexican Style Jalapeno Burger,2,2,2,14
+1077,5257024,7962883,U1053,Layered Chicken and Black Bean Enchilada Casserole,2,2,2,7
+1078,9396622,7962883,U1029,Mexican Bean Pizza,2,2,2,13
+1079,6186658,7962883,U1009,Lobster and Crab Enchiladas,2,2,2,7
+1080,7668584,7962883,U1055,Sweet and Spicy Chinese Takeout Chicken,2,1,2,10
+1081,3035102,9904212,U1030,Udon-Beef Noodle Bowl,2,2,2,7
+1082,9985242,9904212,U1093,Fettuccine Carbonara,2,2,2,14
+1083,9948063,9904212,U1030,Sushi Deviled Eggs | Elegant Appetizers,2,2,2,13
+1084,9085026,9904212,U1030,Yaki Udon With Beef,2,2,2,10
+1085,1593462,9904212,U1066,Udon Noodles with Bay Scallops and Baby Bok Choy,2,2,2,13
+1086,3121700,9904212,U1066,Miso Soup,2,2,2,8
+1087,3952455,9904212,U1093,Grilled Teriyaki-Glazed Salmon,2,2,2,8
+1088,3885547,9904212,U1093,Negimaki,2,2,2,12
+1089,2929996,9904212,U1093,Japanese Beef and Vegetable Hot Pot (Sukiyaki),2,2,2,9
+1090,8502390,9904212,U1030,Miso-Glazed Sea Bass,2,2,2,8
+1091,5430038,654250,U1069,Cilantro-Lime Rice,0,0,0,9
+1092,5430038,654250,U1069,Cilantro-Lime Rice,0,0,0,9
+1093,213517,654250,U1069,Sherry's Wild West Soup,0,0,0,7
+1094,213517,654250,U1069,Sherry's Wild West Soup,0,0,0,7
+1095,3341164,654250,U1069,Cotija and Corn Tacos with Lime and Mango,0,0,0,8
+1096,3341164,654250,U1069,Cotija and Corn Tacos with Lime and Mango,0,0,0,8
+1097,2552596,654250,U1069,Mexican Beef and Cheese Wontons with Salsa,0,0,0,8
+1098,2552596,654250,U1008,Mexican Beef and Cheese Wontons with Salsa,0,0,0,8
+1099,817513,654250,U1069,Mexican-style Lasagna,0,0,0,12
+1100,817513,654250,U1052,Mexican-style Lasagna,0,0,0,12
+1101,9635009,654250,U1069,Mexican Ham and Bean Soup,0,0,0,7
+1102,9635009,654250,U1008,Mexican Ham and Bean Soup,0,0,0,7
+1103,5613349,654250,U1069,Mexican Style Jalapeno Burger,0,0,0,12
+1104,5613349,654250,U1069,Mexican Style Jalapeno Burger,0,0,0,12
+1105,5257024,654250,U1069,Layered Chicken and Black Bean Enchilada Casserole,0,0,0,9
+1106,5430038,5303210,U1090,Cilantro-Lime Rice,2,2,2,11
+1107,213517,5303210,U1027,Sherry's Wild West Soup,2,2,2,7
+1108,3341164,5303210,U1138,Cotija and Corn Tacos with Lime and Mango,2,2,2,14
+1109,2552596,5303210,U1027,Mexican Beef and Cheese Wontons with Salsa,2,2,2,8
+1110,5430038,9000916,U1065,Cilantro-Lime Rice,2,2,2,4
+1111,5430038,9000916,U1026,Cilantro-Lime Rice,0,2,0,11
+1112,213517,9000916,U1065,Sherry's Wild West Soup,2,2,2,5
+1113,213517,9000916,U1039,Sherry's Wild West Soup,0,2,0,14
+1114,3341164,9000916,U1039,Cotija and Corn Tacos with Lime and Mango,2,2,2,2
+1115,7668584,6473654,U1135,Sweet and Spicy Chinese Takeout Chicken,1,1,2,42
+1116,2199744,6473654,U1114,Easy Chinese Soy Sauce Chicken,1,1,2,21
+1117,8633036,6473654,U1091,MAMA’S BRAISED CHICKEN LEGS ON RICE W/ FRIED CHILI CAPERS,1,1,2,48
+1118,5430038,2010044,U1083,Cilantro-Lime Rice,1,1,1,10
+1119,5430038,2010044,U1083,Cilantro-Lime Rice,2,2,2,12
+1120,213517,2010044,U1048,Sherry's Wild West Soup,1,1,1,8
+1121,213517,2010044,U1048,Sherry's Wild West Soup,2,2,2,10
+1122,3341164,2010044,U1003,Cotija and Corn Tacos with Lime and Mango,1,1,1,13
+1123,3341164,2010044,U1003,Cotija and Corn Tacos with Lime and Mango,2,2,2,11
+1124,2552596,2010044,U1048,Mexican Beef and Cheese Wontons with Salsa,1,1,1,14
+1125,2552596,2010044,U1003,Mexican Beef and Cheese Wontons with Salsa,2,2,2,10
+1126,817513,2010044,U1003,Mexican-style Lasagna,1,1,1,9
+1127,817513,2010044,U1003,Mexican-style Lasagna,2,2,2,9
+1128,9635009,2010044,U1048,Mexican Ham and Bean Soup,1,1,1,14
+1129,9635009,2010044,U1048,Mexican Ham and Bean Soup,2,2,2,14
+1130,5613349,2010044,U1048,Mexican Style Jalapeno Burger,1,1,1,8
+1131,5430038,54171,U1123,Cilantro-Lime Rice,0,0,0,3
+1132,5430038,54171,U1068,Cilantro-Lime Rice,2,2,1,3
+1133,5430038,7270622,U1024,Cilantro-Lime Rice,1,2,2,7
+1134,213517,7270622,U1056,Sherry's Wild West Soup,1,2,2,13
+1135,3341164,7270622,U1116,Cotija and Corn Tacos with Lime and Mango,1,2,2,7
+1136,5430038,5813671,U1118,Cilantro-Lime Rice,2,1,2,4
+1137,5430038,5813671,U1044,Cilantro-Lime Rice,1,2,1,8
+1138,5430038,5813671,U1044,Cilantro-Lime Rice,1,2,1,8
+1139,5430038,8800176,U1080,Cilantro-Lime Rice,2,2,1,6
+1140,5430038,8800176,U1050,Cilantro-Lime Rice,1,1,0,13
+1141,213517,8800176,U1050,Sherry's Wild West Soup,2,2,1,6
+1142,213517,8800176,U1082,Sherry's Wild West Soup,1,1,0,11
+1143,3341164,8800176,U1080,Cotija and Corn Tacos with Lime and Mango,2,2,1,2
+1144,3341164,8800176,U1123,Cotija and Corn Tacos with Lime and Mango,1,1,0,12
+1145,2552596,8800176,U1082,Mexican Beef and Cheese Wontons with Salsa,2,2,1,6
+1146,2552596,8800176,U1050,Mexican Beef and Cheese Wontons with Salsa,1,1,0,11
+1147,817513,8800176,U1070,Mexican-style Lasagna,2,2,1,5
+1148,817513,8800176,U1082,Mexican-style Lasagna,1,1,0,8
+1149,5430038,2776886,U1035,Cilantro-Lime Rice,1,2,1,8
+1150,213517,2776886,U1118,Sherry's Wild West Soup,1,2,1,13
+1151,3341164,2776886,U1118,Cotija and Corn Tacos with Lime and Mango,1,2,1,13
+1152,2552596,2776886,U1044,Mexican Beef and Cheese Wontons with Salsa,1,2,1,10
+1153,817513,2776886,U1044,Mexican-style Lasagna,1,2,1,11
+1154,9635009,2776886,U1118,Mexican Ham and Bean Soup,1,2,1,10
+1155,5613349,2776886,U1118,Mexican Style Jalapeno Burger,1,2,1,7
+1156,5257024,2776886,U1044,Layered Chicken and Black Bean Enchilada Casserole,1,2,1,8
+1157,9396622,2776886,U1035,Mexican Bean Pizza,1,2,1,9
+1158,6186658,2776886,U1044,Lobster and Crab Enchiladas,1,2,1,12
+1159,5430038,3235101,U1023,Cilantro-Lime Rice,2,2,2,5
+1160,5430038,3235101,U1080,Cilantro-Lime Rice,2,2,2,5
+1161,5430038,3235101,U1021,Cilantro-Lime Rice,0,0,0,6
+1162,213517,3235101,U1021,Sherry's Wild West Soup,2,2,2,6
+1163,213517,3235101,U1023,Sherry's Wild West Soup,2,2,2,6
+1164,213517,3235101,U1023,Sherry's Wild West Soup,0,0,0,3
+1165,3341164,3235101,U1021,Cotija and Corn Tacos with Lime and Mango,2,2,2,5
+1166,3341164,3235101,U1021,Cotija and Corn Tacos with Lime and Mango,2,2,2,5
+1167,3341164,3235101,U1023,Cotija and Corn Tacos with Lime and Mango,0,0,0,4
+1168,2552596,3235101,U1021,Mexican Beef and Cheese Wontons with Salsa,2,2,2,3
+1169,2552596,3235101,U1023,Mexican Beef and Cheese Wontons with Salsa,2,2,2,3
+1170,2552596,3235101,U1023,Mexican Beef and Cheese Wontons with Salsa,0,0,0,3
+1171,5430038,9165347,U1050,Cilantro-Lime Rice,0,0,0,13
+1172,213517,9165347,U1082,Sherry's Wild West Soup,0,0,0,13
+1173,3341164,9165347,U1123,Cotija and Corn Tacos with Lime and Mango,0,0,0,10
+1174,2552596,9165347,U1123,Mexican Beef and Cheese Wontons with Salsa,0,0,0,13
+1175,5430038,1515727,U1084,Cilantro-Lime Rice,0,0,0,2
+1176,5430038,1515727,U1084,Cilantro-Lime Rice,1,1,1,10
+1177,213517,1515727,U1084,Sherry's Wild West Soup,0,0,0,5
+1178,213517,1515727,U1114,Sherry's Wild West Soup,1,1,1,8
+1179,3341164,1515727,U1083,Cotija and Corn Tacos with Lime and Mango,0,0,0,2
+1180,3341164,1515727,U1096,Cotija and Corn Tacos with Lime and Mango,1,1,1,13
+1181,2552596,1515727,U1083,Mexican Beef and Cheese Wontons with Salsa,0,0,0,2
+1182,2552596,1515727,U1089,Mexican Beef and Cheese Wontons with Salsa,1,1,1,14
+1183,817513,1515727,U1095,Mexican-style Lasagna,0,0,0,5
+1184,5430038,487686,U1133,Cilantro-Lime Rice,2,2,2,12
+1185,213517,487686,U1030,Sherry's Wild West Soup,2,2,2,12
+1186,3341164,487686,U1093,Cotija and Corn Tacos with Lime and Mango,2,2,2,9
+1187,2552596,487686,U1093,Mexican Beef and Cheese Wontons with Salsa,2,2,2,14
+1188,817513,487686,U1133,Mexican-style Lasagna,2,2,2,13
+1189,5430038,8904264,U1103,Cilantro-Lime Rice,0,0,0,3
+1190,5430038,8904264,U1103,Cilantro-Lime Rice,1,1,1,2
+1191,5430038,8904264,U1067,Cilantro-Lime Rice,1,1,1,2
+1192,213517,8904264,U1067,Sherry's Wild West Soup,0,0,0,3
+1193,213517,8904264,U1103,Sherry's Wild West Soup,1,1,1,6
+1194,213517,8904264,U1068,Sherry's Wild West Soup,1,1,1,3
+1195,3341164,8904264,U1068,Cotija and Corn Tacos with Lime and Mango,0,0,0,2
+1196,3341164,8904264,U1068,Cotija and Corn Tacos with Lime and Mango,1,1,1,4
+1197,3341164,8904264,U1103,Cotija and Corn Tacos with Lime and Mango,1,1,1,2
+1198,2552596,8904264,U1068,Mexican Beef and Cheese Wontons with Salsa,0,0,0,2
+1199,2552596,8904264,U1067,Mexican Beef and Cheese Wontons with Salsa,1,1,1,3
+1200,2552596,8904264,U1068,Mexican Beef and Cheese Wontons with Salsa,1,1,1,6
+1201,817513,8904264,U1103,Mexican-style Lasagna,0,0,0,6
+1202,5430038,2860587,U1098,Cilantro-Lime Rice,1,2,2,4
+1203,5430038,2860587,U1113,Cilantro-Lime Rice,2,1,0,12
+1204,213517,2860587,U1089,Sherry's Wild West Soup,1,2,2,3
+1205,213517,2860587,U1134,Sherry's Wild West Soup,2,1,0,9
+1206,3341164,2860587,U1134,Cotija and Corn Tacos with Lime and Mango,1,2,2,2
+1207,5430038,3307340,U1027,Cilantro-Lime Rice,2,2,2,11
+1208,213517,3307340,U1138,Sherry's Wild West Soup,2,2,2,7
+1209,3341164,3307340,U1138,Cotija and Corn Tacos with Lime and Mango,2,2,2,14
+1210,2552596,3307340,U1027,Mexican Beef and Cheese Wontons with Salsa,2,2,2,8
+1211,817513,3307340,U1138,Mexican-style Lasagna,2,2,2,7
+1212,9635009,3307340,U1138,Mexican Ham and Bean Soup,2,2,2,10
+1213,5613349,3307340,U1090,Mexican Style Jalapeno Burger,2,2,2,10
+1214,5430038,4668716,U1026,Cilantro-Lime Rice,0,0,0,3
+1215,213517,4668716,U1065,Sherry's Wild West Soup,0,0,0,2
+1216,3341164,4668716,U1031,Cotija and Corn Tacos with Lime and Mango,0,0,0,6
+1217,2552596,4668716,U1031,Mexican Beef and Cheese Wontons with Salsa,0,0,0,4
+1218,817513,4668716,U1026,Mexican-style Lasagna,0,0,0,2
+1219,9635009,4668716,U1026,Mexican Ham and Bean Soup,0,0,0,6
+1220,5430038,4825286,U1129,Cilantro-Lime Rice,2,2,2,4
+1221,5430038,4825286,U1065,Cilantro-Lime Rice,2,2,2,4
+1222,5430038,4825286,U1129,Cilantro-Lime Rice,0,2,0,11
+1223,5430038,4801951,U1111,Cilantro-Lime Rice,1,0,2,11
+1224,213517,4801951,U1111,Sherry's Wild West Soup,1,0,2,11
+1225,3341164,4801951,U1037,Cotija and Corn Tacos with Lime and Mango,1,0,2,12
+1226,2552596,4801951,U1069,Mexican Beef and Cheese Wontons with Salsa,1,0,2,7
+1227,817513,4801951,U1037,Mexican-style Lasagna,1,0,2,7
+1228,9635009,4801951,U1120,Mexican Ham and Bean Soup,1,0,2,11
+1229,5613349,4801951,U1069,Mexican Style Jalapeno Burger,1,0,2,9
+1230,5257024,4801951,U1120,Layered Chicken and Black Bean Enchilada Casserole,1,0,2,7
+1231,9396622,4801951,U1069,Mexican Bean Pizza,1,0,2,9
+1232,2208462,6695261,U1027,Bramblewood Blackberry Pie,2,1,0,2
+1233,5436564,6695261,U1137,Roasted Vegetables,2,1,0,6
+1234,2186602,6695261,U1027,Grilled Salmon and Spinach Salad with Peach Dressing,2,1,0,5
+1235,2662619,6695261,U1137,Cowboy Nachos,2,1,0,6
+1236,4252503,6695261,U1114,The Munroe Melt,2,1,0,6
+1237,1970456,6695261,U1027,Roasted-Garlic Mashed Potatoes,2,1,0,2
+1238,7512788,6695261,U1137,Dave's BBQ Sauce,2,1,0,4
+1239,4798509,6695261,U1033,Curried Chicken Salad,2,1,0,2
+1240,5430038,6503871,U1134,Cilantro-Lime Rice,1,2,1,2
+1241,213517,6503871,U1134,Sherry's Wild West Soup,1,2,1,3
+1242,3341164,6503871,U1083,Cotija and Corn Tacos with Lime and Mango,1,2,1,2
+1243,2552596,6503871,U1083,Mexican Beef and Cheese Wontons with Salsa,1,2,1,5
+1244,5430038,4359822,U1067,Cilantro-Lime Rice,1,1,1,6
+1245,213517,4359822,U1123,Sherry's Wild West Soup,1,1,1,3
+1246,3341164,4359822,U1068,Cotija and Corn Tacos with Lime and Mango,1,1,1,5
+1247,2552596,4359822,U1068,Mexican Beef and Cheese Wontons with Salsa,1,1,1,6
+1248,817513,4359822,U1068,Mexican-style Lasagna,1,1,1,6
+1249,9635009,4359822,U1068,Mexican Ham and Bean Soup,1,1,1,2
+1250,5613349,4359822,U1068,Mexican Style Jalapeno Burger,1,1,1,4
+1251,5257024,4359822,U1123,Layered Chicken and Black Bean Enchilada Casserole,1,1,1,5
+1252,9396622,4359822,U1103,Mexican Bean Pizza,1,1,1,4
+1253,6186658,4359822,U1123,Lobster and Crab Enchiladas,1,1,1,6
+1254,5430038,9815512,U1107,Cilantro-Lime Rice,1,2,2,3
+1255,5430038,9815512,U1103,Cilantro-Lime Rice,2,2,2,9
+1256,213517,9815512,U1123,Sherry's Wild West Soup,1,2,2,3
+1257,5430038,7189943,U1090,Cilantro-Lime Rice,2,2,2,11
+1258,213517,7189943,U1090,Sherry's Wild West Soup,2,2,2,7
+1259,3341164,7189943,U1090,Cotija and Corn Tacos with Lime and Mango,2,2,2,14
+1260,2552596,7189943,U1138,Mexican Beef and Cheese Wontons with Salsa,2,2,2,8
+1261,7668584,3872213,U1083,Sweet and Spicy Chinese Takeout Chicken,1,2,2,13
+1262,2199744,3872213,U1046,Easy Chinese Soy Sauce Chicken,1,2,2,8
+1263,8633036,3872213,U1083,MAMA’S BRAISED CHICKEN LEGS ON RICE W/ FRIED CHILI CAPERS,1,2,2,8
+1264,129016,3872213,U1134,Sesame Beef and Asian Vegetable Stir-Fry,1,2,2,9
+1265,9378776,3872213,U1046,Fried Rice,1,2,2,8
+1266,5426133,3872213,U1083,The Best Chinese Sesame Chicken,1,2,2,11
+1267,3215406,3872213,U1046,Chinese Chicken Salad,1,2,2,10
+1268,4840546,3872213,U1134,Pot Stickers,1,2,2,11
+1269,2208462,6819102,U1118,Bramblewood Blackberry Pie,1,2,1,6
+1270,2208462,6819102,U1044,Bramblewood Blackberry Pie,1,2,1,6
+1271,2208462,6819102,U1118,Bramblewood Blackberry Pie,1,2,1,6
+1272,5436564,6819102,U1044,Roasted Vegetables,1,2,1,2
+1273,5436564,6819102,U1044,Roasted Vegetables,1,2,1,2
+1274,5436564,6819102,U1035,Roasted Vegetables,1,2,1,2
+1275,2186602,6819102,U1044,Grilled Salmon and Spinach Salad with Peach Dressing,1,2,1,4
+1276,2186602,6819102,U1044,Grilled Salmon and Spinach Salad with Peach Dressing,1,2,1,4
+1277,2186602,6819102,U1118,Grilled Salmon and Spinach Salad with Peach Dressing,1,2,1,4
+1278,2662619,6819102,U1044,Cowboy Nachos,1,2,1,5
+1279,2662619,6819102,U1118,Cowboy Nachos,1,2,1,5
+1280,2662619,6819102,U1044,Cowboy Nachos,1,2,1,5
+1281,4252503,6819102,U1035,The Munroe Melt,1,2,1,4
+1282,4252503,6819102,U1044,The Munroe Melt,1,2,1,4
+1283,4252503,6819102,U1044,The Munroe Melt,1,2,1,4
+1284,5430038,4042352,U1116,Cilantro-Lime Rice,0,2,2,9
+1285,5430038,4042352,U1036,Cilantro-Lime Rice,0,2,2,9
+1286,213517,4042352,U1071,Sherry's Wild West Soup,0,2,2,14
+1287,213517,4042352,U1075,Sherry's Wild West Soup,0,2,2,14
+1288,3341164,4042352,U1024,Cotija and Corn Tacos with Lime and Mango,0,2,2,14
+1289,3341164,4042352,U1071,Cotija and Corn Tacos with Lime and Mango,0,2,2,14
+1290,2552596,4042352,U1071,Mexican Beef and Cheese Wontons with Salsa,0,2,2,8
+1291,2552596,4042352,U1116,Mexican Beef and Cheese Wontons with Salsa,0,2,2,8
+1292,817513,4042352,U1075,Mexican-style Lasagna,0,2,2,14
+1293,817513,4042352,U1071,Mexican-style Lasagna,0,2,2,14
+1294,2208462,7184567,U1013,Bramblewood Blackberry Pie,1,2,2,11
+1295,2208462,7184567,U1095,Bramblewood Blackberry Pie,1,2,2,11
+1296,5430038,2085629,U1003,Cilantro-Lime Rice,2,2,2,3
+1297,5430038,2085629,U1048,Cilantro-Lime Rice,1,1,1,10
+1298,213517,2085629,U1003,Sherry's Wild West Soup,2,2,2,4
+1299,213517,2085629,U1003,Sherry's Wild West Soup,1,1,1,8
+1300,3341164,2085629,U1083,Cotija and Corn Tacos with Lime and Mango,2,2,2,6
+1301,3341164,2085629,U1137,Cotija and Corn Tacos with Lime and Mango,1,1,1,13
+1302,2552596,2085629,U1083,Mexican Beef and Cheese Wontons with Salsa,2,2,2,4
+1303,2552596,2085629,U1003,Mexican Beef and Cheese Wontons with Salsa,1,1,1,14
+1304,817513,2085629,U1083,Mexican-style Lasagna,2,2,2,2
+1305,817513,2085629,U1083,Mexican-style Lasagna,1,1,1,9
+1306,5430038,3594589,U1107,Cilantro-Lime Rice,1,1,1,6
+1307,213517,3594589,U1123,Sherry's Wild West Soup,1,1,1,3
+1308,3341164,3594589,U1067,Cotija and Corn Tacos with Lime and Mango,1,1,1,2
+1309,2552596,3594589,U1123,Mexican Beef and Cheese Wontons with Salsa,1,1,1,5
+1310,817513,3594589,U1107,Mexican-style Lasagna,1,1,1,2
+1311,9635009,3594589,U1103,Mexican Ham and Bean Soup,1,1,1,3
+1312,5613349,3594589,U1107,Mexican Style Jalapeno Burger,1,1,1,4
+1313,5257024,3594589,U1123,Layered Chicken and Black Bean Enchilada Casserole,1,1,1,3
+1314,9396622,3594589,U1123,Mexican Bean Pizza,1,1,1,3
+1315,2208462,466093,U1069,Bramblewood Blackberry Pie,1,0,2,5
+1316,5436564,466093,U1008,Roasted Vegetables,1,0,2,6
+1317,2186602,466093,U1069,Grilled Salmon and Spinach Salad with Peach Dressing,1,0,2,5
+1318,2662619,466093,U1052,Cowboy Nachos,1,0,2,4
+1319,4252503,466093,U1008,The Munroe Melt,1,0,2,2
+1320,1970456,466093,U1069,Roasted-Garlic Mashed Potatoes,1,0,2,2
+1321,7512788,466093,U1052,Dave's BBQ Sauce,1,0,2,5
+1322,7668584,8764874,U1018,Sweet and Spicy Chinese Takeout Chicken,2,1,2,10
+1323,2199744,8764874,U1116,Easy Chinese Soy Sauce Chicken,2,1,2,14
+1324,8633036,8764874,U1055,MAMA’S BRAISED CHICKEN LEGS ON RICE W/ FRIED CHILI CAPERS,2,1,2,13
+1325,129016,8764874,U1116,Sesame Beef and Asian Vegetable Stir-Fry,2,1,2,12
+1326,9378776,8764874,U1053,Fried Rice,2,1,2,7
+1327,5426133,8764874,U1022,The Best Chinese Sesame Chicken,2,1,2,11
+1328,3215406,8764874,U1053,Chinese Chicken Salad,2,1,2,7
+1329,4840546,8764874,U1022,Pot Stickers,2,1,2,10
+1330,3035102,3456435,U1095,Udon-Beef Noodle Bowl,2,2,2,9
+1331,9985242,3456435,U1095,Fettuccine Carbonara,2,2,2,7
+1332,9948063,3456435,U1095,Sushi Deviled Eggs | Elegant Appetizers,2,2,2,12
+1333,5430038,7628522,U1076,Cilantro-Lime Rice,2,2,2,8
+1334,5430038,7628522,U1076,Cilantro-Lime Rice,1,2,2,7
+1335,213517,7628522,U1076,Sherry's Wild West Soup,2,2,2,13
+1336,213517,7628522,U1081,Sherry's Wild West Soup,1,2,2,13
+1337,3341164,7628522,U1116,Cotija and Corn Tacos with Lime and Mango,2,2,2,8
+1338,3341164,7628522,U1081,Cotija and Corn Tacos with Lime and Mango,1,2,2,7
+1339,5430038,3548538,U1046,Cilantro-Lime Rice,1,1,1,10
+1340,5430038,3548538,U1134,Cilantro-Lime Rice,2,1,1,14
+1341,213517,3548538,U1046,Sherry's Wild West Soup,1,1,1,8
+1342,213517,3548538,U1083,Sherry's Wild West Soup,2,1,1,12
+1343,5430038,6493352,U1103,Cilantro-Lime Rice,0,0,0,3
+1344,213517,6493352,U1103,Sherry's Wild West Soup,0,0,0,3
+1345,3341164,6493352,U1067,Cotija and Corn Tacos with Lime and Mango,0,0,0,2
+1346,2552596,6493352,U1082,Mexican Beef and Cheese Wontons with Salsa,0,0,0,2
+1347,817513,6493352,U1103,Mexican-style Lasagna,0,0,0,6
+1348,9635009,6493352,U1068,Mexican Ham and Bean Soup,0,0,0,5
+1349,5613349,6493352,U1067,Mexican Style Jalapeno Burger,0,0,0,3
+1350,5257024,6493352,U1103,Layered Chicken and Black Bean Enchilada Casserole,0,0,0,5
+1351,9396622,6493352,U1082,Mexican Bean Pizza,0,0,0,5
+1352,6186658,6493352,U1103,Lobster and Crab Enchiladas,0,0,0,3
+1353,5430038,8090349,U1083,Cilantro-Lime Rice,2,2,2,12
+1354,213517,8090349,U1134,Sherry's Wild West Soup,2,2,2,10
+1355,3341164,8090349,U1046,Cotija and Corn Tacos with Lime and Mango,2,2,2,11
+1356,2552596,8090349,U1083,Mexican Beef and Cheese Wontons with Salsa,2,2,2,10
+1357,817513,8090349,U1083,Mexican-style Lasagna,2,2,2,9
+1358,9635009,8090349,U1046,Mexican Ham and Bean Soup,2,2,2,14
+1359,5613349,8090349,U1083,Mexican Style Jalapeno Burger,2,2,2,12
+1360,5257024,8090349,U1134,Layered Chicken and Black Bean Enchilada Casserole,2,2,2,14
+1361,9396622,8090349,U1083,Mexican Bean Pizza,2,2,2,9
+1362,6186658,8090349,U1083,Lobster and Crab Enchiladas,2,2,2,14
+1363,3035102,8090349,U1134,Udon-Beef Noodle Bowl,1,2,2,8
+1364,9985242,8090349,U1046,Fettuccine Carbonara,1,2,2,10
+1365,9948063,8090349,U1046,Sushi Deviled Eggs | Elegant Appetizers,1,2,2,12
+1366,9085026,8090349,U1046,Yaki Udon With Beef,1,2,2,12
+1367,5430038,3977660,U1083,Cilantro-Lime Rice,2,2,2,3
+1368,5430038,3977660,U1083,Cilantro-Lime Rice,1,1,1,10
+1369,213517,3977660,U1083,Sherry's Wild West Soup,2,2,2,4
+1370,213517,3977660,U1137,Sherry's Wild West Soup,1,1,1,8
+1371,3341164,3977660,U1083,Cotija and Corn Tacos with Lime and Mango,2,2,2,6
+1372,3341164,3977660,U1003,Cotija and Corn Tacos with Lime and Mango,1,1,1,13
+1373,2552596,3977660,U1003,Mexican Beef and Cheese Wontons with Salsa,2,2,2,4
+1374,2552596,3977660,U1137,Mexican Beef and Cheese Wontons with Salsa,1,1,1,14
+1375,817513,3977660,U1137,Mexican-style Lasagna,2,2,2,2
+1376,5430038,4764208,U1103,Cilantro-Lime Rice,1,1,1,4
+1377,5430038,4764208,U1123,Cilantro-Lime Rice,1,1,1,4
+1378,5430038,4764208,U1103,Cilantro-Lime Rice,2,2,2,9
+1379,213517,4764208,U1067,Sherry's Wild West Soup,1,1,1,5
+1380,213517,4764208,U1103,Sherry's Wild West Soup,1,1,1,5
+1381,213517,4764208,U1123,Sherry's Wild West Soup,2,2,2,11
+1382,3341164,4764208,U1123,Cotija and Corn Tacos with Lime and Mango,1,1,1,5
+1383,3341164,4764208,U1107,Cotija and Corn Tacos with Lime and Mango,1,1,1,5
+1384,3341164,4764208,U1107,Cotija and Corn Tacos with Lime and Mango,2,2,2,11
+1385,2552596,4764208,U1107,Mexican Beef and Cheese Wontons with Salsa,1,1,1,3
+1386,5430038,3959301,U1031,Cilantro-Lime Rice,0,0,0,3
+1387,5430038,3959301,U1031,Cilantro-Lime Rice,1,1,1,6
+1388,5430038,3959301,U1103,Cilantro-Lime Rice,1,2,1,10
+1389,213517,3959301,U1103,Sherry's Wild West Soup,0,0,0,3
+1390,213517,3959301,U1103,Sherry's Wild West Soup,1,1,1,3
+1391,213517,3959301,U1031,Sherry's Wild West Soup,1,2,1,13
+1392,3341164,3959301,U1103,Cotija and Corn Tacos with Lime and Mango,0,0,0,2
+1393,3341164,3959301,U1031,Cotija and Corn Tacos with Lime and Mango,1,1,1,5
+1394,3341164,3959301,U1103,Cotija and Corn Tacos with Lime and Mango,1,2,1,8
+1395,2552596,3959301,U1082,Mexican Beef and Cheese Wontons with Salsa,0,0,0,2
+1396,5430038,4625314,U1083,Cilantro-Lime Rice,2,1,1,14
+1397,213517,4625314,U1083,Sherry's Wild West Soup,2,1,1,12
+1398,3341164,4625314,U1134,Cotija and Corn Tacos with Lime and Mango,2,1,1,13
+1399,2552596,4625314,U1046,Mexican Beef and Cheese Wontons with Salsa,2,1,1,9
+1400,817513,4625314,U1046,Mexican-style Lasagna,2,1,1,11
+1401,524398,5458230,U1095,Pesto Tofu Pasta,1,1,0,6
+1402,1902691,5458230,U1099,How To Make Panzanella (Italian Bread Salad),1,1,0,2
+1403,5430038,8825768,U1082,Cilantro-Lime Rice,1,2,1,10
+1404,213517,8825768,U1123,Sherry's Wild West Soup,1,2,1,13
+1405,3341164,8825768,U1123,Cotija and Corn Tacos with Lime and Mango,1,2,1,8
+1406,2552596,8825768,U1028,Mexican Beef and Cheese Wontons with Salsa,1,2,1,10

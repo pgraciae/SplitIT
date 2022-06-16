@@ -15,6 +15,7 @@ import Register from "./Components/Registration.js";
 import Forgot from "./Components/Forgot.js";
 import Friends from "./Components/Friends.js"
 import Groups from "./Components/Groups.js"
+import StatisticsView from "./Components/Statistics.js"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import cookie from 'react-cookies';
 import ChooseGroup from "./Components/ChooseGroup.js"
@@ -290,6 +291,20 @@ class App extends React.Component {
         <NavBarCustom view={this.go}></NavBarCustom>
       </div>
       <Groups Email={this.email_value()} />
+      </header>
+
+      </div>
+    )
+  }
+
+  else if (this.state.View === 'Statistics'){
+    return(
+      <div className="App">
+      <header className="App-header">
+      <div>
+        <NavBarCustom view={this.go}></NavBarCustom>
+      </div>
+      <StatisticsView Email={this.email_value()} />
       </header>
 
       </div>

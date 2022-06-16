@@ -42,7 +42,9 @@ CREATE TABLE TICKET (
     group_id INT REFERENCES groups(group_id),
     status VARCHAR(20) NOT NULL,
     date DATE NOT NULL,
-    place VARCHAR(50) NOT NULL
+    place VARCHAR(50) NOT NULL,
+    place_id INT,
+    type VARCHAR(50) NOT NULL
 );
 
 
@@ -76,6 +78,9 @@ CREATE TABLE PRODUCT(
     ticket_id INT REFERENCES ticket(ticket_id),
     paid_by VARCHAR(30) REFERENCES usertable(nickname),
     item VARCHAR(1000) NOT NULL,
+    rating INT,
+    food_rating INT,
+    service_rating INT,
     price NUMERIC(5,2) NOT NULL
 );
 
