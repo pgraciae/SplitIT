@@ -70,7 +70,6 @@ def upload():
 def login():
     
     data = request.args.to_dict()
-
     bd =  UserTable.query.filter_by(email = data['nickname']).first()
     
     if bd != None:

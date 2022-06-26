@@ -4,3 +4,4 @@ pandas
 Flask-SQLAlchemy==2.5.1
 matplotlib
 numpy
+python-dateutil

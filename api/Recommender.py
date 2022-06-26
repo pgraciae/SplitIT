@@ -10,8 +10,8 @@ from surprise import Reader
 
 
 
-def get_recommendations(user_id, estimated_prediction, pred_df):
-    df_recommended = pred_df[(pred_df['est'] >= estimated_prediction) & (pred_df['nickname']==user_id)]
+def get_recommendations(user_id, pred_df):
+    df_recommended = pred_df[pred_df['nickname']==user_id]
     restaurants = df_recommended[['place','type']]
     return restaurants
 
@@ -30,74 +30,22 @@ def recommender(ratings_data, userid):
 
     anti_set = data.build_full_trainset().build_anti_testset()
 
-
-    # kf = KFold(n_splits=3)
-    # algo = KNNBasic()
-    # best_algo = None
-    # best_rmse = 1000
-    # best_pred = None
-
-    # for trainset, testset in kf.split(data):
-    #     algo.fit(trainset)
-    #     predictions = algo.test(testset)
-    #     rmse = accuracy.rmse(predictions, verbose=True)
-    #     if rmse < best_rmse:
-    #         best_algo = algo
-    #         best_pred = predictions
-
-    # # Fitting with splits 5
-    # kf = KFold(n_splits=5)
-    # sim_options = {'name':'cosine'}
-    # algo = KNNWithMeans(sim_options = sim_options)
-    # best_algo = None
-    # best_rmse = 1000.0
-    # best_pred = None
-    # for trainset, testset in kf.split(data):
-    #     # train and test algorithm.
-    #     algo.fit(trainset)
-    #     predictions = algo.test(testset)
-    #     # Compute and print Root Mean Squared Error
-    #     rmse = accuracy.rmse(predictions, verbose=True)
-    #     if rmse < best_rmse:
-    #         best_algo = algo
-    #         best_rmse= rmse
-    #         best_pred = predictions
-
-
-    # kf = KFold(n_splits=3)
-    # algo = KNNBaseline(k=3)
-    # best_algo = None
-    # best_rmse = 1000.0
-    # best_pred = None
-    # for trainset, testset in kf.split(data):
-    #     # train and test algorithm.
-    #     algo.fit(trainset)
-    #     predictions = algo.test(testset)
-    #     # Compute and print Root Mean Squared Error
-    #     rmse = accuracy.rmse(predictions, verbose=True)
-    #     if rmse < best_rmse:
-    #         best_rmse = rmse
-    #         best_algo = algo
-    #         best_pred = predictions
-
-
-    sim_options = { 'name': 'cosine' ,'user_based':  False}
+    sim_options = { 'name': 'cosine' ,'user_based':  True}
     kf = KFold(n_splits=5)
-    algo = KNNWithMeans(k =3 , sim_options = sim_options)
     best_algo = None
     best_rmse = 1000.0
     best_pred = None
+    algo = KNNWithMeans(k =8 , sim_options = sim_options)
     for trainset, testset in kf.split(data):
         # train and test algorithm.
         algo.fit(trainset)
         predictions = algo.test(testset)
         # Compute and print Root Mean Squared Error
-        rmse = accuracy.rmse(predictions, verbose=True)
+        rmse = accuracy.rmse(predictions, verbose=False)
         if rmse < best_rmse:
             best_rmse= rmse
             best_algo = algo
             best_pred = predictions
-    
     pred_df = pd.DataFrame(best_pred).merge(ratings_data , left_on = ['uid', 'iid'], right_on = ['nickname', 'place_id'])
 
     pred_df[['uid','iid','nickname','place_id','place','type','rating','food_rating','service_rating','ratings','est']]
@@ -112,7 +60,8 @@ def recommender(ratings_data, userid):
     
     userid = int(userid.replace('U', ''))
     
-    recommendations = get_recommendations(userid, 3, pred_df)
+    recommendations = get_recommendations(userid, pred_df)
+    print(recommendations[:5], flush=True)
     return recommendations [:5]
 
 

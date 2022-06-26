@@ -37,12 +37,10 @@ class StatisticsView extends React.Component{
         series: [
           {
             type: "pie",
-            background: '#282c34',
             angleKey: "value",
             labelKey: "type"
           }
         ],
-        background: 'black',
         legend: {
           enabled: false,
         }
@@ -53,7 +51,6 @@ class StatisticsView extends React.Component{
         title: {
           text: 'Total Spent by type of restaurant',
         },
-        background: 'black',
         series: [
           {
             type: "pie",
