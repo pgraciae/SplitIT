@@ -102,6 +102,14 @@ CREATE TABLE FRIENDS (
     date TIMESTAMP NOT NULL
 );
 
+CREATE TABLE RECOMMENDATIONS (
+    recommendation_id INT PRIMARY KEY,
+    nickname INT,
+    place VARCHAR(1000),
+    type VARCHAR(100),
+    estimation NUMERIC(5,2)
+);
+
 ALTER DATABASE postgres SET datestyle TO 'ISO, DMY'; --Dates format dd/mm/yyyy
 
 --INSERT INTO USERTABLE VALUES('TEST', '603244633', 'polgraciae@gmail.com', 'splitit', 'Pol', 0, 'Carrer santa llucia', '12/02/2000', 'M', NOW());

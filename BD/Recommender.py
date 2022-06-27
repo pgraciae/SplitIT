@@ -7,15 +7,24 @@ from surprise.model_selection import train_test_split
 from surprise import KNNBasic,  KNNWithMeans, KNNBaseline
 from surprise.model_selection import KFold
 from surprise import Reader
+from sqlalchemy import create_engine
 
 
+engine = create_engine('postgresql+psycopg2://postgres:FDP@SplitItDB:5432/postgres')
 
-def get_recommendations(user_id, pred_df):
-    df_recommended = pred_df[pred_df['nickname']==user_id]
-    restaurants = df_recommended[['place','type']]
-    return restaurants
+# def get_recommendations(user_id, pred_df):
+#     df_recommended = pred_df[pred_df['nickname']==user_id]
+#     restaurants = df_recommended[['place','type']]
+#     return restaurants
 
-def recommender(ratings_data, userid):
+def recommender(userid=None):
+
+    group_df = pd.read_sql_table('group_user', engine)
+    tickets_df = pd.read_sql_table('ticket', engine)
+    products_df = pd.read_sql_table('product', engine)
+
+    group_ticket_df = group_df.merge(tickets_df)
+    ratings_data = group_ticket_df.merge(products_df)
 
     dtf_users = ratings_data.groupby(['nickname','place_id']).mean().reset_index()
     
@@ -55,14 +64,23 @@ def recommender(ratings_data, userid):
 
 
     anti_pre = best_algo.test(anti_set)
+
     pred_df = pd.DataFrame(anti_pre).merge(restaurants , left_on = ['iid'], right_on = ['place_id'])
     pred_df = pd.DataFrame(pred_df).merge(users, left_on = ['uid'], right_on = ['nickname'])
     
-    userid = int(userid.replace('U', ''))
+    pred_df.reset_index(inplace=True)
+    pred_df = pred_df.rename(columns={"index": "recommendation_id", "est":"estimation"})
+    pred_df = pred_df[['recommendation_id', 'nickname', 'place', 'type', 'estimation']]
     
-    recommendations = get_recommendations(userid, pred_df)
-    print(recommendations[:5], flush=True)
-    return recommendations [:5]
+    pred_df.to_sql('recommendations', engine, if_exists="replace", index=False)
+    with engine.connect() as con:
+        con.execute('ALTER TABLE recommendations ADD PRIMARY KEY ("recommendation_id");')
+
+    #userid = int(userid.replace('U', ''))
+    #recommendations = get_recommendations(userid, pred_df)
+    #print(recommendations[:5], flush=True)
+    #return recommendations [:5]
 
 
-
+if __name__ == '__main__':
+    recommender()

@@ -16,7 +16,6 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from tables import *
-from Recommender import recommender
 
 app = Flask(__name__)
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = False
@@ -200,37 +199,37 @@ import pandas as pd
 engine = create_engine('postgresql+psycopg2://postgres:FDP@SplitItDB:5432/postgres')
 @app.route('/statistics', methods=['GET'])
 def user_analysis():
-    # try:
-    data = request.args.to_dict()
-    print(data, flush=True)
-    print(data['email'], flush=True)
-    user =  UserTable.query.filter_by(email = data['email']).first()
-    group = Group_User.query.filter_by(nickname = user.nickname).all()
-    
-    group_list =[]
-    for g in group:
-        group_list.append(g.group_id)
+    try:
+        data = request.args.to_dict()
+        print(data, flush=True)
+        print(data['email'], flush=True)
+        user =  UserTable.query.filter_by(email = data['email']).first()
+        group = Group_User.query.filter_by(nickname = user.nickname).all()
+        
+        group_list =[]
+        for g in group:
+            group_list.append(g.group_id)
 
-    types = list()
-    prices = list()
-    for t, p in db.session.query(Ticket, Product).filter(Ticket.ticket_id==Product.ticket_id, Ticket.group_id.in_(tuple(group_list))):
-        types.append(t.type)
-        prices.append(p.price)
-    analysis = pd.DataFrame({'type': types, 'price': prices})
-    visit = analysis['type'].value_counts()
-    visit = [{'type':key, 'value':value} for key,value in zip(visit.index, visit)]
-    spent = analysis.groupby('type')['price'].sum()
-    spent = [{'type':key, 'value':value} for key,value in zip(spent.index, spent)]
-    
-    group_df = pd.read_sql_table('group_user', engine)
-    tickets_df = pd.read_sql_table('ticket', engine)
-    products_df = pd.read_sql_table('product', engine)
-    group_ticket_df = group_df.merge(tickets_df)
-    ratings_df = group_ticket_df.merge(products_df)
-    recommendations = recommender(ratings_df, user.nickname)
-    return {'Visit': visit, 'Spent':spent, 'Recommendations_restaurant':recommendations['place'].tolist(), "Recommendations_type": recommendations['type'].tolist()}
-    # except:
-    #     return {'Visit': "Not enought data"}
+        types = list()
+        prices = list()
+        for t, p in db.session.query(Ticket, Product).filter(Ticket.ticket_id==Product.ticket_id, Ticket.group_id.in_(tuple(group_list))):
+            types.append(t.type)
+            prices.append(p.price)
+        analysis = pd.DataFrame({'type': types, 'price': prices})
+        visit = analysis['type'].value_counts()
+        visit = [{'type':key, 'value':value} for key,value in zip(visit.index, visit)]
+        spent = analysis.groupby('type')['price'].sum()
+        spent = [{'type':key, 'value':value} for key,value in zip(spent.index, spent)]
+            
+        userid = int(user.nickname.replace('U', ''))
+        #recommendations = recommender(user.nickname)
+        recommendations = pd.read_sql_query(f"select * from recommendations where nickname='{userid}'", engine)
+        recommendations = recommendations.sort_values(['estimation'],ascending=False)[:5]
+
+
+        return {'Visit': visit, 'Spent':spent, 'Recommendations_restaurant':recommendations['place'].tolist(), "Recommendations_type": recommendations['type'].tolist()}
+    except:
+        return {'Visit': "Not enought data"}
 
 
 if __name__ == '__main__':

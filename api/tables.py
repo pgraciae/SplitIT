@@ -42,3 +42,6 @@ class Product(db.Model):
 
 class Products_Prop(db.Model):
     __table__ = db.Model.metadata.tables['products_prop']
+
+class Recommendations(db.Model):
+    __table__ = db.Model.metadata.tables['recommendations']
