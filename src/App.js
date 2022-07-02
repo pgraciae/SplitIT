@@ -19,6 +19,7 @@ import StatisticsView from "./Components/Statistics.js"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import cookie from 'react-cookies';
 import ChooseGroup from "./Components/ChooseGroup.js"
+import DivideTicket  from './Components/DivideTicket';
 
 class App extends React.Component {
 
@@ -199,7 +200,7 @@ class App extends React.Component {
       <div className="App">
       <header className="App-header">
       <div>
-        <NavBarCustom view={this.go}></NavBarCustom>
+         <NavBarCustom view={this.go}></NavBarCustom>  {/* Set state/return variable with ticket values */}
       </div>
       <TableX></TableX>
       <div>
@@ -235,7 +236,7 @@ class App extends React.Component {
       <div>
         <NavBarCustom view={this.go}></NavBarCustom>
       </div>
-      hoa
+      <DivideTicket Email={this.email_value()} ></DivideTicket>
       </header>
 
       </div>
