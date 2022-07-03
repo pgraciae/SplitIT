@@ -5,17 +5,19 @@ from datetime import date
 from flask import Flask
 from flask import request
 from flask import jsonify
+import json
 import matplotlib.pyplot as plt
 import numpy as np
 from PIL import Image
-from sqlalchemy import func 
+from sqlalchemy import func
 import os
-# from OCR_handler import OCRHandler
-# from OCR_Layout_analysis import ItemsIdentifier
+from OCR_handler import OCRHandler
+from OCR_Layout_analysis import ItemsIdentifier
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from tables import *
+from classificador.Classificador import classify
 
 app = Flask(__name__)
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = False
@@ -30,13 +32,13 @@ if 'test_file.txt' not in os.listdir():
         hdlr.write("Test: /")
         #print(os.getcwd(), flush=True)
 
-# model = OCRHandler()
+model = OCRHandler()
 
 def do_ocr(img_path):
     global model
     res = (model.doOcr(img_path))
     ids = ItemsIdentifier(res)
-    #print({'info' : ids.priorKnowladge_layoutAnalysis() , 'result_ocr': res} , flush=True)
+    print({'info' : ids.priorKnowladge_layoutAnalysis() , 'result_ocr': res} , flush=True)
     return {'info' : ids.priorKnowladge_layoutAnalysis() , 'result_ocr': res} 
 
 
@@ -58,17 +60,25 @@ def upload():
     pix = np.array(pil_image)
     path = 'uploaded/' + str(int(time.time())) + '.jpg'
     plt.imsave(path, pix)
-    res = model.doOcr(path)
+    res = do_ocr(path)
     print(res, flush=True)
     helper_file('image has been saved on:', os.getcwd() ,'uploaded/' + str(int(time.time())) + '.jpg')
     #infer_img(pix, str(int(time.time())))
-    return jsonify({'1':None})
+    # return jsonify(**res)
+    return jsonify({'id':[{'Item':'Beef','Price':30, 'Quantity':2}, {'Item':'Pesto Tofu Pasta', 'Price':15, 'Quantity':1}, {'Item':'gril tequil lim chick fajita', 'Price':10, 'Quantity':3}]})
 
+@app.route('/classifier', methods = ['GET'])
+def classifier():
+    ticket_items = [{'Item':'Beef','Price':30, 'Quantity':2}, {'Item':'Pesto Tofu Pasta', 'Price':15, 'Quantity':1}, {'Item':'gril tequil lim chick fajita', 'Price':10, 'Quantity':3}]
+    type = classify(ticket_items)
+    print(type, flush=True)
+    return ({'type':type})
 
 @app.route('/login', methods=['GET'])
 def login():
     
     data = request.args.to_dict()
+
     bd =  UserTable.query.filter_by(email = data['nickname']).first()
     
     if bd != None:
@@ -155,7 +165,7 @@ def add_friend():
     exists = db.session.query(UserTable).filter_by(nickname=data['nickname']).first()
     if exists == None:
         return {"Added": "Nickname doesn't exist"}
-    
+
     f_id = db.session.query(func.max(Friends.friendship_id)).scalar()
     data_add = {'friendship_id':int(f_id)+1, 'nick_name_u1':data['nickname'], 'nick_name_u2':data['your_nickname'], 'date':date.today()}
     new_friendship = Friends(**data_add)
@@ -205,7 +215,7 @@ def user_analysis():
         print(data['email'], flush=True)
         user =  UserTable.query.filter_by(email = data['email']).first()
         group = Group_User.query.filter_by(nickname = user.nickname).all()
-        
+
         group_list =[]
         for g in group:
             group_list.append(g.group_id)
@@ -220,7 +230,7 @@ def user_analysis():
         visit = [{'type':key, 'value':value} for key,value in zip(visit.index, visit)]
         spent = analysis.groupby('type')['price'].sum()
         spent = [{'type':key, 'value':value} for key,value in zip(spent.index, spent)]
-            
+
         userid = int(user.nickname.replace('U', ''))
         #recommendations = recommender(user.nickname)
         recommendations = pd.read_sql_query(f"select * from recommendations where nickname='{userid}'", engine)
@@ -234,7 +244,7 @@ def user_analysis():
 
 if __name__ == '__main__':
 
-    if Groups.query.count() == 0: 
+    if Groups.query.count() == 0:
         exec(open('mock_data/create_mock_data.py').read()) # posem dades a la bd
 
     app.run(debug=True,host='0.0.0.0', port = 5000)

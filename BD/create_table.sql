@@ -78,6 +78,7 @@ CREATE TABLE PRODUCT(
     ticket_id INT REFERENCES ticket(ticket_id),
     paid_by VARCHAR(30) REFERENCES usertable(nickname),
     item VARCHAR(1000) NOT NULL,
+    ingredients VARCHAR(10000) NOT NULL, 
     rating INT,
     food_rating INT,
     service_rating INT,

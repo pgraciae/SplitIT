@@ -27,7 +27,7 @@ class App extends React.Component {
   constructor(props){
     super(props);
     
-    this.state = {currentTime: 0, View: 'Login', selectedFile:null, webcamEnabled: false, email: '', choosed_group: null}
+    this.state = {currentTime: 0, View: 'Login', selectedFile:null, webcamEnabled: false, email: '', choosed_group: null, products: [], type : ''}
     this.go = this.move.bind(this)
     this.loadedImage = this.loadImage.bind(this)
     this.enableWebcam = this.enableWebcam.bind(this)
@@ -54,10 +54,18 @@ class App extends React.Component {
         method: 'POST',
         body: formData
       }).then(resp => {
-        resp.json().then(data => {console.log(data)})
-      })
+        resp.json().then(data => {
+          this.setState({products: data.id, View:'Uploaded'})});
+        })
+      await fetch('/classifier', {
+        method: 'GET'
+      }).then(resp => {
+        resp.json().then(data => {
+          this.setState({type: data})
+          console.log(this.state.type)});
+        })
     }
-    this.setState({View:'Uploaded'}); //sota d'Upload()
+    // this.setState({View:'Uploaded'}); //sota d'Upload()
     Upload();
   }
     
@@ -202,7 +210,7 @@ class App extends React.Component {
       <div>
          <NavBarCustom view={this.go}></NavBarCustom>  {/* Set state/return variable with ticket values */}
       </div>
-      <TableX></TableX>
+      <TableX data={this.state.products}></TableX>
       <div>
       <Button variant ="contained" onClick={this.chooseGroup}>
         Continue
@@ -236,7 +244,7 @@ class App extends React.Component {
       <div>
         <NavBarCustom view={this.go}></NavBarCustom>
       </div>
-      <DivideTicket Email={this.email_value()} ></DivideTicket>
+      <DivideTicket Email={this.email_value()} data={this.state.products} ></DivideTicket>
       </header>
 
       </div>

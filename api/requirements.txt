@@ -2,10 +2,14 @@ imutils
 Flask
 flask-restful
 flask-cors
+protobuf~=3.19.0
 paddlepaddle
 paddleocr
-matplotlib
 Flask-SQLAlchemy==2.5.1
 psycopg2-binary==2.8.6
 SQLAlchemy
 surprise
+nltk
+sklearn
+bs4
+#Scrapper

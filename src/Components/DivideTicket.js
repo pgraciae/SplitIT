@@ -2,6 +2,7 @@ import SelectSearch from 'react-select-search';
 import React, { Component } from "react";
 import Select from "react-select";
 
+
 class DivideTicket extends React.Component {
 
 constructor(props){
@@ -9,18 +10,28 @@ constructor(props){
     this.state = {
       data : null,
       nickname: '',
-      selectedOption: null
+      selectedUser: null,
+      selectedItem: null,
+
     }
     this.rows = null;
-    this.llista = {};
+    this.llista = [];
 
 
   }
-  handleChange = selectedOption => {
-    this.setState({ selectedOption });
+
+  handleChange_user = selectedUser => {
+    this.setState({ selectedUser });
     // Option selected: { value: "rojo", label: "rojo" }
-    console.log("Option selected:", selectedOption);
+    console.log("Option selected:", selectedUser);
   };
+
+  handleChange_item = selectedItem => {
+    this.setState({ selectedItem });
+    // Option selected: { value: "rojo", label: "rojo" }
+    console.log("Option selected:", selectedItem);
+  };
+ 
 
   async YourFriends() {
       await fetch('/friends?email='+ this.props.Email, {
@@ -48,6 +59,8 @@ constructor(props){
     // Ticket elements en una estructura igual que rows
   }
 
+  
+
   render(){
     console.log(this.state.friend, 'friend_status')
     if (this.rows === null) {
@@ -57,28 +70,60 @@ constructor(props){
     else {
       console.log('holaa', this.rows)}
       console.log('i', this.rows.map(el => ({value:el, label:el})))
+      console.log('products', this.props.data.map(el => ({value:el.Item, label:el.Item})))
+      // let rows_list = this.rows.length > 0
+    	// && this.rows.map((item, i) => {
+      // return (
+      //   <option key={i} value={item}>{item}</option>
+      //   )
+      //  }, this);
+      
       return(
         <div>
+          <div>
+          <React.Fragment>
+            <Select
+              isMulti
+              options={this.rows.map(el => ({value:el, label:el }))}
+              value={this.state.selectedUser}
+              onChange={this.handleChange_user}
+              closeMenuOnSelect={false}
+            />
+          </React.Fragment>
+          </div>
+          <div>
 
-{/* 
-    <React.Fragment>
-        <Select
-          isMulti
-          options={this.rows.map(el => ({value:el, label:el}))}
-          value={this.state.selectedOption}
-          onChange={this.handleChange}
-          closeMenuOnSelect={false}
-        />
-      </React.Fragment> */}
-
-  <SelectSearch
-          options={this.rows.map(el => ({name:el, value:el}))}
-          multiple
-          search
-          placeholder="Friends"
-          onChange={this.handleChange}
+          
+          <React.Fragment>
+            <Select
+              isMulti
+              options={this.props.data.map(el => ({value:el.Item, label:el.Item}))}
+              value={this.state.selectedItem}
+              onChange={this.handleChange_item}
+              closeMenuOnSelect={false}
+            />
+          </React.Fragment>
+          </div>
+        
+        
+        
+    {/* <h2>USERS: </h2>
+    <select options={rows_list}
+            placeholder='Select user/s'
+            value={this.state.selectedOption}
+            onChange={this.handleChange}
+            isSearchable={true}
     />
-
+    <br /><br />
+    <b>Selected:</b>
+    <pre>{JSON.stringify(this.state.selectedOption)}</pre> */}
+  {/* <SelectSearch
+      options={this.rows.map(el => ({name:el, value:el}))}
+      multiple
+      search
+      placeholder="Friends"
+      // onChange={this.handleChange}
+    /> */}
         </div>
       );
     }

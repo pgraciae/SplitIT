@@ -60,13 +60,20 @@ const CustomTableCell = ({ row, name, onChange }) => {
   );
 };
 
- function TableX() {
-  const [rows, setRows] = React.useState([
-    createData(159 , "Frozen yoghurt", 24,),
-    createData(237, "Ice cream sandwich",34),
-    createData(262 , "Eclair", 12 )
-  ]);
+ function TableX(props) {
+  // const [rows, setRows] = React.useState([
+  //   createData(159 , "Frozen yoghurt", 24,),
+  //   createData(237, "Ice cream sandwich",34),
+  //   createData(262 , "Eclair", 12 )
+  
+
+  // ]);
+  // const rowsState = React.useState('');
+  // const rows = rowsState.state;
+  // const setRows = rowsState;
+  const [rows, setRows] = React.useState(props.data);
   const [previous, setPrevious] = React.useState({});
+  console.log(previous, 'previii')
   const classes = useStyles();
 
   const onToggleEditMode = (id) => {
@@ -110,7 +117,7 @@ const CustomTableCell = ({ row, name, onChange }) => {
     });
     onToggleEditMode(id);
   };
-
+  console.log(rows, 'Rowss')
   return (
     <Paper className={classes.root}>
       <Table className={classes.table} aria-label="caption table">
@@ -118,7 +125,7 @@ const CustomTableCell = ({ row, name, onChange }) => {
           <TableRow>
             <TableCell align="left" />
             <TableCell align="left">Quantity</TableCell>
-            <TableCell align="left">Product Name</TableCell>
+            <TableCell align="left">Item</TableCell>
             <TableCell align="left">Price</TableCell>
             
           </TableRow>
@@ -152,7 +159,7 @@ const CustomTableCell = ({ row, name, onChange }) => {
                 )}
               </TableCell>
               <CustomTableCell {...{ row, name: "Quantity", onChange }} />
-              <CustomTableCell {...{ row, name: "ProductName", onChange }} />
+              <CustomTableCell {...{ row, name: "Item", onChange }} />
               <CustomTableCell {...{ row, name: "Price", onChange }} />
             </TableRow>
           ))}

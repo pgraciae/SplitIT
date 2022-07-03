@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import datetime 
 from dateutil.relativedelta import relativedelta
-
+import textwrap
 
 conn = connect(
     dbname = "postgres",
@@ -40,19 +40,26 @@ def restaurant_analysis(name_restaurant, start, stop):
     print("Total number of groups that visited the restaurant: ", groups_totals)
     print("Number of groups that have repeated: ", repetits)
     
+
+    x_axis=range(5)
+    plt.figure(figsize=(10,10))
     plt.title("5 most requested dishes")
     plt.bar(products_restaurant['item'].value_counts().sort_values()[-5:].index, products_restaurant['item'].value_counts().sort_values()[-5:].values)
     plt.ylabel("Times requested")
     plt.xlabel("Dish")
-    plt.xticks(rotation=45, multialignment='center')
+    plt.xticks(x_axis, [textwrap.fill(label, 10) for label in products_restaurant['item'].value_counts().sort_values()[-5:].index], 
+           rotation = 10, fontsize=11, horizontalalignment="center")
     plt.savefig('output/5_most_ordered.png')
     plt.close()
 
+    x_axis=range(5)
+    plt.figure(figsize=(10,10))
     plt.title("5 least requested dishes")
     plt.bar(products_restaurant['item'].value_counts().sort_values()[:5].index, products_restaurant['item'].value_counts().sort_values()[:5].values)
     plt.ylabel("Times requested")
     plt.xlabel("Dish")
-    plt.xticks(rotation=45)
+    plt.xticks(x_axis, [textwrap.fill(label, 10) for label in products_restaurant['item'].value_counts().sort_values()[:5].index], 
+           rotation = 10, fontsize=11, horizontalalignment="center")
     plt.savefig('output/5_least_ordered.png')
     plt.close()
     

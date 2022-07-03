@@ -65,8 +65,10 @@ class StatisticsView extends React.Component{
       const recommendations_restaurant = this.state.recommendations_restaurant
       return (
         <div>
-          <div>
-            <AgChartsReact options={options_visited}  />
+          <div  style={{position: "fixed", left: "15rem", top:"10rem"}}>
+            <AgChartsReact options={options_visited} />
+          </div>
+          <div  style={{position: "fixed", left: "60rem", top:"10rem"}}>
             <AgChartsReact options={options_spent}  />
           </div>
           {/* <h1 style={{ textAlign: "center" }}>Restaurant Money Spent</h1>
@@ -74,16 +76,18 @@ class StatisticsView extends React.Component{
           <div>
             
           </div> */}
-          <React.Fragment>
-            <ul>
-              <b>Restaurant Recommendations</b>
-              {recommendations_restaurant.map(listitem => (
-                <li>
-                  {listitem}
-                </li>
-              ))}
-            </ul>
-          </React.Fragment>
+          <div  style={{position: "fixed", top:"30rem", left:"40rem"}}>
+            <React.Fragment>
+              <ul>
+                <b>Restaurant Recommendations</b>
+                {recommendations_restaurant.map(listitem => (
+                  <li>
+                    {listitem}
+                  </li>
+                ))}
+              </ul>
+            </React.Fragment>
+          </div>
         </div>
       );
     }

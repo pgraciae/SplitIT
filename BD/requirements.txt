@@ -2,7 +2,8 @@ SQLAlchemy
 psycopg2-binary==2.8.6
 pandas
 Flask-SQLAlchemy==2.5.1
-matplotlib
+#matplotlib
 numpy
 python-dateutil
 surprise
+textwrap3
