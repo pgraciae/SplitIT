@@ -10,19 +10,25 @@ class DivideTicket extends React.Component {
 constructor(props){
     super(props)
     this.state = {
-      data : null,
+      data : this.props.data,
       nickname: '',
       selectedUser: null,
       selectedItem: null,
       counters: 0,
       userItems: {},
-
+      loaded: false,
     }
+
     this.rows = null;
     this.llista = [];
     this.Divide = this.Divide.bind(this)
+    this.MapData = this.MapData.bind(this)
+    console.log('props',this.props)
+  }
 
-
+  MapData(){
+    console.log('data',this.state.data) //loaded not array
+    return this.state.data.map(el => ({value:el.Item, label:el.Item}))
   }
 
   handleChange_user = selectedUser => {
@@ -42,36 +48,45 @@ constructor(props){
   Divide(){
     // this.setState({counters: this.state.counters+1})
     // console.log(this.rows)
-    let a = {}
-    let b = {}
-    for (var i=0; i<this.state.selectedUser.lenght; i++){
-      for (var j; j<this.state.selectedItem.lenght; j++){
-        if (this.state.selectedUser[i] in a){
-          a[this.state.selectedUser[i]].push(this.state.selectedItem[j])
+    let a = this.state.userItems
+    let b = []
+
+    for (var k=0; k<Object.keys(this.state.data).length;k++){
+        if (!(this.state.selectedItem.map(el=>(el.value)).includes(this.state.data[k].Item))){
+          b.push(this.state.data[k])
+        }
+    }
+
+
+    for (var i=0; i<this.state.selectedUser.length; i++){
+      for (var j=0; j<this.state.selectedItem.length; j++){
+        console.log('bucle',i,j)
+        if (this.state.selectedUser[i].value in a){
+          a[this.state.selectedUser[i].value].push(this.state.selectedItem[j].value)
         }
         else{
-          a[this.state.selectedUser[i]]=[this.state.selectedItem[j]]
-        }
-        if (i == 0){
-          
+          a[this.state.selectedUser[i].value]=[this.state.selectedItem[j].value]
         }
       }
     }
-    console.log(a)
-    this.setState({userItems: a})
-    console.log(this.state.userItems)
-    console.log(this.state.selectedUser)
+    console.log('a',a)
+    console.log('b',b)
+    this.setState({userItems: a, data: b})
+
+    console.log('user Items', this.state.userItems)
+    console.log('selected user', this.state.selectedUser)
   }
 
   async YourFriends() {
-      await fetch('/friends?email='+ this.props.Email, {
+    console.log('group_iddd', this.props.group_value)
+      await fetch('/friends_group?group_id='+ this.props.group_value, {
         method: 'GET',
       }).then(resp => {
         resp.json().then((resp)=>{
           console.log(resp);
           this.rows = resp.Friends;
           console.log(this.rows);
-          this.setState({data: 'loaded'});
+          this.setState({loaded: 'loaded'});
         })
       })
       await fetch('/profile?email='+ this.props.Email, {
@@ -96,17 +111,10 @@ constructor(props){
     if (this.rows === null) {
      return ( <a>Retrieving data...</a> )
      
-    } 
-    else {
-      console.log('holaa', this.rows)}
+    } else if (this.state.data.length > 0){
+      console.log('holaa', this.rows)
       console.log('i', this.rows.map(el => ({value:el, label:el})))
       console.log('products', this.props.data.map(el => ({value:el.Item, label:el.Item})))
-      // let rows_list = this.rows.length > 0
-    	// && this.rows.map((item, i) => {
-      // return (
-      //   <option key={i} value={item}>{item}</option>
-      //   )
-      //  }, this);
       
       return(
         <div>
@@ -127,7 +135,7 @@ constructor(props){
           <React.Fragment>
             <Select
               isMulti
-              options={this.props.data.map(el => ({value:el.Item, label:el.Item}))}
+              options={this.MapData()}
               value={this.state.selectedItem}
               onChange={this.handleChange_item}
               closeMenuOnSelect={false}
@@ -138,28 +146,13 @@ constructor(props){
           </Button>
           </div>
         
-        
-        
-    {/* <h2>USERS: </h2>
-    <select options={rows_list}
-            placeholder='Select user/s'
-            value={this.state.selectedOption}
-            onChange={this.handleChange}
-            isSearchable={true}
-    />
-    <br /><br />
-    <b>Selected:</b>
-    <pre>{JSON.stringify(this.state.selectedOption)}</pre> */}
-  {/* <SelectSearch
-      options={this.rows.map(el => ({name:el, value:el}))}
-      multiple
-      search
-      placeholder="Friends"
-      // onChange={this.handleChange}
-    /> */}
         </div>
       );
+    } else {
+      //ficrho tot BD
+
+      this.props.view('final')
     }
 }
-
+}
 export default DivideTicket;

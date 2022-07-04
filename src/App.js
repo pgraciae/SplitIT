@@ -57,13 +57,13 @@ class App extends React.Component {
         resp.json().then(data => {
           this.setState({products: data.id, View:'Uploaded'})});
         })
-      await fetch('/classifier', {
-        method: 'GET'
-      }).then(resp => {
-        resp.json().then(data => {
-          this.setState({type: data})
-          console.log(this.state.type)});
-        })
+      // await fetch('/classifier', {
+      //   method: 'GET'
+      // }).then(resp => {
+      //   resp.json().then(data => {
+      //     this.setState({type: data})
+      //     console.log(this.state.type)});
+      //   })
     }
     // this.setState({View:'Uploaded'}); //sota d'Upload()
     Upload();
@@ -236,15 +236,33 @@ class App extends React.Component {
     )
       }
       
-  else if (this.state.View ==='repartir'){
-    console.log(this.choosedGroup_value())
+
+      else if (this.state.View ==='repartir'){
+        console.log(this.choosedGroup_value())
+        return (
+          <div className="App">
+          <header className="App-header">
+          <div>
+            <NavBarCustom view={this.go}></NavBarCustom>
+          </div>
+          <DivideTicket Email={this.email_value()} data={this.state.products} group_value={this.state.choosed_group} view={this.move0_}></DivideTicket>
+          </header>
+          </div>
+        )
+      }
+    
+  
+  else if (this.state.View ==='final'){
+    //es veu el tiquet dividit?
     return (
       <div className="App">
       <header className="App-header">
       <div>
         <NavBarCustom view={this.go}></NavBarCustom>
       </div>
-      <DivideTicket Email={this.email_value()} data={this.state.products} ></DivideTicket>
+      Yet to be displayed
+
+      Moltes Gràcies!
       </header>
 
       </div>

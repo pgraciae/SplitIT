@@ -65,11 +65,55 @@ def upload():
     helper_file('image has been saved on:', os.getcwd() ,'uploaded/' + str(int(time.time())) + '.jpg')
     #infer_img(pix, str(int(time.time())))
     # return jsonify(**res)
-    return jsonify({'id':[{'Item':'Beef','Price':30, 'Quantity':2}, {'Item':'Pesto Tofu Pasta', 'Price':15, 'Quantity':1}, {'Item':'gril tequil lim chick fajita', 'Price':10, 'Quantity':3}]})
-
+    return jsonify({'id': [
+    {'Item': "KIR CASSIS",
+    'Price': 4.50,
+    'Quantity': 1},
+    {'Item': "BIERE SAISON",
+    'Price': 3.60,
+    'Quantity': 1},
+    {'Item': "PINOT GRIS GRA",
+    'Price': 28.00,
+    'Quantity': 1},
+    {'Item': "BUEWESPAETZ.CR",
+    'Price': 14.10,
+    'Quantity': 1},
+    {'Item': "FLAMBEE",
+    'Price': 8,
+    'Quantity': 1},
+    {'Item': "ONGLET DE BOEU",
+     'Price': 18.5,
+     'Quantity': 1},
+    {'Item': "CAFE ALSACIEN",
+     'Price': 16.0,
+     'Quantity': 2}
+]
+})
 @app.route('/classifier', methods = ['GET'])
 def classifier():
-    ticket_items = [{'Item':'Beef','Price':30, 'Quantity':2}, {'Item':'Pesto Tofu Pasta', 'Price':15, 'Quantity':1}, {'Item':'gril tequil lim chick fajita', 'Price':10, 'Quantity':3}]
+    ticket_items = [
+    {'Item': "KIR CASSIS",
+    'Price': 4.50,
+    'Quantity': 1},
+    {'Item': "BIERE SAISON",
+    'Price': 3.60,
+    'Quantity': 1},
+    {'Item': "PINOT GRIS GRA",
+    'Price': 28.00,
+    'Quantity': 1},
+    {'Item': "BUEWESPAETZ.CR",
+    'Price': 14.10,
+    'Quantity': 1},
+    {'Item': "FLAMBEE",
+    'Price': 8,
+    'Quantity': 1},
+    {'Item': "ONGLET DE BOEU",
+     'Price': 18.5,
+     'Quantity': 1},
+    {'Item': "CAFE ALSACIEN",
+     'Price': 16.0,
+     'Quantity': 2}
+]
     type = classify(ticket_items)
     print(type, flush=True)
     return ({'type':type})
@@ -102,6 +146,17 @@ def login():
         #return {'error': 'User not registered, redirecting to register page'}
         print({'bd':bd}, flush=True)
         return {'error': bd}
+
+
+engine = create_engine('postgresql+psycopg2://postgres:FDP@SplitItDB:5432/postgres')
+@app.route('/friends_group', methods = ['GET'])
+def get_friends_group():
+    print(request, flush=True)
+    data = request.args.to_dict()
+    group_id = pd.read_sql_query(f"select group_id from groups where title='{data['group_id']}'", engine)
+    users = pd.read_sql_query(f"select * from group_user where group_id='{group_id['group_id'].values[0]}'", engine)
+    print(users, flush=True)
+    return({"Friends":users['nickname'].tolist()})
 
 
 @app.route('/register', methods=['POST'])

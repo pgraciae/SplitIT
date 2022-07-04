@@ -51,7 +51,6 @@ class ChooseGroup extends React.Component {
     }
 
 
-
     render(){
       if (this.groups === null) {
        return ( <a>Retrieving data...</a> )
