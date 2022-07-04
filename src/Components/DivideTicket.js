@@ -1,6 +1,8 @@
 import SelectSearch from 'react-select-search';
 import React, { Component } from "react";
 import Select from "react-select";
+import Button from '@mui/material/Button';
+
 
 
 class DivideTicket extends React.Component {
@@ -12,26 +14,54 @@ constructor(props){
       nickname: '',
       selectedUser: null,
       selectedItem: null,
+      counters: 0,
+      userItems: {},
 
     }
     this.rows = null;
     this.llista = [];
+    this.Divide = this.Divide.bind(this)
 
 
   }
 
   handleChange_user = selectedUser => {
-    this.setState({ selectedUser });
+    this.setState({ selectedUser: selectedUser });
     // Option selected: { value: "rojo", label: "rojo" }
+    console.log("remain: ", this.rows)
     console.log("Option selected:", selectedUser);
   };
 
   handleChange_item = selectedItem => {
-    this.setState({ selectedItem });
+    this.setState({ selectedItem: selectedItem });
     // Option selected: { value: "rojo", label: "rojo" }
+    console.log("remain: ", this.props.data)
     console.log("Option selected:", selectedItem);
   };
- 
+  
+  Divide(){
+    // this.setState({counters: this.state.counters+1})
+    // console.log(this.rows)
+    let a = {}
+    let b = {}
+    for (var i=0; i<this.state.selectedUser.lenght; i++){
+      for (var j; j<this.state.selectedItem.lenght; j++){
+        if (this.state.selectedUser[i] in a){
+          a[this.state.selectedUser[i]].push(this.state.selectedItem[j])
+        }
+        else{
+          a[this.state.selectedUser[i]]=[this.state.selectedItem[j]]
+        }
+        if (i == 0){
+          
+        }
+      }
+    }
+    console.log(a)
+    this.setState({userItems: a})
+    console.log(this.state.userItems)
+    console.log(this.state.selectedUser)
+  }
 
   async YourFriends() {
       await fetch('/friends?email='+ this.props.Email, {
@@ -103,6 +133,9 @@ constructor(props){
               closeMenuOnSelect={false}
             />
           </React.Fragment>
+          <Button onClick={this.Divide}>
+            Continue
+          </Button>
           </div>
         
         
